@@ -1,6 +1,6 @@
 # Benchmark de landing pages para Cysure (julio 2026)
 
-Auditoría en vivo de 5 landings con Playwright (Chromium headless, viewport 1440x900, locale es-MX/en-US según sitio). Por sitio: screenshot de hero, 6-8 paradas de scroll lento, full-page, estados hover antes/después y extracción programática (librerías de motion, keyframes, transiciones computadas, fuentes, paleta, secciones, prueba social, funnel). Evidencia: `shots/` (JPEG q75, ancho máx 1280) y `data/` (JSON crudos por sitio).
+Auditoría en vivo de 6 landings con Playwright (5 iniciales + UMA agregado como caso de estudio en sencillez) (Chromium headless, viewport 1440x900, locale es-MX/en-US según sitio). Por sitio: screenshot de hero, 6-8 paradas de scroll lento, full-page, estados hover antes/después y extracción programática (librerías de motion, keyframes, transiciones computadas, fuentes, paleta, secciones, prueba social, funnel). Evidencia: `shots/` (JPEG q75, ancho máx 1280) y `data/` (JSON crudos por sitio).
 
 Nota de método: en Delta Protect el dropdown "SERVICIOS" del nav no abrió en headless (ni hover ni click); todo lo demás se capturó completo. Stoik redirige de stoik.io a stoik.com/en-us.
 
@@ -161,6 +161,30 @@ Nota de método: en Delta Protect el dropdown "SERVICIOS" del nav no abrió en h
 
 ---
 
+## 6. UMA (uma.xyz) - caso de estudio en sencillez (agregado post-auditoría inicial)
+
+Auditado con el mismo método. Se incluye por una razón distinta a los demás: es el mejor ejemplo del lote de cómo comunicar una herramienta compleja (un oráculo optimista para blockchain) con una landing radicalmente simple. Ese es el atributo que Cysure debe copiar.
+
+**Stack:** Next.js + Tailwind (transiciones 0.3s cubic-bezier(0.4,0,0.2,1), la curva default de Tailwind, en 21 elementos). Sin GSAP, sin Webflow, sin Lottie, sin Swiper, sin chat, sin formularios. Keyframes contados con una mano: `arrow-enter` (2s infinite, la flecha del link), `fade-in/out`, `accordion-slide-up/down`. Video del hero en webm con `opacity-10 mix-blend-luminosity`: textura, no protagonista.
+
+**El presupuesto de diseño es mínimo y por eso funciona:**
+- UNA tipografía: Halyard Display, en un solo peso (400). La jerarquía se hace solo con tamaño (H1 96px, el más grande del benchmark, sobre body 16px).
+- DOS fondos: #272528 (casi negro) para hero/cierre y blanco para el contenido. Nada más.
+- UN acento: rojo, racionado con disciplina quirúrgica: números de etapa, la palabra clave del headline ("Participate as a **Voter**"), los X de disputa, links con flecha. Nunca en bloques grandes.
+- UN CTA en toda la página: "Launch app" (blanco, radius 8px, hover apenas gris). No hay demo, no hay form, no hay newsletter en el flujo principal.
+
+**Cómo comunica el propósito de la herramienta:**
+1. **H1 de 5 palabras que ES la definición del producto:** "A decentralized truth machine", con el logo (los dos círculos "OO") incrustado DENTRO del texto del headline entre "truth" y "machine". El logo funciona como palabra. Lo repiten en "Launch products with the OO as your backbone": la marca se vuelve sintaxis.
+2. **Una sola metáfora visual para todo el sitio:** una fábrica isométrica en line-art (banda transportadora de cajas = statements que se verifican). El hero la muestra de fondo; la sección "How UMA works" la desarma en 4 etapas numeradas (01 Statement, 02 Challenge period, 03 Dispute, 04 Voting), cada una con un fragmento de la misma fábrica: cajas avanzando, un robot inspeccionando, una caja marcada con X roja, la urna de votación. Un hilo rojo vertical conecta las 4 etapas. Nada de stock, nada de 3D, nada de dashboards.
+3. **Headlines que son oraciones de sujeto y verbo, no slogans:** "A statement is proposed as true", "Most statements go undisputed", "Anyone can dispute a statement", "Tokenholders vote on disputes and earn rewards". Leyendo solo los H2/H3 entiendes el protocolo completo. Un párrafo corto por etapa, cero bullets.
+4. **La página se estructura por audiencia, no por features:** How it works, luego "Participate as a Voter" (Stake / Vote / Earn: tres palabras, tres iconos line-art, tres oraciones) y "Participate as a Builder" (4 casos de uso en tabs: Prediction Markets, Insurance, Cross-Chain, Real World Assets). El nav replica exactamente eso: How it works, For Voters, For Builders, Docs, Blog. Cinco items.
+5. **Prueba social = producto vivo, no logos con humo:** un ticker fijo arriba y abajo de la página con la votación real en curso ("Time to reveal vote: 10:13:39, 31 votes"). Además: pregunta real usada por Polymarket ("Did the Chiefs beat the Eagles in the 2022-2023 NFL Superbowl?"), snippet de Solidity real por caso de uso, y grid de logos de proyectos en monocromo. Cero testimonios, cero stats inflados.
+6. **Hovers casi invisibles pero consistentes:** CTA blanco a gris claro, links a opacity 50%, todo a 0.3s con la misma curva. La sobriedad del motion es parte del mensaje ("somos infraestructura seria").
+
+**El costo de esa sencillez (para no idealizarla):** no hay funnel de conversión clásico (ni form, ni chat, ni lead magnet), porque UMA no vende: recluta usuarios de protocolo. Cysure sí necesita convertir, así que debe copiar la claridad, no la ausencia de funnel.
+
+---
+
 # Qué robarle a cada uno para Cysure
 
 Prioridad 1 = hacerlo ya en la landing; Prioridad 2 = siguiente iteración; Prioridad 3 = cuando haya presupuesto/tiempo.
@@ -189,6 +213,17 @@ Prioridad 1 = hacerlo ya en la landing; Prioridad 2 = siguiente iteración; Prio
 14. **De Coalition: mega-menu educativo** con card "¿Qué es AI & Cyber Insurance?" cuando el sitio crezca de una landing a varias páginas.
 15. **De Delta: certificaciones del EQUIPO como marquee** (OSCP, CEH, etc. del equipo de seguridad de Cysure) en lugar de solo logos de compliance: humaniza y da credibilidad técnica.
 
+## La lección de sencillez de UMA (aplicada a Cysure)
+
+Estas van ANTES que todo lo demás: son decisiones de resta, no de suma, y definen si la landing se entiende en 5 segundos.
+
+1. **H1 que sea la definición del producto en una oración, no un slogan.** El equivalente Cysure de "A decentralized truth machine": algo como "El seguro cyber que vigila tu empresa" o "Una máquina de proteger empresas". Si el lockup de Cysure puede incrustarse en el headline como hace UMA con su "OO", mejor: marca = sintaxis.
+2. **Una sola metáfora visual desarrollada en etapas numeradas.** En vez de 6 productos con 6 estilos (riesgo del enfoque Delta), UNA ilustración continua del ciclo Cysure: 01 Monitoreamos, 02 Detectamos, 03 Corregimos, 04 Si algo pasa, pagamos. La misma escena evolucionando, con un hilo de color conectando etapas. Leyendo solo los headlines se debe entender el negocio completo.
+3. **Presupuesto de diseño cerrado antes de diseñar:** 1 tipografía, 2 fondos, 1 color de acento racionado, 1 CTA repetido. Cada elemento extra necesita justificar por qué existe. La sensación premium de UMA es la disciplina, sin un solo efecto WebGL.
+4. **Estructura por audiencia con nav espejo.** "Para empresas / Para brokers / Cómo funciona" y que el nav diga exactamente eso. El usuario nunca duda de dónde está.
+5. **Prueba social de producto vivo:** el equivalente Cysure del vote ticker de UMA es un ticker discreto de actividad real: "N amenazas detectadas esta semana en empresas monitoreadas" o el score de riesgo promedio moviéndose. Un dato real y vivo vale más que tres secciones de testimonios.
+6. **Headlines sujeto+verbo en es-MX plano.** "Cualquiera puede disputar un statement" es el tono: "Tu empresa se monitorea sola", "Si algo pasa, pagamos". Cero jerga de seguros, cero "soluciones integrales".
+
 ## Anti-patrones a evitar
 - Delta: el texto de un `<style>` embebido se filtra al textContent del CTA (bug menor de Webflow); y ningún dropdown de nav funcionó en headless (riesgo de SEO/accesibilidad). Revisar accesibilidad de menús custom.
 - Coalition: botones con font Arial computada (fallback visible en la extracción): cuidar el fallback stack de fuentes.
@@ -196,5 +231,5 @@ Prioridad 1 = hacerlo ya en la landing; Prioridad 2 = siguiente iteración; Prio
 - At-Bay/Coalition: 0 presencia es-MX. Nadie del lote (salvo Delta y Sofía) habla español: la localización es-MX con copy nativo es en sí misma la ventaja de Cysure frente a los gringos.
 
 ## Assets
-- `shots/`: 51 capturas curadas (hero, scroll, hovers antes/después, mega-menu, full-page por sitio).
-- `data/`: extracción programática por sitio (delta.json + delta-extra.json con ScrollTriggers y hovers, sofia.json + sofia-comparativa.json con las 11 filas literales, coalition.json, atbay.json, stoik.json).
+- `shots/`: 62 capturas curadas (hero, scroll, hovers antes/después, mega-menu, full-page por sitio).
+- `data/`: extracción programática por sitio (delta.json + delta-extra.json con ScrollTriggers y hovers, sofia.json + sofia-comparativa.json con las 11 filas literales, coalition.json, atbay.json, stoik.json, uma.json).
