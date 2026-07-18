@@ -15,7 +15,7 @@ Auditada en vivo (2026-07-17, viewport 1440x900, Chromium). Coalition es la refe
 
 ## 1.1 Arquitectura general de la página
 
-El patrón maestro: **la página es una pila de "section cards" full-bleed con esquinas muy redondeadas (48-50px) que alternan tres fondos**: blanco, negro #000000 y gris claro #f5f5f3. El contenido vive en un container centrado de **1196-1296px** con padding vertical de **64-96px** por sección. El negro nunca es una franja cuadrada: siempre es una tarjeta gigante redondeada flotando sobre el blanco de la página. Ese gesto (bloques redondeados alternados) es el 80% de su personalidad visual.
+El patrón maestro: **la página es una pila de "section cards" full-bleed con esquinas muy redondeadas (48-50px) que alternan tres fondos**: blanco, negro #000000 y gris claro #f5f5f3. El contenido vive en un container centrado de **1168-1296px** (1200 el más común; la sources bar es full-width 1440). El padding vertical medido en los wrappers que lo declaran: S7 96/96, S8 64/64, S9 72/72, S10 64/64; en el resto vive en elementos internos. El negro nunca es una franja cuadrada: siempre es una tarjeta gigante redondeada flotando sobre el blanco de la página. Ese gesto (bloques redondeados alternados) es el 80% de su personalidad visual.
 
 Orden vertical completo (medido, alturas reales):
 | # | Sección | y | Alto | Fondo | Radius |
@@ -35,7 +35,7 @@ Orden vertical completo (medido, alturas reales):
 
 ## 1.2 Chrome superior
 
-**Announcement bar** (41px, bg azul #2b70d7, texto blanco 16px Public Sans):
+**Announcement bar** (41px, bg azul #2b70d7, texto 16px Public Sans; el blanco del texto está verificado en screenshot, el contenedor mide #6b6b6a):
 > "Now Available: Active Cyber Insurance for Enterprises — **Find Out More →**" (link bold con flecha, X de cierre a la derecha).
 
 **Navbar** (sticky, negro, 70px, logo zona 160x70):
@@ -46,14 +46,14 @@ Orden vertical completo (medido, alturas reales):
 
 **Mega-menus** (ver `coalition-megamenu-*.jpg`): panel blanco full-width que cae debajo del nav; el resto de la página se atenúa con overlay negro 50%. Estructura de 3 zonas:
 1. **Card destacada izquierda** (~300px, fondo gris claro, borde 1px): título bold ("What is Active Insurance?" / "Case Studies" / "Blog"), párrafo gris de 2-4 líneas, link azul "Learn More ›". En Resources la card trae sublinks azules (Cyber Insurance › · Broker Education › · Security › · All Blog Posts ›).
-2-3. **Dos columnas de links** con kicker SMALL-CAPS gris con hairline debajo ("INSURANCE" / "SECURITY", "CYBER INSURANCE" / "ADDITIONAL COVERAGES"): cada link = **título bold 16px negro + descripción gris de 2 líneas**. Ejemplos reales del menú Solutions: For Brokers ("Build your cyber expertise. Grow your book of business with the Active Insurance leader."), For SME Leaders, For Enterprise Security Teams, For Managed Service Providers, For Value Added Resellers. En Resources hay una cuarta fila inferior con íconos: "Claims Report" y "Automated Detection & Response Guide".
+2-3. **Dos columnas de links** con kicker SMALL-CAPS gris con hairline debajo ("INSURANCE" / "SECURITY", "CYBER INSURANCE" / "ADDITIONAL COVERAGES"): cada link = **título bold 16px negro + descripción gris de 2 líneas** (anatomía tomada de los screenshots `coalition-megamenu-*.jpg`; la extracción DOM no la capturó). Ejemplos reales del menú Solutions: For Brokers ("Build your cyber expertise. Grow your book of business with the Active Insurance leader."), For SME Leaders, For Enterprise Security Teams, For Managed Service Providers, For Value Added Resellers. En Resources hay una cuarta fila inferior con íconos: "Claims Report" y "Automated Detection & Response Guide".
 
 ## 1.3 Hero (ver `coalition-hero.jpg`)
 
 Card negra con esquinas inferiores redondeadas sobre página blanca:
-- **H2 (no usan h1, dato curioso):** "Protect your business with cyber insurance and security, together" — Degular ~72px, weight 300, blanco, alineado a la izquierda, 3 líneas.
+- **H2 (no usan h1, dato curioso):** "Protect your business with cyber insurance and security, together" — Degular **60px/300 medido** (en pantalla puede verse mayor), blanco, alineado a la izquierda, 3 líneas.
 - Sub: "Coalition's Active Insurance helps businesses spot and stop fast-moving cyber threats before they strike." — Public Sans 18px gris claro.
-- **Doble CTA por audiencia:** "Brokers: Get Appointed →" (amarillo #ffbb3c) + "Free Security Assessment →" (menta #baf6eb). Ambos: 16px/700, padding 16x24, **radius 0** (todo botón en Coalition es rectangular puro).
+- **Doble CTA por audiencia:** "Brokers: Get Appointed →" (amarillo #ffbb3c) + "Free Security Assessment →" (menta #baf6eb). Ambos: 16px/700, padding 16x24, **radius 0** (todo CTA de conversión en Coalition es rectangular puro; las únicas excepciones de radius son los tabs de S5 a 16px y botones utilitarios circulares al 50%).
 - Debajo, **banner pill de caso real** (gris oscuro, full-width del container, radius pill): "See how Coalition's active approach helped a policyholder claw back $1.5 million after a fraudulent funds transfer scam. — Watch Now →" (link amarillo).
 - Sin video de fondo ni ilustración en el hero: el drama es tipográfico.
 
@@ -63,15 +63,15 @@ Card negra con esquinas inferiores redondeadas sobre página blanca:
 - H2: "Insurance that can stop cyber threats in their tracks? Meet Coalition." — Degular **60px/300, lh 60px, negro**.
 - Sub: "Policyholders experience **73% fewer claims\*** and a seamless claims process when they do." — Public Sans 18px #6b6b6a. El asterisco remite a la sources bar del final. Patrón: **afirmación fuerte + footnote honesto.**
 
-**S4 · Trío de features (card blanca radius 48px, 1552px de alto):** tres filas alternadas texto/media:
-1. "Prevent cyber risks before they happen" (Degular 40px/400) + 3 sub-items, cada uno: título bold 16px + link azul #2b70d7 con › ("Know and act on your business's risks with ease → Try our easy-to-use risk management platform, for free ›", "Discover how we analyze threats to your business", "Strengthen your security with premium add-ons").
+**S4 · Trío de features (card blanca radius 48px, borde hairline sin sombra, 1552px de alto):** tres filas alternadas texto/media. Anatomía de cada sub-item: **título Public Sans 18px/400 negro + link azul #2b70d7 16px/700 con ›**, separados por hairlines grises:
+1. "Prevent cyber risks before they happen" (Degular 40px/400) + 3 sub-items ("Know and act on your business's risks with ease → Try our easy-to-use risk management platform, for free ›", "Discover how we analyze threats to your business", "Strengthen your security with premium add-ons").
 2. "Our security experts respond to threats fast" + ("Mitigate threats, recover systems, recoup funds → Learn about our affiliate, Coalition Incident Response ›", "Put cyber pros to work for your business, 24/7 ›").
 3. "Get cyber coverage designed for digital risk" + ("From incident to recovery, we've got your back", "Our industry-leading cyber coverages", "Broad coverage for a spectrum of cyber risks").
-- Media: **videos de producto autoplay-loop** (Homepage-1/2/3.mp4, ~464px de ancho) con botón de play circular naranja. Los separadores entre sub-items son hairlines grises.
+- Media: **videos de producto autoplay-loop** (Homepage-1.mp4, Homepage-2.mp4, Homepage_Sect2-3.mp4; ~464px de ancho) con botón de play circular naranja (color observado en screenshot, sin hex medido).
 
-**S5 · Security (card negra radius 50px, padY 96px):**
+**S5 · Security (card negra radius 50px, padding asimétrico: 96px arriba / 16px abajo):**
 - H3: "Level up your cyber defenses with Coalition Security®" — Degular 48px/400 blanco, centrado.
-- **Tabs pill** (radius 16px, borde 1px #8c8d8d, texto blanco 16px; activa = fondo blanco texto negro, con ícono svg 18px: shield/teach/lock_mail): Wirespeed · Security Training · Coalition Control · Vulnerability Management.
+- **Tabs pill** (radius 16px, borde 1px #8c8d8d, texto blanco **24px/500 medido**; activa = fondo blanco texto negro, con ícono svg 18px: shield/teach/lock_mail): Wirespeed · Security Training · Coalition Control · Vulnerability Management.
 - Panel activo: "Stop attacks in seconds with Wirespeed ADR" (40px), sub "Automated detection & response helps keep you ahead of AI-powered threats.", stat gigante "**1.8 seconds** median time to verdict\*\*" (Degular 40px), screenshot del producto + mock de chat de alertas ("Hi Alex! How can I help?").
 
 **S6 · Staccato (card gris #f5f5f3 radius 48px):**
@@ -113,13 +113,13 @@ Card negra con esquinas inferiores redondeadas sobre página blanca:
 | Outline | transparente, borde 2px #ffbb3c | #ffbb3c | 0 | 14px 22px | 16/700 | Sobre fondos negros |
 | Text-link | - | #2b70d7 (o #ffbb3c en dark) | - | - | 16/700 + › | Sub-items, cards |
 
-Todos con flecha → o › al final. El rectangular sin radius es firma de marca.
+Todos con flecha → o › al final (verificado en screenshots; el extractor marcó arrow:false porque las flechas son SVG). El rectangular sin radius es firma de marca en los CTAs de conversión.
 
 ## 1.6 Tipografía y color
 
 **Fuentes:** Degular (display; pesos 300 en 60px+, 400 en 40-48px; lh apretado = 1.0-1.1) · **Degular Mono** (solo eyebrows: 14px/300, ls 1px, uppercase, azul) · Public Sans (body 16-18px/400, gris #6b6b6a sobre claro, #f5f5f3 sobre oscuro; botones 16px/700).
-**Escala medida:** 72 (hero) · 60/300 (H2 sección) · 48/400 (H3) · 40/400 (H4 bloque) · 18 body-lead · 16 body/botones · 14 eyebrow/nav.
-**Paleta completa:** #000000 (secciones oscuras) · #ffffff (página) · #f5f5f3 (secciones suaves) · #ffbb3c (amarillo primario) · #baf6eb (menta secundario) · #2b70d7 y #2773e0 (azul links/eyebrows/announcement) · #6b6b6a (texto secundario) · #cad3db (links footer) · naranja (botones play de video). Color con roles fijos: amarillo = acción, menta = gratis/entrada suave, azul = aprender/navegar.
+**Escala medida:** 60/300 (hero y H2 de sección) · 48/400 (H3) · 40/400 (H4 bloque) · 24/500 (tabs) · 18 body-lead y títulos de sub-item · 16 body/botones/links · 14 eyebrow/nav.
+**Paleta completa (hex medidos):** #000000 (secciones oscuras) · #ffffff (página) · #f5f5f3 (secciones suaves) · #ffbb3c (amarillo primario) · #baf6eb (menta secundario) · #2b70d7 y #2773e0 (azul links/eyebrows/announcement) · #6b6b6a (texto secundario) · #cad3db (links footer) · #8c8d8d (bordes on-dark). El naranja de los botones play es observación visual, sin hex medido. Color con roles fijos: amarillo = acción, menta = gratis/entrada suave, azul = aprender/navegar.
 
 ## 1.7 Motion y hovers (medido)
 
@@ -151,7 +151,7 @@ Regla de la fusión: **se copia el esqueleto, no la piel.** Donde Coalition pone
 | Display font | Degular 300/400 | **Space Grotesk 600** (`--font-display`), tracking -0.02em en grandes |
 | Eyebrow | Degular Mono 14/300 ls1px azul | **Eyebrow tone navy/royal**: Space Grotesk 700, 11px, tracking 0.16em, uppercase |
 | Body | Public Sans 16-18 | **DM Sans** 15px (`--font-sans`) |
-| Palabra clave del heading | (no tienen) | **UNA palabra DM Serif Display italic** color `--serif-accent` #3A5BA8 por heading |
+| Palabra clave del heading | (no tienen) | **UNA palabra DM Serif Display italic** color `--serif-accent` (#3A5BA8 sobre claro / #AEBEE6 sobre ink; usar el token, remapea solo con `data-theme="dark"`). Alcance: solo H1/H2 de sección (display-l/xl); los headings de bloque (B4, B9) van sin serif |
 | Números/stats (1.8 seconds) | Degular 40px | **Space Grotesk + tabular-nums** (`--font-number`) |
 | Negro de sección #000000 | #000000 | **`--ink` #0E1116** con `--shadow-elevated` (exclusiva de marketing) |
 | Gris de sección #f5f5f3 | #f5f5f3 | **`--sunken` #F6F6F3** |
@@ -159,12 +159,12 @@ Regla de la fusión: **se copia el esqueleto, no la piel.** Donde Coalition pone
 | Amarillo CTA #ffbb3c | #ffbb3c | **Button `primary` = ink fill** (#0E1116, texto blanco). El amarillo NO existe en Cysure |
 | Menta CTA #baf6eb | #baf6eb | **Button `secondary`** (borde) para el CTA suave; el mint Cysure #34E0AE se reserva para VALOR DE REGRESO (payout) y solo sobre ink |
 | Radius de botones 0px | 0 | **9-11px** (radius Cysure de botones; el rectangular puro no es de la casa) |
-| Radius de section cards 48-50px | 48-50px | **Mantener el gesto: 32-48px.** Es layout, no token de componente; conserva la firma Coalition |
+| Radius de section cards 48-50px | 48-50px | **Mantener el gesto: 40px fijo.** Es layout, no token de componente, pero queda fuera de la escala de radios del DS (tope 20px) → `[TBD aprobación de Toño]`; si no se aprueba, techo 18-20px |
 | Íconos svg + patrón Bauhaus | decorativo | **Icon-chips** (ícono del set propio dentro de cuadro `--<tone>-soft` radius 11) + anillos concéntricos tenues. **Cero clip-art, cero Bauhaus shapes** |
 | Videos de producto autoplay | mp4 en loop | **Sin video ni foto.** Screenshots del producto (UI kits del DS) en frames `--shadow-frame`, superficies generativas: radar sweep en heros ink, arc gauge del Risk Score, tiles del Detection Coverage Map, shimmer AISummary |
 | Play button naranja | naranja | No aplica (no hay video) |
 | Hover: shadow 0.3s + flecha | MUI easing | **Un solo easing `cubic-bezier(.2,.7,.2,1)`**, 140/220/280ms; hover/press = brightness (.cy-press), cards `.cy-lift` 2px. La flecha → sí puede desplazarse 4px |
-| Announcement bar azul | #2b70d7 | Bar `--royal` #3B5BFF, texto blanco, DM Sans 14 |
+| Announcement bar azul | #2b70d7 | Bar sobre `--ink` (royal es acento, no superficie): texto blanco DM Sans 14, link "Conoce más →" en royal dark #7C92FF vía token. Con X de cierre y dismiss persistido en localStorage |
 | "Cyber Incident? Get Help" amarillo | amarillo | **"¿Incidente activo? · Repórtalo"** en `--coral` #EF4444 (color = urgencia; este es EL caso semántico correcto para coral). Pill coral-soft opcional |
 | Footnotes con asterisco | #cad3db | Mantener el patrón tal cual: sources bar con `--faint`, asteriscos en superíndice |
 | Chat widget | negro | Opcional; si va, botón ink con radius 9999 |
@@ -183,40 +183,40 @@ Regla de la fusión: **se copia el esqueleto, no la piel.** Donde Coalition pone
 
 Estructura espejo de Coalition, 12 bloques. El copy es borrador listo para iterar; los `[TBD]` requieren dato o decisión de Toño. Cada heading marca su palabra serif-accent entre \*asteriscos\*.
 
-**B0 · Announcement bar** (royal, 40px):
+**B0 · Announcement bar** (ink, 40px, X de cierre con dismiss en localStorage; link en royal-dark vía token):
 > "Nuevo: cobertura paramétrica hasta USD 250K por evento · **Conoce más →**"
 
-**B1 · Navbar** (sticky, ink, 68-70px):
+**B1 · Navbar** (sticky, ink, 68px):
 - Logo: `<Logo onDark withWordmark>` (cysure lowercase).
-- Items (5, espejo de Coalition): **Seguro ⌄ · Seguridad ⌄ · Soluciones ⌄ · Recursos ⌄ · Nosotros ⌄** — DM Sans 14/500.
+- Items (5, espejo de Coalition): **Seguro ⌄ · Seguridad ⌄ · Soluciones ⌄ · Recursos · Nosotros** — DM Sans 14/500. Solo los 3 primeros llevan mega-menu; Recursos y Nosotros son links planos (decisión tomada para no inventar contenido de menú).
 - Derecha: **"¿Incidente activo? · Repórtalo"** (coral, el único elemento coral del chrome) + botón **Entrar** (secondary chico) + búsqueda opcional.
-- Mega-menu de 3 zonas igual que Coalition: card destacada izquierda ("¿Qué es AI & Cyber Insurance?" con párrafo y "Conoce más ›" royal) + 2 columnas con kicker eyebrow ("SEGURO" / "COBERTURAS", "SEGURIDAD" / "AGENTES") con links bold + descripción de 2 líneas. Contenido menú Seguro: Cobertura cyber (B1-B4) · Cobertura AI risk (A1-A9) · Express Payout · Claims. Menú Seguridad: Sentinel · Hunter · EASM · Dark Web Monitoring · AI Scout · AI Auditor · AI Adversary · AI Vendor Watcher. Menú Soluciones: Para brokers · Para PyMEs · Para CISOs · Para MSPs.
+- Mega-menu de 3 zonas igual que Coalition: card destacada izquierda ("¿Qué es Cyber & AI Insurance?" con párrafo y "Conoce más ›" royal; usar SIEMPRE el orden canónico del descriptor: **Cyber & AI Insurance**) + 2 columnas con kicker eyebrow ("SEGURO" / "COBERTURAS", "SEGURIDAD" / "AGENTES") con links bold + descripción de 2 líneas. Contenido menú Seguro: Cobertura cyber (B1-B4) · Cobertura AI risk (A1-A9) · Express Payout · Claims. Menú Seguridad: Sentinel · Hunter · EASM · Dark Web Monitoring · AI Scout · AI Auditor · AI Adversary · AI Vendor Watcher. Menú Soluciones: Para brokers · Para PyMEs · Para CISOs · Para MSPs. Las descripciones de 2 líneas de cada link son borrador libre de la sesión constructora (marcadas como editables), siguiendo voice.md. Todos los hrefs del sitio son stubs `#` documentados: las subpáginas no existen aún.
 
 **B2 · Hero** (card ink redondeada abajo, radar sweep de fondo, `--shadow-elevated`):
-- Eyebrow navy: "AI & CYBER INSURANCE · LATAM"
+- Eyebrow navy: "CYBER & AI INSURANCE · LATAM" (orden canónico del descriptor según voice.md)
 - H1 (sí h1, corrigiendo a Coalition), Space Grotesk 64px, izquierda: "Protege tu empresa con seguro y seguridad, \*juntos\*."
-- Lead (DM Sans 17, muted-on-dark): "Cysure detecta el riesgo con su propia telemetría, lo asegura y paga en 24-48 h. Sin señal, no hay cobertura."
-- **Doble CTA:** primario ink-inverso (blanco sobre ink o ink sobre blanco según contraste del DS) "Obtén tu Risk Score →" + secundario borde "Brokers: únete →".
+- Lead (DM Sans 15 body, muted-on-dark): "Cysure detecta el riesgo con su propia telemetría, lo asegura y paga en 24-48 h. Sin señal, no hay cobertura."
+- **Doble CTA:** primario `Button primary` + secundario `Button secondary` "Brokers: únete →". Sobre superficies ink NO inventar variantes: se envuelve la card en `data-theme="dark"` y el re-map de tokens del DS resuelve el contraste (regla para TODAS las superficies ink de la página). Primario: "Obtén tu Risk Score →".
 - **Banner pill de caso** (equivalente al claw-back de Coalition): "Así funciona Express Payout: detección T+0 y pago en moneda local en 24-48 h · **Ver cómo →**" (link royal; cuando exista un caso real con monto, sustituir por el caso).
 
 **B3 · Intro claim** (blanco):
 - H2 44px: "¿Un seguro que \*detiene\* amenazas antes de que peguen? Conoce Cysure."
-- Sub 17 muted: "Solo aseguramos lo que detectamos con nuestra propia telemetría. Detection-Coverage Alignment: menos siniestros, cero letra chica.\*" (el asterisco apunta a la sources bar; si hay % real de reducción, va aquí como `[TBD]`).
+- Sub 15 muted: "Solo aseguramos lo que detectamos con nuestra propia telemetría. Detection-Coverage Alignment: menos siniestros, cero letra chica.\*" (el asterisco apunta a la sources bar; si hay % real de reducción, va aquí como `[TBD]`).
 
-**B4 · Trío de features** (card blanca radius 32-48, tres filas texto/media alternadas):
-1. **"Prevenimos el riesgo antes de que sea siniestro"** + 3 sub-items con icon-chip + link royal ›: "Conoce tu Risk Score en minutos ›" · "Vemos lo que cada integración emite. Decimos lo que no. ›" · "Agentes de AI monitoreando 24/7 ›". Media: **arc gauge del Risk Score** (800 / 1000) en frame `--shadow-frame`.
-2. **"Tu Resilience Lead responde en minutos, no en días"** + "Un humano al frente de tu cuenta, una flota de agentes detrás ›" · "Qué pasó · por qué te toca a ti · qué sigue ›". Media: screenshot de la Console (UI kit del DS).
+**B4 · Trío de features** (card blanca radius 40, borde 1px `--border`, sin sombra, tres filas texto/media alternadas):
+1. **"Prevenimos el riesgo antes de que sea siniestro"** + 3 sub-items con icon-chip + link royal ›: "Conoce tu Risk Score hoy ›" · "Vemos lo que cada integración emite. Decimos lo que no. ›" · "Agentes de AI monitoreando 24/7 ›". Media: **arc gauge del Risk Score** (800 / 1000) en frame `--shadow-frame`.
+2. **"Tu Resilience Lead responde primero"** (sin claims de tiempo: el único SLA canónico es Express Payout 24-48 h y detección T+0) + "Un humano al frente de tu cuenta, una flota de agentes detrás ›" · "Qué pasó · por qué te toca a ti · qué sigue ›". Media: screenshot de la Console (UI kit del DS).
 3. **"Cobertura diseñada para riesgo digital, pagada como debe ser"** + "Triggers paramétricos A1-A9 · B1-B4 ›" · "Express Payout: fiat local en 24-48 h ›" · "Póliza y payout sellados on-chain ›". Media: **Detection Coverage Map tiles** + timeline de payout con el monto en **mint sobre ink**.
 
-**B5 · Sección Seguridad** (card ink radius 32-48, `--shadow-elevated`):
+**B5 · Sección Seguridad** (card ink radius 40, `--shadow-elevated`, envuelta en `data-theme="dark"`):
 - H2 44px blanco centrado: "Sube tus defensas con la \*flota\* Cysure."
-- **Tabs pill** (radius 9-11, borde hairline-on-dark; activa = blanca con texto ink + ícono del set): Sentinel · Hunter · EASM · Dark Web · AI Scout · AI Auditor.
-- Panel: título 28px + párrafo + **stat gigante en Space Grotesk tabular:** "T+0 detección · 24-48 h payout\*\*" (el valor de payout en mint) + screenshot consola en frame.
+- **Tabs pill** (radius 9-11, borde hairline-on-dark; activa = blanca con texto ink + ícono del set): Sentinel · Hunter · EASM · Dark Web Monitoring · AI Scout · AI Auditor (nomenclatura canónica completa; si el ancho no da, la abreviación requiere OK de Toño).
+- Panel: **los 6 tabs comparten el mismo layout** (título 28px + párrafo + stat + media). El copy específico por agente es `[TBD con Toño]`; mientras, usar el patrón con placeholder marcado. Dos ejemplos listos: Sentinel: "Sentinel vigila tu perímetro 24/7" · "Telemetría continua de endpoints y red. Lo que Sentinel ve, tu póliza lo cubre." · stat "T+0 detección". AI Scout: "AI Scout audita tus modelos y prompts" · "Inventario vivo de tu superficie AI: modelos, agentes y vendors." · stat "A1-A9 triggers". Stat gigante compartido del bloque en Space Grotesk tabular: "T+0 detección · 24-48 h payout\*\*" (el valor de payout en mint) + screenshot consola en frame.
 
-**B6 · Staccato** (card sunken radius 32-48):
-- Eyebrow royal: "AMENAZAS ACTIVAS REQUIEREN SEGURO ACTIVO"
-- Staccato Space Grotesk 34-44px ink, 4 líneas: "Ransomware. / Fraude de transferencias. / Phishing con AI. / Y lo que \*siga\*."
-- Párrafo: "El seguro tradicional no se construyó para amenazas que evolucionan a diario. Por eso el nuestro detecta, responde y paga a la velocidad del riesgo."
+**B6 · Staccato** (card sunken radius 40):
+- Eyebrow royal: "SIN SEÑAL, NO HAY COBERTURA" (vocabulario de la casa; nunca traducir el "Active Insurance" de Coalition)
+- Staccato Space Grotesk 40px ink, 4 líneas: "Ransomware. / Fraude de transferencias. / Phishing con AI. / Y lo que \*siga\*."
+- Párrafo: "El seguro tradicional no se construyó para amenazas que evolucionan a diario. El nuestro detecta con telemetría propia, responde y paga a la velocidad del riesgo."
 - CTA primario ink: "Conoce la cobertura →".
 
 **B7 · Casos** (card ink):
@@ -224,10 +224,10 @@ Estructura espejo de Coalition, 12 bloques. El copy es borrador listo para itera
 - Sin video: fondo con anillos concéntricos tenues o radar sweep. Lista de casos con icon-chip + título bold + › (usar casos reales cuando existan; mientras: "Fintech detecta exfiltración y cobra Express Payout en 36 h `[TBD]` ›"). CTA outline-on-dark: "Ver casos →".
 
 **B8 · Respaldo de capacidad** (card sunken):
-- H3 28-34px: "Capacidad \*real\*, sellada on-chain."
-- Tiles de partners (grayscale, 40px): Ensuro · Etherisc · fronting carrier CNSF `[TBD nombre]` · Bridge/Stripe (off-ramp) `[confirmar cuáles son públicos]`. Microcopy: "MGA bajo CNSF vía fronting carrier · settlement en USDC · legal twin de cada póliza."
+- H3 32px: "Capacidad \*real\*, sellada on-chain."
+- Tiles de partners **a color, patrón IntLogo del DS** (el grayscale es el tratamiento de Coalition, no el de Cysure): Ensuro · Etherisc · fronting carrier CNSF `[TBD nombre]` · Bridge/Stripe (off-ramp) `[confirmar cuáles son públicos]`. No hay SVGs de estos partners en el DS: conseguir los SVG upstream `[TBD assets]`; fallback autorizado mientras tanto: tiles de texto en Space Grotesk 600. Microcopy: "MGA bajo CNSF vía fronting carrier · settlement en USDC · legal twin de cada póliza."
 
-**B9 · Recursos** (card ink, container ancho):
+**B9 · Recursos** (card ink radius 40, mismo container 1200):
 - H2: "Adelántate a las amenazas con \*criterio\*, no con miedo."
 - 3 cards (borde hairline-on-dark, radius 16, icon-chip royal 56px): "Reporte de riesgo AI & cyber LATAM `[TBD]` → Descargar ›" · "Portal de brokers → Únete ›" · "Calculadora de Risk Score → Pruébala gratis ›". Decoración: NADA de shapes; anillos concéntricos tenues.
 
@@ -235,21 +235,23 @@ Estructura espejo de Coalition, 12 bloques. El copy es borrador listo para itera
 
 **B11 · Footer** (ink, espejo estructural de Coalition):
 - Fila 1: logo cysure grande + social (LinkedIn · X · YouTube `[TBD cuáles existen]`).
-- 5 columnas con kicker eyebrow: SEGURO (Cobertura cyber, Cobertura AI, Express Payout, Claims) · SEGURIDAD (Sentinel, Hunter, EASM, Dark Web Monitoring, agentes AI) · SOLUCIONES (Brokers, PyMEs, CISOs, MSPs) · RECURSOS (Docs, Blog, Casos, Calculadora) · COMPAÑÍA (Nosotros, Careers, Contacto) + bloque **CONTACTO →**: "Reporta un siniestro: `[TBD teléfono]`" · "Soporte: hola@cysure.ai `[TBD]`".
+- 5 columnas con kicker eyebrow: SEGURO (Cobertura cyber, Cobertura AI, Express Payout, Claims) · SEGURIDAD (Sentinel, Hunter, EASM, Dark Web Monitoring, agentes AI) · SOLUCIONES (Brokers, PyMEs, CISOs, MSPs) · RECURSOS (Docs, Blog, Casos, Calculadora) · COMPAÑÍA (Nosotros, Vacantes, Contacto) + bloque **CONTACTO →**: "Reporta un siniestro: `[TBD teléfono]`" · "Soporte: hola@cysure.ai `[TBD]`".
 - Fila legal: selector de país pill "🇲🇽 México ⌄" (única excepción de emoji permitida) + Aviso de privacidad · Términos · Licencias CNSF `[TBD]`.
-- Strip de logos de capacidad (los mismos de B8) + microcopy legal de 2 líneas + "© 2026 cysure. Detection-Coverage Alignment®`[TBD registro]`".
+- Strip de logos de capacidad (los mismos de B8, a color) + microcopy legal de 2 líneas `[TBD legal: el texto regulatorio CNSF/MGA lo redacta Toño, no la sesión de build; usar placeholder neutral mientras]` + "© 2026 cysure. Detection-Coverage Alignment®`[TBD registro]`". Iconos sociales: el icon set del DS no trae glifos sociales; conseguir SVGs `[TBD assets]` o links de texto.
 
 ---
 
 # PARTE 4 · Especificaciones de implementación
 
-**Stack sugerido:** HTML/CSS/JS estático o Next.js. Cero librerías de animación (Coalition no las usa y el DS tampoco las necesita). Copia `assets/design-system/` y linkea `styles.css`; componentes UMD en `_ds_bundle.js` (`window.CysureDesignSystem_acdda2`).
+**Stack decidido:** sitio estático (HTML/CSS/JS vanilla). Cero librerías de animación (Coalition no las usa y el DS tampoco las necesita). Copia `assets/design-system/` y linkea `styles.css` para fonts y tokens. **No montes el bundle UMD de componentes en la landing** (requiere React 18 + Babel desde CDN): para las "media" de producto (B4, B5) abre los UI kits (`ui_kits/cliente/index.html`, `ui_kits/console/index.html`) en un navegador, captura las pantallas concretas (Cliente → Score con arc gauge; Console → Mapa de cobertura) y úsalas como imágenes estáticas dentro de frames `--shadow-frame`. Los componentes simples (botones, eyebrows, badges, icon-chips) se recrean con los helpers CSS del DS (`.cy-*`).
 
-**Layout:** container 1200px máx, gutter 24px. Section cards full-bleed con radius 32-48px y margen lateral 0 (el radius es del bloque, no del container). Padding vertical de sección: 64-96px. Navbar sticky 68px + announcement 40px.
+**Tema:** la página es light-only global; cada superficie ink se envuelve en `data-theme="dark"` para que los tokens remapeen. Body en **DM Sans** (la excepción Inter aplica solo a la landing viva actual, no a este rebuild).
 
-**Tipografía:** escala Cysure (64 display-xl hero · 44 display-l secciones · 28-34 bloques · 22 cards · 15 body · 11 eyebrows). Nunca los pesos light de Coalition: Space Grotesk 600 siempre en display. Una palabra serif italic navy por heading, exactamente una.
+**Layout:** container 1200px máx en TODAS las secciones (incluida B9), gutter 24px. Section cards full-bleed con radius 40px `[TBD aprobación de Toño; fallback 18-20px]` y margen lateral 0. Padding vertical de sección: 96px (secciones grandes) / 64px (bandas cortas). Navbar sticky 68px + announcement 40px.
 
-**Motion spec:** easing único `cubic-bezier(.2,.7,.2,1)`; 140ms (micro) / 220ms (hover) / 280ms (entradas). Hover botones = brightness .93; press .86. Cards interactivas `.cy-lift` (translateY -2px + shadow). Flecha de CTAs se desplaza 4px. Entradas al scroll: opcional un fade-up sobrio de 280ms con IntersectionObserver, sin stagger dramático, respetando `prefers-reduced-motion`. Los mega-menus abren en 220ms con fade + overlay 50% ink sobre la página.
+**Tipografía:** escala Cysure (64 display-xl hero · 44 display-l secciones · 28 bloques (32 en H3 de banda) · 22 cards · 15 body · 11 eyebrows). Nunca los pesos light de Coalition: Space Grotesk 600 siempre en display. Una palabra serif italic navy por heading, exactamente una.
+
+**Motion spec:** easing único `cubic-bezier(.2,.7,.2,1)`; 140ms (micro) / 220ms (hover) / 280ms (entradas). Hover botones = brightness .93; press .86. Cards interactivas `.cy-lift` (translateY -2px + borde fuerte; ojo: el CSS real del DS NO asigna sombra en hover, solo la transiciona; si quieres sombra hover, añádela como extensión del proyecto con `--shadow-card`→`--shadow-pop` suave). Flecha de CTAs se desplaza 4px. Entradas al scroll: opcional un fade-up sobrio de 280ms con IntersectionObserver, sin stagger dramático, respetando `prefers-reduced-motion`. Los mega-menus abren en 220ms con fade + overlay 50% ink sobre la página.
 
 **Checklist de aceptación (antes de entregar):**
 - [ ] Estructura de 12 bloques espejo Coalition (announcement → footer con sources bar)
