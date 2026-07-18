@@ -76,6 +76,13 @@ nuevos CTAs.
 4. **Copy fixes** de las 2 auditorías de subpáginas aplicados (28 hallazgos, 0 fallos): descriptor "Cyber & AI Insurance", "Risk Score", `700 / 1000`, acentos serif reducidos a una palabra, middots de Recursos, "¿Listo" singular, y mensajes de éxito/error del formulario de demo en español.
 5. **Animaciones nuevas** (easing DS `cubic-bezier(.2,.7,.2,1)`, respetan `prefers-reduced-motion`): rise-in al scroll de cada bloque nuevo; **stagger** de 90ms en las líneas del staccato y de 70ms en cards de recursos y escenarios; **crossfade** del panel de la flota al cambiar de tab; ya existentes: radar del hero (corregido a `conic-gradient` con alpha), marquee de integraciones, pulso del dot mint, flecha de CTAs.
 
+## 4.2 · Ronda v6.2 (4 animaciones aprobadas por Toño, publicadas)
+1. **Subrayado que se dibuja** al hover en links del footer y en la card destacada de los mega-menus (patrón Delta, 300ms, easing DS).
+2. **Dim siblings** en el nav: al hacer hover sobre un item, los demás bajan a 50% de opacidad.
+3. **Contador del Risk Score**: el 360 de la calculadora sube animado de 0 a 360 al entrar en viewport (900ms, ease-out; termina exacto en 360 para no romper el quiz). Registrado como inline script `CysureScoreCounter` aplicado solo al Home.
+4. **Red de nodos en el hero** (el único efecto "wow"): canvas con ~30-44 nodos y enlaces royal-dark de baja opacidad que reaccionan suavemente al cursor. Pausada fuera de viewport, DPR-aware, sin librerías (~1.5KB). Registrado como inline script `CysureHeroNet` aplicado solo al Home.
+Todas respetan `prefers-reduced-motion`. Nota operativa: los bloques grandes de custom code se llevaron al mecanismo de registered scripts de Webflow para evitar los timeouts del prompt de permisos con payloads gigantes.
+
 ## 5 · Deuda y pendientes (siguiente iteración)
 1. **Variables Webflow**: crear la colección de tokens (colores light/dark, radios, tipografía) y recablear las clases `cy-*6` — hoy los valores son hex canónicos pero hardcodeados.
 2. **Higiene de estilos**: purgar las 62 clases de prueba y consolidar los 241 nombres duplicados (censo completo en curso; ver scratchpad `styles-census.md`).
