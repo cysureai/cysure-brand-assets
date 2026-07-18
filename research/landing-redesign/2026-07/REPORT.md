@@ -69,6 +69,13 @@ nuevos CTAs.
 - **Assets**: fotos oficiales de fundadores en Nosotros; alt text ES en todos los assets de contenido.
 - **Instructions**: las 3 skills + regla dura de `webflow-instructions/` instaladas en el sitio (11 paths).
 
+## 4.1 · Ronda v6.1 (feedback de Toño, aplicada y publicada)
+1. **Links azules subrayados / tipografías rotas**: causa raíz — el importador WHTML eliminó el atributo `class` de 37 anchors (items del nav, links de mega-menus y footer), que caían al default del navegador (Arial azul subrayado). Recuperados por selectores de contexto en la capa `v6.1` del head; también se restauró el hover de botones (brightness + flecha 4px) que dependía de clases perdidas.
+2. **Radios**: section cards de 40px → **20px** (hero `0 0 20px 20px`), alineado al techo del DS.
+3. **Tags de capacidad**: el bloque "Capacidad real, sellada on-chain" (Ensuro · Etherisc · USDC · Bridge y Stripe) venía del vocabulario BP v3.0. Contrastado contra el **Modelo de negocio BP v3.1** (Notion): la Fase 2 coloca cobertura vía **MGA partner / carrier de fronting regulado**, con payout en stablecoin y off-ramp instantáneo. El bloque se reconstruyó como "Cobertura con respaldo *regulado*" (carrier de fronting regulado · 9 triggers AI y 4 cyber · off-ramp instantáneo · CFDI) y la strip del footer igual. **Polygon** y **Ensuro** se retiraron también de la banda de integraciones (texto e imagen) — no son integraciones del producto.
+4. **Copy fixes** de las 2 auditorías de subpáginas aplicados (28 hallazgos, 0 fallos): descriptor "Cyber & AI Insurance", "Risk Score", `700 / 1000`, acentos serif reducidos a una palabra, middots de Recursos, "¿Listo" singular, y mensajes de éxito/error del formulario de demo en español.
+5. **Animaciones nuevas** (easing DS `cubic-bezier(.2,.7,.2,1)`, respetan `prefers-reduced-motion`): rise-in al scroll de cada bloque nuevo; **stagger** de 90ms en las líneas del staccato y de 70ms en cards de recursos y escenarios; **crossfade** del panel de la flota al cambiar de tab; ya existentes: radar del hero (corregido a `conic-gradient` con alpha), marquee de integraciones, pulso del dot mint, flecha de CTAs.
+
 ## 5 · Deuda y pendientes (siguiente iteración)
 1. **Variables Webflow**: crear la colección de tokens (colores light/dark, radios, tipografía) y recablear las clases `cy-*6` — hoy los valores son hex canónicos pero hardcodeados.
 2. **Higiene de estilos**: purgar las 62 clases de prueba y consolidar los 241 nombres duplicados (censo completo en curso; ver scratchpad `styles-census.md`).
