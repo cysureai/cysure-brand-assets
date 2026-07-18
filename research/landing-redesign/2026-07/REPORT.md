@@ -83,6 +83,16 @@ nuevos CTAs.
 4. **Red de nodos en el hero** (el único efecto "wow"): canvas con ~30-44 nodos y enlaces royal-dark de baja opacidad que reaccionan suavemente al cursor. Pausada fuera de viewport, DPR-aware, sin librerías (~1.5KB). Registrado como inline script `CysureHeroNet` aplicado solo al Home.
 Todas respetan `prefers-reduced-motion`. Nota operativa: los bloques grandes de custom code se llevaron al mecanismo de registered scripts de Webflow para evitar los timeouts del prompt de permisos con payloads gigantes.
 
+## 4.3 · Ronda v6.3 (feedback de Toño, aplicada y publicada)
+1. **Logo**: el wordmark de texto se reemplazó por el `cysure-lockup.svg` oficial (currentColor, blanco) en nav y footer.
+2. **Gutters**: las section cards ya no tocan el borde de la página (14 a 16px de aire); el hero ahora es card flotante con 4 esquinas a 20px.
+3. **Final del Home aligerado**: Recursos pasó a tono claro (sunken) con chips y acento serif en variantes light; los únicos bloques ink del cierre son Casos, CTA y footer. Se eliminaron los anillos decorativos de Casos.
+4. **Radar del hero y red de nodos eliminados** (elemento y script fuera).
+5. **Descriptor corregido a "AI & Cyber Insurance"** (decisión del founder, AI primero) en hero, mega-menu, SEO, footer y las 8 ubicaciones de subpáginas; `nomenclatura.md` actualizado en repo y en las instructions del sitio. Nota: la wiki de Notion aún dice "Cyber & AI" en varios puntos — pendiente de actualizar en HQ.
+6. **Codenames A1-A9/B1-B4 retirados del copy público** (Home, mega-menus, JS de la flota; subpáginas ya estaban limpias) y regla nueva en nomenclatura: los códigos de triggers son internos.
+7. **4 páginas nuevas** con chrome completo: `/como-funciona` (4 pasos), `/risk-score` (score, fuentes del cálculo), `/flota` (6 agentes canónicos + human-in-the-loop), `/incidente` (**formulario propio de reporte de incidente**, ya no el modal de demo). Mega-menus y nav recableados a páginas reales.
+8. **Footer simplificado**: lockup SVG + iconos de LinkedIn y X (URLs de perfiles pendientes de confirmar) + fila única con TODAS las páginas + footnotes + párrafo regulatorio + fila legal compacta. Fuera las 5 columnas con kickers y la strip de tiles.
+
 ## 5 · Deuda y pendientes (siguiente iteración)
 1. **Variables Webflow**: crear la colección de tokens (colores light/dark, radios, tipografía) y recablear las clases `cy-*6` — hoy los valores son hex canónicos pero hardcodeados.
 2. **Higiene de estilos**: purgar las 62 clases de prueba y consolidar los 241 nombres duplicados (censo completo en curso; ver scratchpad `styles-census.md`).
