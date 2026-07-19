@@ -23,3 +23,6 @@ Cómo se escribe cada nombre, siempre.
 10. Términos de producto que se quedan en inglés dentro de prosa en español:
     Risk Score, Resilience Lead, AI Augmented MDR, Express Payout,
     Detection-Coverage Alignment, on-chain, KEV.
+11. Tiers comerciales públicos: **Cysure Starter**, **Cysure Active** y
+    **Cysure Enterprise**, en ese orden. Decisión de Toño, jul 2026: los nombres
+    internos Essential/Professional/Enterprise SME NO se usan en copy público.

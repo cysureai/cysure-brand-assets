@@ -197,14 +197,42 @@ assets y bios sobrias de rol) → CTA.
 
 ---
 
-## ⚠ Pendientes que requieren input de Toño
-1. URLs reales de LinkedIn, X, YouTube e Instagram (hoy `href="#"`).
-2. Autorización para publicar a staging/producción (nada publicado en esta ronda).
-3. Decisión D del spec: motivo de mega-menú generativo (actual) vs estilo caricatura.
-4. Generación de covers del blog con los prompts de `BLOG-COVERS-SPEC.md`.
-5. "Spending Agent" del spec no existe en el prototipo: ¿se agrega al prototipo o
+## Ronda "luz verde" (19 jul 2026, decisiones de Toño aplicadas)
+
+Toño respondió: publicar autorizado; caricaturas para el mega-menú; adelante con
+los covers; tiers públicos = Starter/Active/Enterprise; URLs de redes aún
+pendientes.
+
+- **Covers del blog (H5b ejecutado):** 7 ilustraciones SVG planas estilo
+  caricatura editorial (paleta Cysure, compuestas a mano siguiendo los prompts de
+  `BLOG-COVERS-SPEC.md`), subidas como assets y asignadas al campo Cover de los
+  7 posts (publicados). La card del Home ahora muestra el cover bound al CMS
+  (`cy-blog6-cov`, 150 px, object-fit cover). Si Toño prefiere versiones raster
+  generadas con IA, los prompts siguen listos en el spec.
+- **Mega-menú a caricatura (decisión D):** los anillos se reemplazaron por 3
+  escenas cartoon SVG: escudo amigable con paloma mint (Seguro), tres bots de la
+  flota (Seguridad) y cohete con estela mint (Soluciones).
+- **Tiers:** confirmados los nombres comerciales Cysure Starter/Active/Enterprise.
+  Codificado como regla 12 de `nomenclatura.md` (repo + instrucción del sitio,
+  v3). Se corrigió un leak de los nombres internos en la descripción de "Planes
+  y precios" del mega-menú.
+- **Fix de census:** una pregunta del FAQ decía el descriptor en orden inverso;
+  corregida a "AI & Cyber Insurance".
+- **PUBLICADO a staging** (`cysurelanding.webflow.io`; publish base + 2 fixes).
+  Census final sobre las 18 páginas publicadas: 0 codenames internos, 0 «—»,
+  0 «·», 0 descriptores en orden inverso, 0 nombres internos de tiers,
+  `data-cy-hero` presente en todas. El `noindex` de staging sigue puesto
+  (quitar antes del dominio de producción).
+
+## ⚠ Pendientes
+1. URLs reales de LinkedIn, X, YouTube e Instagram (hoy `href="#"`); se conectan
+   en cuanto Toño las comparta.
+2. "Spending Agent" del spec no existe en el prototipo: ¿se agrega al prototipo o
    se elimina del spec?
-6. Logo Azure: solo existe el icono oficial vigente en SVG público (sin wordmark).
+3. Logo Azure: solo existe el icono oficial vigente en SVG público (sin wordmark).
    Los demás 12 logos (incl. Okta, GitHub, OpenAI y Anthropic) sí se consiguieron.
-7. El middot «·» que sugiere el guardrail del spec NO se reintrodujo: choca con las
+4. El middot «·» que sugiere el guardrail del spec NO se reintrodujo: choca con las
    reglas v4.2 instaladas en el sitio (sin «·» ni «—» en copy).
+5. Covers: si se prefieren ilustraciones raster generadas con IA en lugar de los
+   SVG actuales, usar los prompts de `BLOG-COVERS-SPEC.md` y reemplazar el campo
+   Cover de cada post.
