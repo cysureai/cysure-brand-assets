@@ -330,3 +330,10 @@ el inicio del cuestionario.
 Census final post-publish: 0 codenames, 0 «—», 0 descriptores invertidos,
 0 tiers internos; scripts legacy fuera del HTML; /flota completa con los 11
 agentes canónicos.
+
+### Fix del velocímetro (frase completada por Toño)
+El arco de valor del gauge usaba un degradado mint estático con largo fijo (por
+eso se veía verde y grande al iniciar) más un path de brillo residual. Ahora:
+arranca rojo y chico (muñón mínimo de 2%), se llena en proporción al score y
+cambia rojo → ámbar (600) → verde (700); el brillo y el gradiente huérfano se
+eliminaron del SVG.
