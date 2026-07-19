@@ -159,7 +159,23 @@ assets y bios sobrias de rol) → CTA.
   cambiarlo); renombrar es decisión de copy aparte.
 
 ### S5/S6/S2 · Cómo funciona + FAQ + Express Payout (agente)
-- (pendiente de reporte del agente)
+- **/como-funciona** (reconstruida a fondo): hero ink con strip de pasos 01 a 04 →
+  timeline vertical con icon-chips SVG y métrica por paso (24/7 con 11 agentes,
+  700 / 1000, T+0, 24 a 48 h) → banda "Detrás: Detection-Coverage Alignment" con
+  4 stats → CTA final. Copys canónicos (sin agentes invasivos ni SOC propio, sin
+  cuestionarios anuales, sin peritajes, siempre fiat).
+- **/faq** (expandida): se conservaron las 21 preguntas existentes y se agregaron
+  6 nuevas (total 27) con el mismo patrón de acordeón: score bajo 700 después de
+  contratar, carrier de fronting regulado, Resilience Lead en el día a día, qué
+  datos lee Cysure, y un grupo nuevo "Cumplimiento" (marcos ISO/IEC 42001, EU AI
+  Act, NIST AI RMF, SOC 2; AI de vendors externos). Hero convertido a ink card.
+- **/express-payout** (solo estilo, cero copy): hero a ink card con gutter;
+  eliminados el botón "Reproducir simulación", el radar cónico, el grid y la
+  línea de barrido; todas las secciones con el patrón de gutters y cards.
+- ⚠ Notas: los estilos huérfanos `cy-cf-*` viejos quedaron sin uso (limpieza
+  posterior opcional); los paneles legacy ocultos del FAQ viejo no se tocaron para
+  no alterar el JS; la banda CTA final de express sigue full-bleed a propósito
+  (patrón compartido del cierre de página, decisión a nivel sitio).
 
 ### S8 + pack G2/G4 · Integraciones + producto/recursos/brokers/legal (agente)
 - (pendiente de reporte del agente)
