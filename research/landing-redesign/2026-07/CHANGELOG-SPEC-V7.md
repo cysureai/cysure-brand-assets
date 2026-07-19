@@ -178,7 +178,22 @@ assets y bios sobrias de rol) → CTA.
   (patrón compartido del cierre de página, decisión a nivel sitio).
 
 ### S8 + pack G2/G4 · Integraciones + producto/recursos/brokers/legal (agente)
-- (pendiente de reporte del agente)
+- **/integraciones** (nueva): hero ink ("Conecta lo que ya usas. Sin cambiar cómo
+  trabajas.") + 4 secciones de categoría con 15 cards blancas con logo real:
+  Identidad y productividad (Google Workspace, Microsoft 365, Okta, Slack,
+  Notion), Nube y desarrollo (Google Cloud, AWS, Azure, GitHub), Seguridad
+  (SentinelOne, CrowdStrike, Trend Micro, Bitdefender) y AI (OpenAI, Anthropic
+  Claude). Los 7 conectores del prototipo llevan chip oscuro "Conector nativo";
+  el resto, chip claro "Señales soportadas". Sin JS de filtros: el "filtrado" es
+  por secciones estáticas.
+- Logos adicionales conseguidos y subidos (ya no faltan): Okta
+  `6a5ce21c709930699f196077`, GitHub `6a5ce21dca6896f20c371ec9`, OpenAI
+  `6a5ce21d159a5037138393de`, Anthropic Claude `6a5ce21dd53727dee341465a`.
+- **Pack G2/G4** (solo estilo, cero copy): heroes de producto, recursos, brokers y
+  legal convertidos a ink card con gutter + `data-cy-hero`; eliminados 14
+  overlays decorativos en total (retículas, barridos de luz, radares cónicos,
+  glow blobs); botones de hero invertidos a modo oscuro; en legal se separó el
+  contenido en hero + card clara sin tocar textos ni links.
 
 ---
 
@@ -190,5 +205,6 @@ assets y bios sobrias de rol) → CTA.
 5. "Spending Agent" del spec no existe en el prototipo: ¿se agrega al prototipo o
    se elimina del spec?
 6. Logo Azure: solo existe el icono oficial vigente en SVG público (sin wordmark).
+   Los demás 12 logos (incl. Okta, GitHub, OpenAI y Anthropic) sí se consiguieron.
 7. El middot «·» que sugiere el guardrail del spec NO se reintrodujo: choca con las
    reglas v4.2 instaladas en el sitio (sin «·» ni «—» en copy).
