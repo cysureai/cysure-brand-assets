@@ -277,3 +277,56 @@ logos, 11 chips con icono, carrusel, fixes de nav; 0 codenames, 0 «—», orden
 AI & Cyber correcto). Pendiente: QA visual en Designer (los screenshots
 automatizados fallaron por red del sandbox) y la frase cortada de Toño sobre
 el inicio del cuestionario.
+
+## Ronda 4 (19 jul): fixes de QA de Toño + AUDITORÍA de código viejo
+
+### Fixes
+1. **Banda de integraciones duplicada:** la causa era el script legacy
+   `cysurepunchmotion` (era v5) que clonaba los tiles en el navegador
+   (`track.innerHTML += track.innerHTML`); curl veía 7 tiles pero el browser
+   mostraba 14. Script removido y banda estática correcta.
+2. **Modal de evaluación cortado:** los 3 modales (demo, cómo funciona,
+   incidente) ahora centran con `margin:auto` + overlay con scroll: nunca se
+   corta arriba y hacen scroll interno si no caben.
+3. **CTA de incidente:** pill rojo con icono de alerta (rojo claro sobre nav
+   oscuro, rojo pleno sobre nav claro) y el modal abre con banda de hotline
+   roja "Línea de incidentes 24/7". ⚠ El número real está pendiente de Toño;
+   mientras, la banda dice "número disponible al lanzamiento".
+4. **Nav fusionado + liquid glass:** 3 estados: transparente fusionado con el
+   hero al tope, glass oscuro (blur+saturate) al hacer scroll dentro del hero,
+   y glass blanco de borde a borde al pasar el hero. Los heros de todas las
+   páginas se pegan al tope (gutter superior removido y compensado).
+5. **Hero redistribuido:** h1 a clamp(34-50px), lead 16px/46ch, tag de Express
+   Payout compacto tipo pill con texto corto.
+6. **Checks de la comparativa** alineados: chip ✓ fijo + texto a la izquierda
+   en bloque centrado de 430px.
+7. **/flota completada a fondo:** hero + banda de stats + 6 agentes Cyber
+   Risks y 5 AI Risks en cards con icono y "Alimenta:" (qué parte de la
+   cobertura nutre cada agente) + panel Detection-Coverage Alignment + sección
+   del Resilience Lead + mini-FAQ + CTA.
+
+### Auditoría de código (pedida por Toño)
+- **Scripts registrados:** removidos de aplicación los 2 legacy
+  (`cysurepunchcorev3`, `cysurepunchmotion`); quedan aplicados solo
+  `cysurev7chrome` (responsive + chip inicial). El interino `cysurev7navglass`
+  se consolidó al head y se removió. Los registros muertos (heronet,
+  fleetnames, scorecounter, responsive, punch ×2) no cargan ni un byte; la API
+  devuelve 400 al intentar borrarlos del registro (limitación de Webflow).
+- **Custom code por página:** limpiados 10 bloques con CSS de animaciones
+  muerto y 6 scripts de scroll-reveal legacy (violaban G3 a nivel página) en
+  producto, cobertura, planes, recursos, faq, nosotros, brokers,
+  express-payout, legal y el template de artículo. Se conservó el filtro de
+  categorías de /recursos (funcional).
+- **Head del sitio consolidado a v8:** de 8 bloques históricos a 4; podadas
+  34 reglas hover de clases que ya no existen en ningún HTML publicado
+  (census), más `cy-und/cy-dim/cy-tabp/cy-ft6-*/cy-nav2-lnk` sin uso.
+- **Footer del sitio consolidado a v8:** podados el dropdown legacy
+  (`data-nav-dropdown`) y el marcador de link activo (`data-nav`), ambos con
+  0 usos en el HTML publicado; el toggle del nav ahora maneja los 3 estados.
+- Las clases `cy-anim-*` que persisten en atributos de elementos viejos son
+  inertes (sin CSS y congeladas por la kill-rule); limpiarlas elemento por
+  elemento es cosmético y queda como opcional.
+
+Census final post-publish: 0 codenames, 0 «—», 0 descriptores invertidos,
+0 tiers internos; scripts legacy fuera del HTML; /flota completa con los 11
+agentes canónicos.
