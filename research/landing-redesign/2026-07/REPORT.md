@@ -93,6 +93,10 @@ Todas respetan `prefers-reduced-motion`. Nota operativa: los bloques grandes de 
 7. **4 páginas nuevas** con chrome completo: `/como-funciona` (4 pasos), `/risk-score` (score, fuentes del cálculo), `/flota` (6 agentes canónicos + human-in-the-loop), `/incidente` (**formulario propio de reporte de incidente**, ya no el modal de demo). Mega-menus y nav recableados a páginas reales.
 8. **Footer simplificado**: lockup SVG + iconos de LinkedIn y X (URLs de perfiles pendientes de confirmar) + fila única con TODAS las páginas + footnotes + párrafo regulatorio + fila legal compacta. Fuera las 5 columnas con kickers y la strip de tiles.
 
+## 4.4 · Ronda v6.4 (integraciones del prototipo + footer a detalle)
+1. **Banda de integraciones alineada al prototipo de la Cysure App**: los tiles ahora son exactamente los 7 conectores de la pantalla Conexiones del UI kit Cliente (Google Workspace, Okta, OpenAI, GitHub, Google Cloud, Microsoft 365, Anthropic Claude). Fuera CISA KEV, NVD, crt.sh y Have I Been Pwned (fuentes de threat intel, no integraciones) y fuera Polygon/Ensuro.
+2. **Footer depurado a detalle**: se eliminó la banda CTA legacy v5 que sobrevivía dentro del contenedor del footer del Home ("¿Listo para controlar tu AI & cyber risk?", duplicaba el cierre nuevo) y su spacer; el párrafo regulatorio se integró al cluster de small-print del footer (fuera el wrapper viejo con su padding). El footer queda: logo + redes, fila de 14 páginas, small-print (footnotes + disclaimer), fila legal.
+
 ## 5 · Deuda y pendientes (siguiente iteración)
 1. **Variables Webflow**: crear la colección de tokens (colores light/dark, radios, tipografía) y recablear las clases `cy-*6` — hoy los valores son hex canónicos pero hardcodeados.
 2. **Higiene de estilos**: purgar las 62 clases de prueba y consolidar los 241 nombres duplicados (censo completo en curso; ver scratchpad `styles-census.md`).
