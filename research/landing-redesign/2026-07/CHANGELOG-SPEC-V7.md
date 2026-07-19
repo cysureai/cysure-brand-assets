@@ -236,3 +236,44 @@ pendientes.
 5. Covers: si se prefieren ilustraciones raster generadas con IA en lugar de los
    SVG actuales, usar los prompts de `BLOG-COVERS-SPEC.md` y reemplazar el campo
    Cover de cada post.
+
+## Ronda de feedback visual (19 jul 2026, 10 puntos de Toño)
+
+1. **Nav alineado con las cards:** el nav ahora flota con margen de 16 px por
+   lado y radius 14 (mismo ancho que la card del hero), en oscuro y en claro.
+2. **Video a la derecha del hero:** hero convertido a grid de 2 columnas
+   (texto en wrapper `cy-hero6-left`, frame de video a la derecha con un bot
+   caricatura asomándose); apila en móvil.
+3. **Iconos en la banda de integraciones:** los 7 conectores tienen logo real
+   (Okta y Google Cloud como wordmark solo, GitHub/OpenAI/Anthropic icono +
+   nombre). El duplicado que se veía en el screenshot era del publish
+   intermedio; la banda publicada tiene 7 tiles.
+4. **Iconos en los 11 agentes:** cada chip de la flota lleva su icono SVG de
+   trazo (escudo, globo, mira, nube, correo, capas, ojo, checklist, edificio,
+   rayo, embudo).
+5. **Ilustración en "Sin señal, no hay cobertura":** sección a 2 columnas con
+   ilustración caricatura original (bot con antena captando señal mint que
+   conecta con un escudo con paloma).
+6. **Quiz:** botón «← Anterior» ahora es visible (era ink sobre fondo oscuro:
+   invisible); el arco del gauge se llena en proporción al score y cambia
+   rojo → ámbar (600) → verde (700), igual que el badge; al iniciar, el arco
+   está vacío en 0.
+7. **Blog en carrusel:** una sola fila con scroll-snap, 6 posts y flechas
+   ‹ › como indicador en el encabezado de la sección.
+8. **Negritas del mega-menú:** el selector castigaba a los spans anidados
+   (`span:last-child` descendiente); se cambió a hijos directos + reglas de
+   herencia. "Cobertura Cyber Risks"/"AI Risks" ya pesan igual que el resto.
+9. **Hover en nav claro:** el estado activo del mega-menú pasó de estilos
+   inline (color de modo oscuro) a la clase `cy-mmbtn-on`, con variante gris
+   clara cuando el nav está blanco.
+10. **Pass "friendly" estilo Coalition** (análisis estructural de
+    coalitioninc.com; copy 100% original): kickers pill, icon-chips, bandas de
+    stats con cifras aprobadas, escenarios ilustrativos narrativos y mini-FAQs
+    agregados por agentes en cobertura-cyber-risks, cobertura-ai-risks,
+    cobertura (índice), resilience-lead e integraciones.
+
+Publicado a staging y verificado por census de HTML (hero 2-col, 7 tiles con
+logos, 11 chips con icono, carrusel, fixes de nav; 0 codenames, 0 «—», orden
+AI & Cyber correcto). Pendiente: QA visual en Designer (los screenshots
+automatizados fallaron por red del sandbox) y la frase cortada de Toño sobre
+el inicio del cuestionario.
