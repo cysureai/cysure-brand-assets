@@ -42,6 +42,26 @@ Todo vía MCP de Webflow, publicado a staging (cysurelanding.webflow.io):
 4. Alt text descriptivo es-MX en las 58 imágenes de ilustraciones colocadas en esta ronda (ver changelog de ronda 5).
 5. Sin tocar: slugs, redirects, robots.txt, código del gate de inversores (otro sitio), estructura de páginas.
 
+## 3b. Copy pass on-page (aprobado por Toño, mismo día)
+
+Segunda pasada Tier A: integración de la keyword asignada de cada página en el copy visible (H1, H2 o lead), conservando la voz de marca y la palabra con acento serif de cada heading. 11 ediciones en 9 páginas, publicadas a staging y verificadas en el HTML publicado:
+
+| Página | Antes | Después |
+|---|---|---|
+| Home (lead del hero) | "Cysure detecta el riesgo con su propia telemetría, lo asegura y paga en 24 a 48 horas..." | "El seguro cibernético y de IA para empresas: Cysure detecta tu riesgo con telemetría propia, lo asegura y paga en 24 a 48 horas. Sin señal, no hay cobertura." |
+| /producto (H2) | "Un MDR *AI-augmented*" | "Tu seguro de ciberriesgo empieza en un MDR *AI-augmented*" |
+| /cobertura-cyber-risks (H1) | "Tu cobertura cyber, sin letras *chiquitas*" | "Tu seguro de ciberriesgo, sin letras *chiquitas*" |
+| /cobertura-ai-risks (H1) | "Nueve formas en que la AI te puede costar *caro*" | "Nueve formas en que la inteligencia artificial te puede costar *caro*" |
+| /cobertura-ai-risks (H2) | "Los 9 riesgos de AI, con disparador *claro*" | "Seguro contra riesgos de IA: 9 coberturas con disparador *claro*" |
+| /como-funciona (H2) | "Del riesgo vivo al depósito, sin *fricción*" | "¿Cómo se activa el pago de tu seguro paramétrico? Sin *fricción*" |
+| /express-payout (H2) | "Blockchain por debajo, *fiat* por delante" | "Seguro cibernético con pago automático: blockchain por debajo, *fiat* por delante" |
+| /planes (H2) | "¿Qué incluye cada *plan*?" | "¿Qué incluye cada *plan* de seguro cibernético para empresas medianas?" |
+| /planes (H2 CTA) | "¿Listos para elegir tu *plan*?" | "¿Listos para cotizar tu *plan*?" |
+| /risk-score (H2) | "Las señales que *mueven* tu score" | "Las señales que *mueven* el Risk Score cibernético de tu empresa" |
+| /brokers (H2) | "Cyber que se vende con *evidencia*, no con promesas" | "El MGA de seguros cibernéticos que vende con *evidencia*, no con promesas" |
+
+Criterio: una keyword por página, en formato pregunta citable donde sonara natural (como-funciona, planes); H1 punchy intactos salvo cobertura-cyber y cobertura-ai donde la keyword cabía sin forzar; términos de producto en inglés (Risk Score, Express Payout); sin claims nuevos.
+
 ## 4. Tier B / Requiere input (para decisión de Toño)
 
 1. llms.txt: propuesta lista en `llms-txt-propuesta.txt`. Hosting en Webflow requiere: (a) reverse proxy delante de cysure.ai, (b) redirect 301 de /llms.txt a un archivo hospedado, o (c) plan Enterprise (well-known files). Requiere input.
