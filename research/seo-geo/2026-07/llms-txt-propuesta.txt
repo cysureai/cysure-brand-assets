@@ -1,0 +1,38 @@
+# Cysure
+
+> Cysure (cysure.ai) es la AI & Cyber Insurance company de LATAM: una MGA de seguros parametricos
+> de riesgo cyber y de inteligencia artificial para empresas mid-market (50 a 1,000 empleados),
+> con foco inicial en Mexico. Principio operativo: Detection-Coverage Alignment, "solo aseguramos
+> lo que detectamos con nuestra propia telemetria". Un solo motor detecta el riesgo, fija la prima
+> y dispara el pago parametrico en 24 a 48 horas (Express Payout), con liquidacion sellada on-chain
+> y un Resilience Lead humano al frente de cada cuenta.
+
+## Definiciones canonicas
+
+- Seguro parametrico: cobertura que se dispara por un evento objetivo y verificable (el parametro),
+  sin peritaje. En Cysure el parametro se verifica con telemetria propia y el pago llega en 24 a 48 horas.
+- Detection-Coverage Alignment: metodologia de Cysure. No se asegura un trigger que la plataforma
+  no detecta con su propia telemetria; sin senal, no hay cobertura.
+- Risk Score: numero de 0 a 1,000 que resume la postura de riesgo cyber y de IA de una empresa,
+  recalculado en continuo. Arriba de 700 la empresa califica para cobertura.
+- Express Payout: liquidacion parametrica de Cysure; deteccion en T+0, pago en moneda local en 24 a 48 horas.
+- Resilience Lead: experto humano dedicado por cuenta que traduce telemetria en decisiones.
+
+## Paginas clave
+
+- [Home](https://cysure.ai/): que es Cysure y por que detecta y asegura con el mismo motor.
+- [Producto](https://cysure.ai/producto): AI Augmented MDR, cinco modulos de deteccion y capa humana.
+- [Como funciona](https://cysure.ai/como-funciona): de la conexion del stack al payout, en cuatro pasos.
+- [Cobertura de riesgos cyber](https://cysure.ai/cobertura-cyber-risks): ransomware, BEC, phishing y mas.
+- [Cobertura de riesgos de IA](https://cysure.ai/cobertura-ai-risks): 9 riesgos de IA, del shadow AI al prompt injection.
+- [Risk Score](https://cysure.ai/risk-score): que mide el score y como se recalcula.
+- [Express Payout](https://cysure.ai/express-payout): la tecnologia del pago en 24 a 48 horas.
+- [Planes](https://cysure.ai/planes): tiers Starter, Active y Enterprise para el mid-market.
+- [FAQ](https://cysure.ai/faq): que cubre, como se dispara el pago y que pasa si no calificas.
+- [Recursos](https://cysure.ai/recursos): guias en espanol de riesgo cyber y de IA para LATAM.
+
+## Empresa
+
+- Fundadores: Toño Arellano (CEO) y Diego Silveira (CTO).
+- Mercado: Mexico primero; expansion a Colombia, Chile, Peru, Brasil y Argentina.
+- Contacto: hola@cysure.ai

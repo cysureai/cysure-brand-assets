@@ -1,0 +1,426 @@
+{
+ "6a553f8e569e3148ffc68445": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "Organization",
+    "@id": "https://cysure.ai/#organization",
+    "name": "Cysure",
+    "url": "https://cysure.ai",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6a561abfddfe21cf136ea095_webflow-webclip-512.png"
+    },
+    "description": "La AI & Cyber Insurance company de LATAM: detección de riesgos cyber y de IA con telemetría propia y cobertura paramétrica con pago en 24 a 48 horas.",
+    "founder": [
+     {
+      "@type": "Person",
+      "name": "Toño Arellano",
+      "jobTitle": "Co-fundador y CEO"
+     },
+     {
+      "@type": "Person",
+      "name": "Diego Silveira",
+      "jobTitle": "Co-fundador y CTO"
+     }
+    ],
+    "areaServed": [
+     {
+      "@type": "Country",
+      "name": "México"
+     },
+     {
+      "@type": "Place",
+      "name": "Latinoamérica"
+     }
+    ]
+   },
+   {
+    "@type": "WebSite",
+    "@id": "https://cysure.ai/#website",
+    "url": "https://cysure.ai",
+    "name": "Cysure",
+    "publisher": {
+     "@id": "https://cysure.ai/#organization"
+    },
+    "inLanguage": "es-MX"
+   }
+  ]
+ },
+ "6a563da7b5024ee4c0c33b58": {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Detección y respuesta gestionada con IA (AI Augmented MDR)",
+  "serviceType": "Managed Detection and Response",
+  "description": "MDR aumentado con IA con cinco módulos de detección, un Resilience Lead humano por cuenta y telemetría propia que alimenta la cobertura.",
+  "url": "https://cysure.ai/producto",
+  "provider": {
+   "@id": "https://cysure.ai/#organization"
+  },
+  "areaServed": {
+   "@type": "Country",
+   "name": "México"
+  }
+ },
+ "6a5bfe9ff2da6edb3b85bf81": {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Seguro paramétrico de riesgos cyber y de IA",
+  "serviceType": "Seguro paramétrico",
+  "description": "Proceso de cuatro pasos: conexión del stack, Risk Score en continuo, disparo paramétrico ante evento cubierto y pago en 24 a 48 horas.",
+  "url": "https://cysure.ai/como-funciona",
+  "provider": {
+   "@id": "https://cysure.ai/#organization"
+  },
+  "areaServed": {
+   "@type": "Country",
+   "name": "México"
+  }
+ },
+ "6a5bfea007c1f01707d2b316": {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Risk Score de Cysure",
+  "serviceType": "Evaluación de riesgo",
+  "description": "Score de 0 a 1,000 que resume la postura de riesgo cyber y de IA de una empresa, recalculado en continuo con telemetría real.",
+  "url": "https://cysure.ai/risk-score",
+  "provider": {
+   "@id": "https://cysure.ai/#organization"
+  },
+  "areaServed": {
+   "@type": "Country",
+   "name": "México"
+  }
+ },
+ "6a5ce02031c8a1455c6eedf5": {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Cobertura paramétrica de riesgos cyber",
+  "serviceType": "Seguro de ciberriesgo",
+  "description": "Cobertura de ransomware, BEC, phishing y otros riesgos cyber, alineada a lo que la telemetría de Cysure detecta. Pago en 24 a 48 horas.",
+  "url": "https://cysure.ai/cobertura-cyber-risks",
+  "provider": {
+   "@id": "https://cysure.ai/#organization"
+  },
+  "areaServed": {
+   "@type": "Country",
+   "name": "México"
+  }
+ },
+ "6a5ce02146eb862f1b3031f1": {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Cobertura paramétrica de riesgos de IA",
+  "serviceType": "Seguro de riesgos de IA",
+  "description": "Cobertura para 9 riesgos de inteligencia artificial, del shadow AI al prompt injection, con detección propia y pago paramétrico.",
+  "url": "https://cysure.ai/cobertura-ai-risks",
+  "provider": {
+   "@id": "https://cysure.ai/#organization"
+  },
+  "areaServed": {
+   "@type": "Country",
+   "name": "México"
+  }
+ },
+ "6a563da790aa2783ef4bd6f0": {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Cobertura Cysure: riesgos cyber y de IA",
+  "serviceType": "Seguro paramétrico",
+  "description": "Dos familias de cobertura paramétrica bajo una sola marca: riesgos cyber y riesgos de IA, con Detection-Coverage Alignment.",
+  "url": "https://cysure.ai/cobertura",
+  "provider": {
+   "@id": "https://cysure.ai/#organization"
+  },
+  "areaServed": {
+   "@type": "Country",
+   "name": "México"
+  }
+ },
+ "6a563da93f7f01e9a8fb3e58": {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Planes de detección y cobertura",
+  "serviceType": "Seguro paramétrico",
+  "description": "Tiers Starter, Active y Enterprise para el mid-market de LATAM, con add-ons por industria.",
+  "url": "https://cysure.ai/planes",
+  "provider": {
+   "@id": "https://cysure.ai/#organization"
+  },
+  "areaServed": {
+   "@type": "Country",
+   "name": "México"
+  }
+ },
+ "6a563dad6ede691ef4750f21": {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Express Payout",
+  "serviceType": "Pago paramétrico de seguros",
+  "description": "Liquidación paramétrica: del incidente cubierto y verificado al pago en cuenta bancaria en 24 a 48 horas, sellado on-chain.",
+  "url": "https://cysure.ai/express-payout",
+  "provider": {
+   "@id": "https://cysure.ai/#organization"
+  },
+  "areaServed": {
+   "@type": "Country",
+   "name": "México"
+  }
+ },
+ "6a5bfea219ee1c75200af63c": {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Flota de agentes de detección",
+  "serviceType": "Managed Detection and Response",
+  "description": "Once agentes vigilan superficie de ataque, correo, nube y uso de IA 24/7, con un Resilience Lead al frente.",
+  "url": "https://cysure.ai/flota",
+  "provider": {
+   "@id": "https://cysure.ai/#organization"
+  },
+  "areaServed": {
+   "@type": "Country",
+   "name": "México"
+  }
+ },
+ "6a5ce02208be4027db8f3f2a": {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Resilience Lead",
+  "serviceType": "Servicio gestionado de ciberseguridad",
+  "description": "Un experto humano dedicado por cuenta que traduce telemetría en decisiones y acompaña en incidentes.",
+  "url": "https://cysure.ai/resilience-lead",
+  "provider": {
+   "@id": "https://cysure.ai/#organization"
+  },
+  "areaServed": {
+   "@type": "Country",
+   "name": "México"
+  }
+ },
+ "6a5ce022a7b58bea14aed7e2": {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Integraciones de Cysure",
+  "serviceType": "Integraciones de telemetría",
+  "description": "Conectores de solo lectura para Google Workspace, Microsoft 365, Okta, GitHub, AWS y más.",
+  "url": "https://cysure.ai/integraciones",
+  "provider": {
+   "@id": "https://cysure.ai/#organization"
+  },
+  "areaServed": {
+   "@type": "Country",
+   "name": "México"
+  }
+ },
+ "6a563dab3f7f01e9a8fb423e": {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "¿Quién califica para el AI & Cyber Insurance?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Empresas con un Risk Score arriba de 700 / 1000, calculado con tu telemetría real durante la evaluación, no con un cuestionario. Si aún no llegas, tu Resilience Lead te entrega un plan priorizado para subirlo antes de cubrirte."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Cysure es un seguro tradicional?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Es cobertura paramétrica: se dispara por un evento objetivo y medible, detectado y verificado con nuestra telemetría. Tú defines el disparador y los umbrales desde el día cero."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Qué cubre exactamente?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Nueve riesgos de AI y cuatro de cyber, todos detection-aligned: cada cobertura está atada a una capacidad de detección que operamos por ti. El detalle vive en la página de Cobertura."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Qué pasa si el evento no se detecta?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Solo aseguramos lo que detectamos (Detection-Coverage Alignment). Si una capacidad de detección se degrada, tu Resilience Lead lo corrige antes de que sea un punto ciego, no durante un reclamo."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Esto reemplaza mi póliza cyber actual?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No tienes que cancelar nada: Cysure complementa tu póliza tradicional con detección gestionada, coberturas de AI risk y payout en horas. El efectivo paramétrico cubre el golpe inmediato; la póliza clásica, la cola larga."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Y el riesgo de base (si el parámetro no refleja mi pérdida)?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Diseñamos los disparadores contigo desde el día cero usando tu propia telemetría, y tu Resilience Lead calibra umbrales y montos contra tus escenarios antes de emitir. Se revisan a medida que cambia tu entorno."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Cuánto tarda en pagarse un reclamo?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Horas, no semanas. Detección en T+0 y liquidación vía Express Payout en 24 a 48 horas, sujeto al contrato. Sin ajustador y sin expediente que armar."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿En qué moneda me pagan? ¿Necesito una wallet?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Recibes fiat en tu moneda local (MXN, COP, CLP) en tu cuenta bancaria. Por debajo usamos rails de stablecoin, pero tú nunca tocas crypto."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Por qué pagan con stablecoin como USDC?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Porque liquida en minutos, 24/7, sin ventanas bancarias, y es programable: un smart contract ejecuta el pago cuando el evento verificado se cumple. Tú solo ves el depósito en fiat."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿El stablecoin pone en riesgo mi dinero?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No, porque no lo manejas tú. Convertimos vía rampas reguladas con custodia institucional, multi-firma y monitoreo AML/KYT. Nunca quedas expuesto a volatilidad ni custodia de un activo digital."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Quién respalda realmente el pago?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Capital de seguros real: emitimos a través de un carrier de fronting regulado y el capital y reaseguro se canalizan vía Ensuro. Cysure opera la detección, la verificación y el Express Payout."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Por qué usan blockchain?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Para dos cosas concretas: anclar una copia inmutable de tu póliza y registrar la evidencia de cada evento con sello de tiempo. El pago se dispara contra hechos verificables, no contra un peritaje."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Mi póliza queda registrada en blockchain? ¿Es seguro?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Se ancla una huella criptográfica (hash), no tus datos en claro. Es imposible de falsificar, no expone información sensible y no puede revertirse para reconstruir el contrato."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Cómo verifican un evento a través del blockchain?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Tu telemetría detecta en T+0; la CVL hashea la evidencia (SHA-256) y la ancla con marca de tiempo. Si coincide con los parámetros de tu póliza anclada, el pago procede. Queda un rastro inmutable y auditable."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Cómo se verifica un reclamo sin pelear?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Las reglas se acordaron desde el día cero y la decisión se basa en hechos verificables: tú y nosotros vemos la misma evidencia auditable. No hay espacio para interpretación subjetiva."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Necesito un equipo de seguridad interno?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Tu Resilience Lead y la flota de agentes funcionan como tu MDR y tu equipo de AI governance, por una fracción del costo de un SOC propio. Si ya tienes equipo, lo potenciamos."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Cuánto tarda la implementación?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Días, no meses. Nos integramos vía API con tu stack (EDR/EPP, identidad, nube, correo, modelos de AI) y, si hace falta, desplegamos un agente ligero en tus endpoints."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿El agente ligero va a frenar mis equipos?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Primero consumimos la telemetría de tu EDR/EPP vía API; el agente ligero solo se despliega cuando falta cobertura, con huella mínima de CPU y memoria. Complementa, no reemplaza."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Qué pasa con mis datos? ¿Son privados?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Seguridad por diseño: mínimo privilegio, alcance acotado y aislamiento por cliente. La evidencia se hashea y se cifra; a la cadena solo llega la huella. Controles alineados a SOC 2 e ISO/IEC 42001."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "¿Dónde residen mis datos y bajo qué jurisdicción?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Alojamos la telemetría de clientes de LATAM en infraestructura cloud de la región siempre que es posible, con cifrado en tránsito y en reposo. Tu Resilience Lead documenta la arquitectura exacta para tu equipo legal."
+    }
+   }
+  ]
+ },
+ "6a563dac3f7f01e9a8fb4379": {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "url": "https://cysure.ai/nosotros",
+  "name": "Nosotros",
+  "about": {
+   "@id": "https://cysure.ai/#organization"
+  },
+  "inLanguage": "es-MX"
+ },
+ "6a5bfea22463b2b4e997b7d3": {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "url": "https://cysure.ai/incidente",
+  "name": "Reportar un incidente activo",
+  "about": {
+   "@id": "https://cysure.ai/#organization"
+  },
+  "inLanguage": "es-MX"
+ },
+ "6a563da99c6f0e301c15632d": {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "url": "https://cysure.ai/recursos",
+  "name": "Recursos de Cysure",
+  "publisher": {
+   "@id": "https://cysure.ai/#organization"
+  },
+  "inLanguage": "es-MX"
+ },
+ "6a563dad950f41d0a0d53993": {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Programa de brokers de Cysure",
+  "serviceType": "Seguros para brokers",
+  "description": "Cotización en minutos, incentivos y renovaciones para brokers que colocan AI & Cyber Insurance en el mid-market.",
+  "url": "https://cysure.ai/brokers",
+  "provider": {
+   "@id": "https://cysure.ai/#organization"
+  },
+  "areaServed": {
+   "@type": "Country",
+   "name": "México"
+  }
+ }
+}
