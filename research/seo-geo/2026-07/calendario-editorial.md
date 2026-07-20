@@ -16,6 +16,24 @@ Reglas de producción (todas las piezas):
 
 Estacionalidad a aprovechar: Buen Fin (S17 y S18, noviembre), temporada decembrina de fraude (S21 a S23), arranque de presupuestos (S25 y S26, enero 2027).
 
+## Recalibración con data primaria de mercado (20 jul 2026)
+
+Se validó el plan contra 16 meses de datos reales de GSC y 19 de GA4 de un sitio de contenido de ciberseguridad B2B líder en México (data compartida internamente, fuente confidencial). Conclusiones aplicadas:
+
+1. El formato answer-first está confirmado: el 91% de las impresiones en superficies de IA (AI Overviews / AI Mode) de ese sitio van a posts de blog con H2 pregunta + respuesta citable, y páginas en posición web 6 a 18 también reciben citas. La regla 1 de producción no cambia y es la palanca GEO principal.
+2. El blog atrae pero no convierte solo (1 a 4% de tasa de evento clave en piezas informacionales); las piezas comparativas con intención comercial convierten ~10% y también ganan citas de IA, y las páginas de producto/servicio 18 a 36%. Por eso se agrega una pieza puente comparativa (ver S16b) y cada artículo mantiene su CTA a página de producto.
+3. Temas con demanda validada en México que intersectan con Cysure y suben de prioridad como secundarias u outlines: matriz de riesgos (ligado a Risk Score), plan de respuesta a incidentes (ligado a /incidente y Express Payout), tipos de ransomware y ejemplos de phishing/BEC (ligados a cobertura cyber), ventajas y riesgos de la IA en empresas (ligado a /cobertura-ai-risks).
+4. NO competir por glosario genérico de ciberseguridad (qué es un firewall, modelo OSI, etc.): demanda enorme pero conversión mínima, fuera de la categoría de Cysure y con dueños establecidos. El glosario de Cysure se queda en términos de seguro y riesgo (paramétrico, basis risk, trigger, Express Payout, shadow AI, deepfake).
+5. La cola LATAM es real (más de la mitad de los clics de contenido en español vienen de fuera de México: ES, CO, PE, EC, AR). Mantener es-MX pero sin hipergeolocalizar los titulares informacionales; las páginas transaccionales sí siguen ancladas a México.
+
+### Semana 16b (pieza puente adicional, entre S16 y S17): Mejores seguros cibernéticos para empresas en México: comparativa honesta
+1. Keyword primaria: mejor seguro cibernético para empresas México
+2. Secundarias: comparativa seguros cibernéticos, seguro cibernético precios México, qué seguro cyber elegir
+3. Intención: comercial (formato listicle comparativo, el que mejor convierte y también gana citas de IA)
+4. Outline: ¿Qué debe incluir un buen seguro cibernético en 2026? / Comparativa: aseguradoras tradicionales vs MGAs especializadas vs paramétrico / ¿Cuánto cuesta un seguro cibernético en México? (rangos honestos) / ¿Qué preguntas hacerle a tu broker? / ¿Cuándo tiene sentido el modelo paramétrico?
+5. Ángulo Cysure: transparencia radical, comparar de verdad (incluir Chubb, AXA, GNP y brokers con sus fortalezas reales); Cysure gana en velocidad de pago y verificabilidad, no en todo. Cero reseñas infladas: criterios objetivos y verificables.
+6. CTA: /planes y Agenda una evaluación.
+
 ---
 
 ## Fase 1: nicho propietario (semanas 1 a 6)

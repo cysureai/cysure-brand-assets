@@ -6,6 +6,16 @@ Metodología: búsquedas web en español de México + revisión directa de pági
 
 Nota crítica de marca: Delta Protect es una empresa mexicana de ciberseguridad completamente separada de Cysure. Se analiza aquí únicamente como competidor de SERPs informacionales. Jamás asociar ambas marcas en contenido, PR o link building.
 
+## Actualización 20 jul 2026: validación con data primaria de mercado
+
+Se contrastó este research contra datos reales de comportamiento de búsqueda del nicho en México (16 meses de GSC y 19 de GA4 de un sitio B2B de contenido de ciberseguridad, compartidos de forma confidencial; no se publican cifras identificables). Cinco conclusiones que ajustan el plan:
+
+1. La tesis del nicho propietario se sostiene: en 1,000+ consultas reales que llevan tráfico de ciberseguridad en español, no aparece NI UNA con intención de seguro (ciberseguro, póliza, aseguradora). La categoría "seguro cibernético/paramétrico" sigue sin dueño orgánico en español y las keywords ya integradas al sitio no cambian.
+2. El formato answer-first está validado empíricamente para GEO: ~90% de las impresiones en superficies de IA (reporte Generative AI features de GSC) van a artículos de blog con estructura pregunta-respuesta, y páginas en posición web 6 a 18 también reciben citas de IA.
+3. El embudo del nicho: contenido informacional convierte 1 a 4%, listicles comparativos comerciales ~10% (y también ganan citas de IA), páginas de servicio 18 a 36%. El calendario editorial ya incorpora una pieza puente comparativa (S16b).
+4. Los referrals desde motores de IA (ChatGPT sobre todo) convierten 2 a 3 veces mejor que el orgánico de Google en este nicho: la inversión GEO tiene ROI medible aunque el volumen sea chico. Bing genera ~18% del volumen de Google y alimenta a Copilot.
+5. Más de la mitad del tráfico de contenido en español viene de fuera de México (ES, CO, PE, EC, AR): los titulares informacionales no se hipergeolocalizan; las páginas transaccionales sí quedan ancladas a México.
+
 ---
 
 ## 1. Panorama competitivo

@@ -12,6 +12,17 @@
 4. Conversiones asistidas por organico: envios del form de evaluacion + tesis_unlock.
 5. Visibilidad GEO: muestreo mensual de 10 preguntas clave en ChatGPT, Perplexity, Claude y AI Overviews
    (documentar si Cysure aparece citado y con que pagina). Preguntas base: las 10 del keyword map P1.
+6. Referrals de motores de IA (GA4): segmento con session_source que contenga chatgpt, perplexity, gemini,
+   copilot, claude o deepseek. Medir sesiones Y tasa de evento clave por separado. Benchmark de la industria
+   validado con data primaria de un sitio B2B del nicho: el trafico desde ChatGPT convierte 2 a 3 veces mejor
+   que el organico de Google (poco volumen, altisima intencion). Si ese patron se repite en Cysure, cada cita
+   GEO vale mas que una posicion organica equivalente.
+7. Reporte "Generative AI features" de GSC (disponible en la consola desde mayo 2026): impresiones en
+   AI Overviews / AI Mode por pagina, revision mensual. Es la unica fuente directa de citabilidad en Google.
+
+## Nota Bing (prioridad subida)
+En el nicho, Bing organico genera ~18% del volumen de Google con conversiones reales, y ademas alimenta a
+Copilot. Dar de alta Bing Webmaster Tools el MISMO dia que GSC al pasar a produccion, no despues.
 
 ## Baseline y expectativas honestas
 - Hoy (staging): 0 indexacion (robots bloqueado por diseno en webflow.io). El reloj arranca al publicar en cysure.ai.
