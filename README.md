@@ -10,7 +10,7 @@ Archivos (nombres estables — no renombrar, hay URLs externas apuntando a ellos
 - `cysure-mark.svg` / `cysure-lockup.svg` — vectores oficiales del mark y del lockup (v2.1)
 - `cysure-mark-firma-1024.png` — mark sobre blanco, 1024×1024 (firma electrónica)
 - `cover-notion-linkedin-drive-blanco-2400x600.png` — cover claro (Notion HQ, LinkedIn, Drive)
-- `cover-notion-linkedin-drive-dark-2400x600.png` — cover oscuro
+- `cover-notion-linkedin-drive-dark-2400x600.png` — cover oscuro «Que el riesgo no marque tu rumbo» (Notion HQ, LinkedIn, Drive). Dimensiones reales 2400×800; el nombre legado `2400x600` se conserva para no romper las URLs externas
 - `google-workspace-logo-320x132.png` — lockup horizontal (Google Workspace)
 - `firma-icon-whatsapp.png` / `firma-icon-linkedin.png` / `firma-icon-x.png` — íconos sociales 512×512 para la firma electrónica (tile redondeado, colores oficiales)
 - `firma-icon-calendar.png` — ícono de agenda 512×512, línea blanca sobre transparente (pill "Agendar reunión" de la firma)
