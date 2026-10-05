@@ -73,9 +73,13 @@ def main():
             rel = os.path.relpath(os.path.join(root, name), ROOT)
             if rel not in listed and rel not in NON_ASSET:
                 errors.append(f"archivo sin registrar en manifest.json: {rel}")
+    declared = {a['path']: a.get('duplicateOf') for a in manifest['assets']}
     for sha, paths in seen.items():
         if len(paths) > 1:
-            errors.append(f"duplicado por sha256: {paths}")
+            primary = [p for p in paths if not declared.get(p)]
+            aliases_ok = len(primary) == 1 and all(declared.get(p) == primary[0] for p in paths if p != primary[0])
+            if not aliases_ok:
+                errors.append(f"duplicado por sha256 no declarado: {paths}")
     readme = open(os.path.join(ROOT, 'README.md'), encoding='utf-8').read()
     for ref in sorted(set(re.findall(r'`([\w./-]+\.(?:svg|png|webp|jpg))`', readme))):
         if not os.path.isfile(os.path.join(ROOT, ref)):
@@ -84,7 +88,7 @@ def main():
         print('\n'.join(errors))
         sys.exit(1)
     print(f"OK: {len(manifest['assets'])} assets, sha256/bytes/dimensiones coinciden, "
-          f"sin duplicados, sin archivos sin registrar, referencias del README resueltas.")
+          f"sin duplicados no declarados, sin archivos sin registrar, referencias del README resueltas.")
 
 
 if __name__ == '__main__':
