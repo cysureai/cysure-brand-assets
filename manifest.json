@@ -1,0 +1,1202 @@
+{
+  "schema": "cysure-brand-assets/manifest-1",
+  "generated": "2026-10-05",
+  "policy": "Distribución versionada de assets ya aprobados. No es una cuarta biblioteca canónica: la fuente de verdad son los Files y el almacén de las tres bibliotecas de Claude Design. Cualquier corrección se hace allí y se redistribuye aquí con nuevo sha256.",
+  "sources": [
+    {
+      "library": "Cysure · Landing Page",
+      "artifact": "https://claude.ai/artifact/2eE7Et7U5ncfhXFWiLwKrQ",
+      "artifactVersion": "1791163080-8473",
+      "dsVersion": "38.4",
+      "key": "lp",
+      "manifest": "project/MIGRACION/manifiesto.json generado 2026-10-05T01:17:42.336Z",
+      "state": "EN AFINACIÓN · versión comprobada registrada; sincronización final pendiente hasta entrega estable"
+    },
+    {
+      "library": "Cysure · Presentaciones y Documentos",
+      "artifact": "https://claude.ai/artifact/Fg2g2h34stb1rSW7i4uk4h",
+      "artifactVersion": "1791163078-a0df",
+      "dsVersion": "tokens 2 · 2026-10-04",
+      "key": "pres",
+      "manifest": "project/MIGRACION/manifiesto.json generado 2026-10-05T01:17:42.436Z",
+      "state": "estable (preparado; no importado en Team)"
+    },
+    {
+      "library": "Cysure · Producto",
+      "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+      "artifactVersion": "1791163082-fce4",
+      "dsVersion": "1.5.1 · 2026-10-04",
+      "key": "prod",
+      "manifest": "project/MIGRACION/manifiesto.json generado 2026-10-05T01:17:42.549Z",
+      "state": "estable (preparado; no importado en Team)"
+    }
+  ],
+  "assets": [
+    {
+      "path": "portadas-ds/Cysure-DS-landing-page-cover.png",
+      "category": "portada-ds",
+      "theme": null,
+      "source": {
+        "library": "Cysure · Landing Page",
+        "artifact": "https://claude.ai/artifact/2eE7Et7U5ncfhXFWiLwKrQ",
+        "artifactVersion": "1791163080-8473",
+        "dsVersion": "38.4",
+        "group": "Portada",
+        "name": "Cysure-DS-landing-page-cover.png",
+        "blobId": "f98e58779ad33d14cb3162d96915cf26",
+        "bytes": 1264139,
+        "sha256": "8fc777163d08efd3dac7077f4a890e498148937229ab0406f1550881fbc280cf"
+      },
+      "version": "LP 38.4",
+      "status": "publicado-provisional · LP en afinación: sincronización final pendiente",
+      "approval": "Portada aprobada del sistema de diseño: PNG 1920×1080 instalado tal cual, sin regenerar (components/Cover/preview.html de la biblioteca). Sin cambios desde v38 (Cover/preview.html sha256 2b90fd6b…).",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 1264139,
+      "sha256": "8fc777163d08efd3dac7077f4a890e498148937229ab0406f1550881fbc280cf",
+      "notes": "La biblioteca LP sigue en afinación; esta es la versión comprobada el 2026-10-05. Revalidar contra la entrega estable antes de cerrar."
+    },
+    {
+      "path": "portadas-ds/Cysure-DS-presentaciones-cover.png",
+      "category": "portada-ds",
+      "theme": null,
+      "source": {
+        "library": "Cysure · Presentaciones y Documentos",
+        "artifact": "https://claude.ai/artifact/Fg2g2h34stb1rSW7i4uk4h",
+        "artifactVersion": "1791163078-a0df",
+        "dsVersion": "tokens 2 · 2026-10-04",
+        "group": "Portada",
+        "name": "Cysure-DS-presentaciones-cover.png",
+        "blobId": "f2944329a543551a0994f6a975bd6d4c",
+        "bytes": 1272041,
+        "sha256": "fd9b13cab1f0ee2d4025ba3fac25fe54ae6219850f3d0986b882f13dd14bfb89"
+      },
+      "version": "Presentaciones tokens 2 · 2026-10-04",
+      "status": "publicado",
+      "approval": "Portada aprobada del sistema de diseño: PNG 1920×1080 instalado tal cual, sin regenerar (components/Cover/preview.html de la biblioteca).",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 1272041,
+      "sha256": "fd9b13cab1f0ee2d4025ba3fac25fe54ae6219850f3d0986b882f13dd14bfb89"
+    },
+    {
+      "path": "portadas-ds/Cysure-DS-producto-cover.png",
+      "category": "portada-ds",
+      "theme": null,
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Portada",
+        "name": "Cysure-DS-producto-cover.png",
+        "blobId": "34cb6c4a1db388040b61d052569afcc8",
+        "bytes": 1267917,
+        "sha256": "9d9274a588dbea65a50b70da5d4e69ad923d8a2c1080b155a9024645dc394fd0"
+      },
+      "version": "Producto 1.5.1 · 2026-10-04",
+      "status": "publicado",
+      "approval": "Portada aprobada del sistema de diseño: PNG 1920×1080 instalado tal cual, sin regenerar (components/Cover/preview.html de la biblioteca).",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 1267917,
+      "sha256": "9d9274a588dbea65a50b70da5d4e69ad923d8a2c1080b155a9024645dc394fd0"
+    },
+    {
+      "path": "logo-grid/logo-grid-landing-page-light.svg",
+      "category": "logo-grid",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Landing Page",
+        "artifact": "https://claude.ai/artifact/2eE7Et7U5ncfhXFWiLwKrQ",
+        "artifactVersion": "1791163080-8473",
+        "dsVersion": "38.4",
+        "group": "Logo grid",
+        "name": "logo-grid-landing-page-light.svg",
+        "blobId": "79aac1ec4861383038a284f11d946135",
+        "bytes": 16212,
+        "sha256": "228cd6d93eea95ff974d860ad526f90ab52277f5a33421fc402d0357346aad59",
+        "filesSha256": "3ffef027713aa9f9ab28ed070e8922ef295257ab36752a8f253b5ea862a4d0cc",
+        "filesPath": "project/marca/logo-grid/logo-grid-landing-page-light.svg"
+      },
+      "version": "38.4",
+      "status": "publicado-provisional · LP en afinación: sincronización final pendiente",
+      "approval": "Lámina de documentación de la geometría del maestro (no es vector de reemplazo). Instalada en la biblioteca el 4-5 oct 2026; VALIDACION-LOCAL.json: path_maestro_intacto=true, viewBox 0 0 1600 1000.",
+      "dimensions": {
+        "viewBox": "0 0 1600 1000"
+      },
+      "bytes": 16212,
+      "sha256": "228cd6d93eea95ff974d860ad526f90ab52277f5a33421fc402d0357346aad59",
+      "notes": "El SVG del almacén es equivalente C14N al de Files `project/marca/logo-grid/` (sólo cambia la serialización `/>` ↔ `></tag>`). Los textos de la lámina usan Arial (fuente del sistema): el render puede variar según el equipo; el PNG es la referencia de pintura."
+    },
+    {
+      "path": "logo-grid/logo-grid-landing-page-light.png",
+      "category": "logo-grid",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Landing Page",
+        "artifact": "https://claude.ai/artifact/2eE7Et7U5ncfhXFWiLwKrQ",
+        "artifactVersion": "1791163080-8473",
+        "dsVersion": "38.4",
+        "group": "Logo grid",
+        "name": "logo-grid-landing-page-light.png",
+        "blobId": "2fe8bdab45ae00a39f430b515ebe48c3",
+        "bytes": 144867,
+        "sha256": "0469dbfaf2420e04c1f21fcab3745f4bf990bf2551da4e1cc1380d56f07beb7c"
+      },
+      "version": "38.4",
+      "status": "publicado-provisional · LP en afinación: sincronización final pendiente",
+      "approval": "Lámina de documentación de la geometría del maestro (no es vector de reemplazo). Instalada en la biblioteca el 4-5 oct 2026; VALIDACION-LOCAL.json: path_maestro_intacto=true, viewBox 0 0 1600 1000.",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 144867,
+      "sha256": "0469dbfaf2420e04c1f21fcab3745f4bf990bf2551da4e1cc1380d56f07beb7c"
+    },
+    {
+      "path": "logo-grid/logo-grid-landing-page-dark.svg",
+      "category": "logo-grid",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Landing Page",
+        "artifact": "https://claude.ai/artifact/2eE7Et7U5ncfhXFWiLwKrQ",
+        "artifactVersion": "1791163080-8473",
+        "dsVersion": "38.4",
+        "group": "Logo grid",
+        "name": "logo-grid-landing-page-dark.svg",
+        "blobId": "a431379f991b73454f2056cc16f60964",
+        "bytes": 16211,
+        "sha256": "c2f7ea49e0a73ea9684cbbf04002d6fee51d8306b5b1992b8f05bb1714cd4690",
+        "filesSha256": "8f9af667ba8191053980d95a8ed1a829b87411df47e825d629e2d9a028913136",
+        "filesPath": "project/marca/logo-grid/logo-grid-landing-page-dark.svg"
+      },
+      "version": "38.4",
+      "status": "publicado-provisional · LP en afinación: sincronización final pendiente",
+      "approval": "Lámina de documentación de la geometría del maestro (no es vector de reemplazo). Instalada en la biblioteca el 4-5 oct 2026; VALIDACION-LOCAL.json: path_maestro_intacto=true, viewBox 0 0 1600 1000.",
+      "dimensions": {
+        "viewBox": "0 0 1600 1000"
+      },
+      "bytes": 16211,
+      "sha256": "c2f7ea49e0a73ea9684cbbf04002d6fee51d8306b5b1992b8f05bb1714cd4690",
+      "notes": "El SVG del almacén es equivalente C14N al de Files `project/marca/logo-grid/` (sólo cambia la serialización `/>` ↔ `></tag>`). Los textos de la lámina usan Arial (fuente del sistema): el render puede variar según el equipo; el PNG es la referencia de pintura."
+    },
+    {
+      "path": "logo-grid/logo-grid-landing-page-dark.png",
+      "category": "logo-grid",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Landing Page",
+        "artifact": "https://claude.ai/artifact/2eE7Et7U5ncfhXFWiLwKrQ",
+        "artifactVersion": "1791163080-8473",
+        "dsVersion": "38.4",
+        "group": "Logo grid",
+        "name": "logo-grid-landing-page-dark.png",
+        "blobId": "8cef690a0f227a332e9cc02a36c1163e",
+        "bytes": 145049,
+        "sha256": "ae5dcb49b7a4fef87825de0856aab73ed5236e1057293d5d7c4174de1f278b41"
+      },
+      "version": "38.4",
+      "status": "publicado-provisional · LP en afinación: sincronización final pendiente",
+      "approval": "Lámina de documentación de la geometría del maestro (no es vector de reemplazo). Instalada en la biblioteca el 4-5 oct 2026; VALIDACION-LOCAL.json: path_maestro_intacto=true, viewBox 0 0 1600 1000.",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 145049,
+      "sha256": "ae5dcb49b7a4fef87825de0856aab73ed5236e1057293d5d7c4174de1f278b41"
+    },
+    {
+      "path": "logo-grid/logo-grid-presentaciones-light.svg",
+      "category": "logo-grid",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Presentaciones y Documentos",
+        "artifact": "https://claude.ai/artifact/Fg2g2h34stb1rSW7i4uk4h",
+        "artifactVersion": "1791163078-a0df",
+        "dsVersion": "tokens 2 · 2026-10-04",
+        "group": "Marca",
+        "name": "logo-grid-presentaciones-light.svg",
+        "blobId": "215b0e688e82005256dc4ee77f808f38",
+        "bytes": 16216,
+        "sha256": "cd5c569e6969d00368b153a080b7deafe015f26067d70ac53302009334c51f04",
+        "filesSha256": "6fb7cea4f7a2c2da10bcd77e8022f2aeff29bbea42d634304fca524c539cb569",
+        "filesPath": "project/marca/logo-grid/logo-grid-presentaciones-light.svg"
+      },
+      "version": "tokens 2 · 2026-10-04",
+      "status": "publicado",
+      "approval": "Lámina de documentación de la geometría del maestro (no es vector de reemplazo). Instalada en la biblioteca el 4-5 oct 2026; VALIDACION-LOCAL.json: path_maestro_intacto=true, viewBox 0 0 1600 1000.",
+      "dimensions": {
+        "viewBox": "0 0 1600 1000"
+      },
+      "bytes": 16216,
+      "sha256": "cd5c569e6969d00368b153a080b7deafe015f26067d70ac53302009334c51f04",
+      "notes": "El SVG del almacén es equivalente C14N al de Files `project/marca/logo-grid/` (sólo cambia la serialización `/>` ↔ `></tag>`). Los textos de la lámina usan Arial (fuente del sistema): el render puede variar según el equipo; el PNG es la referencia de pintura."
+    },
+    {
+      "path": "logo-grid/logo-grid-presentaciones-light.png",
+      "category": "logo-grid",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Presentaciones y Documentos",
+        "artifact": "https://claude.ai/artifact/Fg2g2h34stb1rSW7i4uk4h",
+        "artifactVersion": "1791163078-a0df",
+        "dsVersion": "tokens 2 · 2026-10-04",
+        "group": "Marca",
+        "name": "logo-grid-presentaciones-light.png",
+        "blobId": "0befd3397205e2297c9d0b9754ca2c76",
+        "bytes": 145472,
+        "sha256": "410a2d16f7fc16bdcf1195b669c8f2719537fef81d042f375331f80154200a30"
+      },
+      "version": "tokens 2 · 2026-10-04",
+      "status": "publicado",
+      "approval": "Lámina de documentación de la geometría del maestro (no es vector de reemplazo). Instalada en la biblioteca el 4-5 oct 2026; VALIDACION-LOCAL.json: path_maestro_intacto=true, viewBox 0 0 1600 1000.",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 145472,
+      "sha256": "410a2d16f7fc16bdcf1195b669c8f2719537fef81d042f375331f80154200a30"
+    },
+    {
+      "path": "logo-grid/logo-grid-presentaciones-dark.svg",
+      "category": "logo-grid",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Presentaciones y Documentos",
+        "artifact": "https://claude.ai/artifact/Fg2g2h34stb1rSW7i4uk4h",
+        "artifactVersion": "1791163078-a0df",
+        "dsVersion": "tokens 2 · 2026-10-04",
+        "group": "Marca",
+        "name": "logo-grid-presentaciones-dark.svg",
+        "blobId": "2f5494fecb8f0ad2303359949e9bf553",
+        "bytes": 16215,
+        "sha256": "95f4d8cd9ee145f0a0dccdd015bfa544adb297bce5ea7d6891fd53c621e6735f",
+        "filesSha256": "de7d112b09df49fa18e222037839b0de10df07b8cd0e0bf472577af8970a590d",
+        "filesPath": "project/marca/logo-grid/logo-grid-presentaciones-dark.svg"
+      },
+      "version": "tokens 2 · 2026-10-04",
+      "status": "publicado",
+      "approval": "Lámina de documentación de la geometría del maestro (no es vector de reemplazo). Instalada en la biblioteca el 4-5 oct 2026; VALIDACION-LOCAL.json: path_maestro_intacto=true, viewBox 0 0 1600 1000.",
+      "dimensions": {
+        "viewBox": "0 0 1600 1000"
+      },
+      "bytes": 16215,
+      "sha256": "95f4d8cd9ee145f0a0dccdd015bfa544adb297bce5ea7d6891fd53c621e6735f",
+      "notes": "El SVG del almacén es equivalente C14N al de Files `project/marca/logo-grid/` (sólo cambia la serialización `/>` ↔ `></tag>`). Los textos de la lámina usan Arial (fuente del sistema): el render puede variar según el equipo; el PNG es la referencia de pintura."
+    },
+    {
+      "path": "logo-grid/logo-grid-presentaciones-dark.png",
+      "category": "logo-grid",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Presentaciones y Documentos",
+        "artifact": "https://claude.ai/artifact/Fg2g2h34stb1rSW7i4uk4h",
+        "artifactVersion": "1791163078-a0df",
+        "dsVersion": "tokens 2 · 2026-10-04",
+        "group": "Marca",
+        "name": "logo-grid-presentaciones-dark.png",
+        "blobId": "64e2c170b3f97b9093f3f70bfd8b9597",
+        "bytes": 145599,
+        "sha256": "a73e59059163bbc9b09b1c67911d4a720ce35b997e8cff81a3a7d5bc5c0ab685"
+      },
+      "version": "tokens 2 · 2026-10-04",
+      "status": "publicado",
+      "approval": "Lámina de documentación de la geometría del maestro (no es vector de reemplazo). Instalada en la biblioteca el 4-5 oct 2026; VALIDACION-LOCAL.json: path_maestro_intacto=true, viewBox 0 0 1600 1000.",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 145599,
+      "sha256": "a73e59059163bbc9b09b1c67911d4a720ce35b997e8cff81a3a7d5bc5c0ab685"
+    },
+    {
+      "path": "logo-grid/logo-grid-producto-light.svg",
+      "category": "logo-grid",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Logos",
+        "name": "logo-grid-producto-light.svg",
+        "blobId": "1f37c00be6e231710d3c6a44fff96851",
+        "bytes": 16204,
+        "sha256": "a8a7889bf5de30879562f43a70ecbb68801c46f5e8ba2579d386873b32f05584",
+        "filesSha256": "01c713e5bd1422aba217d955c75f747bc52fe99385f490d0c92e006e3da635f0",
+        "filesPath": "project/marca/logo-grid/logo-grid-producto-light.svg"
+      },
+      "version": "1.5.1 · 2026-10-04",
+      "status": "publicado",
+      "approval": "Lámina de documentación de la geometría del maestro (no es vector de reemplazo). Instalada en la biblioteca el 4-5 oct 2026; VALIDACION-LOCAL.json: path_maestro_intacto=true, viewBox 0 0 1600 1000.",
+      "dimensions": {
+        "viewBox": "0 0 1600 1000"
+      },
+      "bytes": 16204,
+      "sha256": "a8a7889bf5de30879562f43a70ecbb68801c46f5e8ba2579d386873b32f05584",
+      "notes": "El SVG del almacén es equivalente C14N al de Files `project/marca/logo-grid/` (sólo cambia la serialización `/>` ↔ `></tag>`). Los textos de la lámina usan Arial (fuente del sistema): el render puede variar según el equipo; el PNG es la referencia de pintura."
+    },
+    {
+      "path": "logo-grid/logo-grid-producto-light.png",
+      "category": "logo-grid",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Logos",
+        "name": "logo-grid-producto-light.png",
+        "blobId": "da1933b40d4a3fb233c5ca23245e0dcd",
+        "bytes": 143427,
+        "sha256": "9fc83c036d1c68008f448fe4ee988689831acd68f24f3b3ee91b752b8606007c"
+      },
+      "version": "1.5.1 · 2026-10-04",
+      "status": "publicado",
+      "approval": "Lámina de documentación de la geometría del maestro (no es vector de reemplazo). Instalada en la biblioteca el 4-5 oct 2026; VALIDACION-LOCAL.json: path_maestro_intacto=true, viewBox 0 0 1600 1000.",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 143427,
+      "sha256": "9fc83c036d1c68008f448fe4ee988689831acd68f24f3b3ee91b752b8606007c"
+    },
+    {
+      "path": "logo-grid/logo-grid-producto-dark.svg",
+      "category": "logo-grid",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Logos",
+        "name": "logo-grid-producto-dark.svg",
+        "blobId": "ccf71a943b6266539679ef70074890a6",
+        "bytes": 16203,
+        "sha256": "7d3fd50b73323734951a56f2262c9e82b4e4929bbda7cdc086f6bc616a8e6261",
+        "filesSha256": "85dcb90b5c9635ec80dd0691c2783e99caa96095b1f79e00a25f1797843ea38b",
+        "filesPath": "project/marca/logo-grid/logo-grid-producto-dark.svg"
+      },
+      "version": "1.5.1 · 2026-10-04",
+      "status": "publicado",
+      "approval": "Lámina de documentación de la geometría del maestro (no es vector de reemplazo). Instalada en la biblioteca el 4-5 oct 2026; VALIDACION-LOCAL.json: path_maestro_intacto=true, viewBox 0 0 1600 1000.",
+      "dimensions": {
+        "viewBox": "0 0 1600 1000"
+      },
+      "bytes": 16203,
+      "sha256": "7d3fd50b73323734951a56f2262c9e82b4e4929bbda7cdc086f6bc616a8e6261",
+      "notes": "El SVG del almacén es equivalente C14N al de Files `project/marca/logo-grid/` (sólo cambia la serialización `/>` ↔ `></tag>`). Los textos de la lámina usan Arial (fuente del sistema): el render puede variar según el equipo; el PNG es la referencia de pintura."
+    },
+    {
+      "path": "logo-grid/logo-grid-producto-dark.png",
+      "category": "logo-grid",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Logos",
+        "name": "logo-grid-producto-dark.png",
+        "blobId": "13504b186bb682809dfb828b70ff6e5e",
+        "bytes": 143694,
+        "sha256": "d8bd523a6a7cf13799cf3a1431dabed00342935dcffd798948aeb0d99f0ed2cb"
+      },
+      "version": "1.5.1 · 2026-10-04",
+      "status": "publicado",
+      "approval": "Lámina de documentación de la geometría del maestro (no es vector de reemplazo). Instalada en la biblioteca el 4-5 oct 2026; VALIDACION-LOCAL.json: path_maestro_intacto=true, viewBox 0 0 1600 1000.",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 143694,
+      "sha256": "d8bd523a6a7cf13799cf3a1431dabed00342935dcffd798948aeb0d99f0ed2cb"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-mdr.webp",
+      "category": "ilustracion-agente",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7971d83e0144745766e_AG-mdr.webp",
+        "blobId": "64544caf42df8b511659eafa8da079bf",
+        "bytes": 1115600,
+        "sha256": "43faecf76e8d2eaeb9137e05a5165b5778ac30f10d8df739260d7c4c77bfd131",
+        "cdnId": "6ab9f7971d83e0144745766e"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1671,
+        941
+      ],
+      "bytes": 1115600,
+      "sha256": "43faecf76e8d2eaeb9137e05a5165b5778ac30f10d8df739260d7c4c77bfd131"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-mdr-dark.webp",
+      "category": "ilustracion-agente",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f79d86511a2d9a17c4ad_AG-mdr-dark.webp",
+        "blobId": "3da3556bc861244d31bc009a7d7d1ee0",
+        "bytes": 1041924,
+        "sha256": "00ab4d37ab154382fe9faf5cb0064a1b0c4b1aeb2c506f1bd2c0e35992d850ee",
+        "cdnId": "6ab9f79d86511a2d9a17c4ad"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1671,
+        941
+      ],
+      "bytes": 1041924,
+      "sha256": "00ab4d37ab154382fe9faf5cb0064a1b0c4b1aeb2c506f1bd2c0e35992d850ee"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-superficie.webp",
+      "category": "ilustracion-agente",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7974de2e93e8d5fe11d_AG-superficie.webp",
+        "blobId": "9c4fde18e5d81aae2d5fcaee449097d7",
+        "bytes": 1178524,
+        "sha256": "e969f7efef3a8ec1c0e398f5230ddcaabaee09aae888cabbb3c45656f49ffaaf",
+        "cdnId": "6ab9f7974de2e93e8d5fe11d"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1178524,
+      "sha256": "e969f7efef3a8ec1c0e398f5230ddcaabaee09aae888cabbb3c45656f49ffaaf"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-superficie-dark.webp",
+      "category": "ilustracion-agente",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7a41d83e014474579dd_AG-superficie-dark.webp",
+        "blobId": "a8153a05235c88e33e8b3d62382a7114",
+        "bytes": 1096822,
+        "sha256": "c376182d3fe25c0e9e831802fa2feaded7e6bec8b4dff4211f3c6e229486f3ff",
+        "cdnId": "6ab9f7a41d83e014474579dd"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1096822,
+      "sha256": "c376182d3fe25c0e9e831802fa2feaded7e6bec8b4dff4211f3c6e229486f3ff"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-redteam.webp",
+      "category": "ilustracion-agente",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7978cea92e9a79b1bc1_AG-redteam.webp",
+        "blobId": "39c33d382c53d13519d9d99a49a19477",
+        "bytes": 1254970,
+        "sha256": "c5e0c442fe2c3d3478a37557f7e216f60fc8faf3f3b254da65d1210372557c3b",
+        "cdnId": "6ab9f7978cea92e9a79b1bc1"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1586,
+        992
+      ],
+      "bytes": 1254970,
+      "sha256": "c5e0c442fe2c3d3478a37557f7e216f60fc8faf3f3b254da65d1210372557c3b"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-redteam-dark.webp",
+      "category": "ilustracion-agente",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f797e74f3d325be80d4b_AG-redteam-dark.webp",
+        "blobId": "382eb656a9b5c8cf68920287ea40f2b2",
+        "bytes": 1104430,
+        "sha256": "d39ed58ff9bae447d305dba581727ebbbacb8a5008e7db978b50534d398f8a11",
+        "cdnId": "6ab9f797e74f3d325be80d4b"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1584,
+        993
+      ],
+      "bytes": 1104430,
+      "sha256": "d39ed58ff9bae447d305dba581727ebbbacb8a5008e7db978b50534d398f8a11"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-correo.webp",
+      "category": "ilustracion-agente",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f79801c145a2ef41e324_AG-correo.webp",
+        "blobId": "19fb599781b1deb8b65aae08ff2bbcaa",
+        "bytes": 1064856,
+        "sha256": "302e9248f96f08df0b51783f5f8a99d2fedfbee99016c5fe997ccdd8af884c06",
+        "cdnId": "6ab9f79801c145a2ef41e324"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1585,
+        992
+      ],
+      "bytes": 1064856,
+      "sha256": "302e9248f96f08df0b51783f5f8a99d2fedfbee99016c5fe997ccdd8af884c06"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-correo-dark.webp",
+      "category": "ilustracion-agente",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7a4397af2ce092ee08e_AG-correo-dark.webp",
+        "blobId": "ab7b4f7af928fac22a30e358a8bddcb0",
+        "bytes": 993504,
+        "sha256": "858195aaaf0c4e454f75ed69756af31e0876960c9856721df9c681b969cdfa03",
+        "cdnId": "6ab9f7a4397af2ce092ee08e"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1585,
+        992
+      ],
+      "bytes": 993504,
+      "sha256": "858195aaaf0c4e454f75ed69756af31e0876960c9856721df9c681b969cdfa03"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-nube.webp",
+      "category": "ilustracion-agente",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7981d83e0144745769a_AG-nube.webp",
+        "blobId": "126191056ecf1deb8c177c57eddd68d1",
+        "bytes": 1166060,
+        "sha256": "898a3e37270ba78d25672b4205b12cf6dff28315722e37c69073d442132d3499",
+        "cdnId": "6ab9f7981d83e0144745769a"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1166060,
+      "sha256": "898a3e37270ba78d25672b4205b12cf6dff28315722e37c69073d442132d3499"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-nube-dark.webp",
+      "category": "ilustracion-agente",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7a4f75564eacc82c2dd_AG-nube-dark.webp",
+        "blobId": "c8ad5b42fe3ba7f74fea29fcea9d5eed",
+        "bytes": 1118108,
+        "sha256": "d171aa0fbcef7cc934c819ddb0a9dcde822fef54496dccf5dedcf46b9f840a2b",
+        "cdnId": "6ab9f7a4f75564eacc82c2dd"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1118108,
+      "sha256": "d171aa0fbcef7cc934c819ddb0a9dcde822fef54496dccf5dedcf46b9f840a2b"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-explorador.webp",
+      "category": "ilustracion-agente",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f79840db6e326a0e9ddd_AG-explorador.webp",
+        "blobId": "9c6cfbe62b93cce52615808350c02bc9",
+        "bytes": 1126582,
+        "sha256": "1f70348df70fb0a4454491d909e580b92f8d77e889482c9834f510c2239f4d6f",
+        "cdnId": "6ab9f79840db6e326a0e9ddd"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1126582,
+      "sha256": "1f70348df70fb0a4454491d909e580b92f8d77e889482c9834f510c2239f4d6f"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-explorador-dark.webp",
+      "category": "ilustracion-agente",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7a446af511965267c69_AG-explorador-dark.webp",
+        "blobId": "22867285c4b44ed5eadb8999224b0f9f",
+        "bytes": 1021006,
+        "sha256": "da8f383ae238c454617b078a423bf4c96f07f1053c5ad567b0a53dae17799080",
+        "cdnId": "6ab9f7a446af511965267c69"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1021006,
+      "sha256": "da8f383ae238c454617b078a423bf4c96f07f1053c5ad567b0a53dae17799080"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-auditoria.webp",
+      "category": "ilustracion-agente",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7984de2e93e8d5fe199_AG-auditoria.webp",
+        "blobId": "3ea2287733b22109e876dfdde2376509",
+        "bytes": 1046696,
+        "sha256": "624cff09fc6c7f3131a71a918e04e6da2f9afea5b6756e620f2e350f1609863e",
+        "cdnId": "6ab9f7984de2e93e8d5fe199"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1046696,
+      "sha256": "624cff09fc6c7f3131a71a918e04e6da2f9afea5b6756e620f2e350f1609863e"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-auditoria-dark.webp",
+      "category": "ilustracion-agente",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7a446af511965267c4c_AG-auditoria-dark.webp",
+        "blobId": "5b24e5c56e99d3bc81366b5692867093",
+        "bytes": 1050118,
+        "sha256": "f709466123e6966ec90819efa6dd180cab87d4b083ef05c63c5f081f3cd7bbed",
+        "cdnId": "6ab9f7a446af511965267c4c"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1671,
+        941
+      ],
+      "bytes": 1050118,
+      "sha256": "f709466123e6966ec90819efa6dd180cab87d4b083ef05c63c5f081f3cd7bbed"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-vendor.webp",
+      "category": "ilustracion-agente",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7993d5ad78d754ead62_AG-vendor.webp",
+        "blobId": "dc5750e9452dda80af471fbe3650dff0",
+        "bytes": 1197108,
+        "sha256": "0a8ce9800332b40ad5ed6d1c4947685fbd3355da615bc8697e69cfb5f23e6130",
+        "cdnId": "6ab9f7993d5ad78d754ead62"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1197108,
+      "sha256": "0a8ce9800332b40ad5ed6d1c4947685fbd3355da615bc8697e69cfb5f23e6130"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-vendor-dark.webp",
+      "category": "ilustracion-agente",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7a47eb59be05ceae2e6_AG-vendor-dark.webp",
+        "blobId": "048bff6d2b23d0fa535f8e93954aa86b",
+        "bytes": 1121374,
+        "sha256": "bbd0a3bec5350c3c633832aa898412c2cb16ef1aa154ff5321afcd7ec22ed1f0",
+        "cdnId": "6ab9f7a47eb59be05ceae2e6"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1121374,
+      "sha256": "bbd0a3bec5350c3c633832aa898412c2cb16ef1aa154ff5321afcd7ec22ed1f0"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-vendor-mobile-18sep.webp",
+      "category": "ilustracion-agente",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7a4cffa7e9d7a85bc03_AG-vendor-mobile-18sep.webp",
+        "blobId": "d57fd0cce0413f6e0c615dfb0152df24",
+        "bytes": 1183150,
+        "sha256": "6e60d479bfa4bd7c7471e14f6e465ffaea196d84ab0ce1abd9bc5621596409bc",
+        "cdnId": "6ab9f7a4cffa7e9d7a85bc03"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 1183150,
+      "sha256": "6e60d479bfa4bd7c7471e14f6e465ffaea196d84ab0ce1abd9bc5621596409bc"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-vendor-mobile-18sep-dark.webp",
+      "category": "ilustracion-agente",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7a5f75564eacc82c31d_AG-vendor-mobile-18sep-dark.webp",
+        "blobId": "fad0f8f8954ae4b01c557fbef421dd64",
+        "bytes": 1069004,
+        "sha256": "53b415036347f70b56b0780b88a127845095382b8dd2923cae4a46ca86b90ebd",
+        "cdnId": "6ab9f7a5f75564eacc82c31d"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 1069004,
+      "sha256": "53b415036347f70b56b0780b88a127845095382b8dd2923cae4a46ca86b90ebd"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-gasto.webp",
+      "category": "ilustracion-agente",
+      "theme": "light",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7993d5ad78d754ead8c_AG-gasto.webp",
+        "blobId": "af5dfd27d5c065bbdf6eb9b30cdca81f",
+        "bytes": 1180132,
+        "sha256": "530e717ffc7e5d2da64f1d9a42a0bc5c550935a09b84dee4f9908ac71a8a6ceb",
+        "cdnId": "6ab9f7993d5ad78d754ead8c"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1180132,
+      "sha256": "530e717ffc7e5d2da64f1d9a42a0bc5c550935a09b84dee4f9908ac71a8a6ceb"
+    },
+    {
+      "path": "ilustraciones/agentes/AG-gasto-dark.webp",
+      "category": "ilustracion-agente",
+      "theme": "dark",
+      "source": {
+        "library": "Cysure · Producto",
+        "artifact": "https://claude.ai/artifact/GCo5W1nJTUGzBWiNEMWtFx",
+        "artifactVersion": "1791163082-fce4",
+        "dsVersion": "1.5.1 · 2026-10-04",
+        "group": "Arte",
+        "name": "6ab9f7a48d094c64bb994616_AG-gasto-dark.webp",
+        "blobId": "0568713a95919494945b1a998820916b",
+        "bytes": 1099660,
+        "sha256": "6db238c107f470f4e9e6dc8f9be35a737172bd194f821ee00b1ef48a20cdc665",
+        "cdnId": "6ab9f7a48d094c64bb994616"
+      },
+      "version": "banco arte servido 30 sep 2026 (cy-arte28 v10)",
+      "status": "publicado",
+      "approval": "Derivado aprobado y servido en staging (Producto assets/Arte/README: SHA-256 = MAPA-CONSUMIDORES-A28.json, readback_ok=true). Homologado: mismo sha256 en las tres bibliotecas (LP «Arte servido», Presentaciones «Arte», Producto «Arte»).",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1099660,
+      "sha256": "6db238c107f470f4e9e6dc8f9be35a737172bd194f821ee00b1ef48a20cdc665"
+    },
+    {
+      "path": "cysure-lockup.svg",
+      "category": "logo",
+      "theme": null,
+      "source": {
+        "library": "histórico del repositorio (anterior a esta entrega)"
+      },
+      "version": "existente en main e471086",
+      "status": "existente · conservado sin cambios (URL externa estable)",
+      "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
+      "dimensions": {
+        "viewBox": "0 0 490.92 133"
+      },
+      "bytes": 6127,
+      "sha256": "b382a41e4fc1421aa5beafaf7bad42da81c08b6cfefed66fccdebc4d68f62802",
+      "notes": "Lockup oficial v2.1. Equivalente C14N al maestro de las tres bibliotecas `project/marca/cysure-lockup-master.svg` (6133 B, sha256 f1c0f862686f4c7a997e654000b547e5d2277755fac87218c8b681b618197951): mismo trazado, viewBox y atributos; sólo cambia la serialización del cierre del path. No se añade otra copia para no duplicar."
+    },
+    {
+      "path": "cysure-mark.svg",
+      "category": "logo",
+      "theme": null,
+      "source": {
+        "library": "histórico del repositorio (anterior a esta entrega)"
+      },
+      "version": "existente en main e471086",
+      "status": "existente · conservado sin cambios (URL externa estable)",
+      "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
+      "dimensions": {
+        "viewBox": "0 0 115.6 133"
+      },
+      "bytes": 2739,
+      "sha256": "68702c0db924bb6dc46da7dd5ff7faac6241684362e0a8f1491216478a6cdb72",
+      "notes": "Símbolo sin wordmark (v2.1). Las bibliotecas no publican el símbolo como archivo suelto; no hay fuente con la que cotejar bytes."
+    },
+    {
+      "path": "cysure-mark-firma-1024.png",
+      "category": "firma",
+      "theme": null,
+      "source": {
+        "library": "histórico del repositorio (anterior a esta entrega)"
+      },
+      "version": "existente en main e471086",
+      "status": "existente · conservado sin cambios (URL externa estable)",
+      "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 54374,
+      "sha256": "0c514993adc585bc01b2c786a249d822872334475643d17880eb2b3a4923153f"
+    },
+    {
+      "path": "cover-notion-linkedin-drive-blanco-2400x600.png",
+      "category": "cover-social",
+      "theme": null,
+      "source": {
+        "library": "histórico del repositorio (anterior a esta entrega)"
+      },
+      "version": "existente en main e471086",
+      "status": "existente · conservado sin cambios (URL externa estable)",
+      "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
+      "dimensions": [
+        2400,
+        600
+      ],
+      "bytes": 133837,
+      "sha256": "0b59268728ac25882788559f8b282db756fb480f95f186fcd366b8c137b82b8f"
+    },
+    {
+      "path": "cover-notion-linkedin-drive-dark-2400x600.png",
+      "category": "cover-social",
+      "theme": null,
+      "source": {
+        "library": "histórico del repositorio (anterior a esta entrega)"
+      },
+      "version": "existente en main e471086",
+      "status": "existente · conservado sin cambios (URL externa estable)",
+      "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
+      "dimensions": [
+        2400,
+        800
+      ],
+      "bytes": 1185209,
+      "sha256": "4369c6e0c14ab72d9bf52da9c3b03aa8e38543ef3efb12e442d4919682d94ab7",
+      "notes": "Dimensiones reales 2400×800; nombre legado conservado por URLs externas."
+    },
+    {
+      "path": "google-workspace-logo-320x132.png",
+      "category": "logo",
+      "theme": null,
+      "source": {
+        "library": "histórico del repositorio (anterior a esta entrega)"
+      },
+      "version": "existente en main e471086",
+      "status": "existente · conservado sin cambios (URL externa estable)",
+      "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
+      "dimensions": [
+        320,
+        132
+      ],
+      "bytes": 11978,
+      "sha256": "a78841222a353696905709a0e2781146b77f373c15b82cb261aa8c2b4a95ee81"
+    },
+    {
+      "path": "firma-icon-whatsapp.png",
+      "category": "firma",
+      "theme": null,
+      "source": {
+        "library": "histórico del repositorio (anterior a esta entrega)"
+      },
+      "version": "existente en main e471086",
+      "status": "existente · conservado sin cambios (URL externa estable)",
+      "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
+      "dimensions": [
+        512,
+        512
+      ],
+      "bytes": 27673,
+      "sha256": "80afe795741249c559214adb3b6df57021fb71db85c695979d8b78c71626037a"
+    },
+    {
+      "path": "firma-icon-linkedin.png",
+      "category": "firma",
+      "theme": null,
+      "source": {
+        "library": "histórico del repositorio (anterior a esta entrega)"
+      },
+      "version": "existente en main e471086",
+      "status": "existente · conservado sin cambios (URL externa estable)",
+      "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
+      "dimensions": [
+        512,
+        512
+      ],
+      "bytes": 12374,
+      "sha256": "0d51dccb5c1a7acf7b85b17d048b739108e512d2f2ca680b4d7a1e6a5ae900cd"
+    },
+    {
+      "path": "firma-icon-x.png",
+      "category": "firma",
+      "theme": null,
+      "source": {
+        "library": "histórico del repositorio (anterior a esta entrega)"
+      },
+      "version": "existente en main e471086",
+      "status": "existente · conservado sin cambios (URL externa estable)",
+      "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
+      "dimensions": [
+        512,
+        512
+      ],
+      "bytes": 18341,
+      "sha256": "ccdfdb334c1051cf16e40eab7c92f403a6b427213193be93c0ae8977b22254c9"
+    },
+    {
+      "path": "firma-icon-calendar.png",
+      "category": "firma",
+      "theme": null,
+      "source": {
+        "library": "histórico del repositorio (anterior a esta entrega)"
+      },
+      "version": "existente en main e471086",
+      "status": "existente · conservado sin cambios (URL externa estable)",
+      "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
+      "dimensions": [
+        512,
+        512
+      ],
+      "bytes": 6645,
+      "sha256": "ede4be8085ec5c61b6d8acc0049e1b602dfa8301686568f90b332ab600c51aa8"
+    },
+    {
+      "path": "firma-meandro-transparente-110x24-v2.png",
+      "category": "firma",
+      "theme": null,
+      "source": {
+        "library": "histórico del repositorio (anterior a esta entrega)"
+      },
+      "version": "existente en main e471086",
+      "status": "existente · conservado sin cambios (URL externa estable)",
+      "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
+      "dimensions": [
+        110,
+        24
+      ],
+      "bytes": 514,
+      "sha256": "6c5a932f7313b08713bed2a240bd28dc222cac80e1f54059775a1eb3dcbab7b8"
+    },
+    {
+      "path": "perfil-diego-1024.jpg",
+      "category": "retrato",
+      "theme": null,
+      "source": {
+        "library": "histórico del repositorio (anterior a esta entrega)"
+      },
+      "version": "existente en main e471086",
+      "status": "existente · conservado sin cambios (URL externa estable)",
+      "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 138342,
+      "sha256": "7ae9f5868e2ee869bae1afe5ced994112abb309e0c46243a6d77be09876933e4",
+      "notes": "Retrato preexistente en el repo. Las bibliotecas no registran aprobación de publicación para fotos de perfil («Las fotos de perfil personales están cerradas»). Se conserva sin cambios y no se promueve; decidir su permanencia fuera de este PR."
+    },
+    {
+      "path": "perfil-tono-1024.jpg",
+      "category": "retrato",
+      "theme": null,
+      "source": {
+        "library": "histórico del repositorio (anterior a esta entrega)"
+      },
+      "version": "existente en main e471086",
+      "status": "existente · conservado sin cambios (URL externa estable)",
+      "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 131223,
+      "sha256": "eb92641a1dfdaf14e3e8b4d80e175225ac5e1b8fb8b175d7c6ef5e921aea07d7",
+      "notes": "Retrato preexistente en el repo. Mismo caso que perfil-diego-1024.jpg: se conserva, no se promueve."
+    }
+  ],
+  "pending": [
+    {
+      "item": "Favicons frosted con esquinas curvas",
+      "reason": "No están en Files ni en el almacén de ninguna de las tres bibliotecas. LP 95-afinacion-v38.md sólo los registra como «aprobado y servido · favicon de esquinas curvas (sólo staging)»; viven en Webflow staging, que esta entrega no toca. Las fichas Logos de LP y Producto remiten favicons y app icons al proyecto Marca d6ceb9aa-9e36-42f6-8823-adc4bfb5ecc1.",
+      "needed": "Binarios exactos publicados (tamaños, formato .ico/.png/.svg) con sha256, subidos a una de las bibliotecas o entregados por quien los publicó."
+    },
+    {
+      "item": "Nueve metas ES dark v3 (OG 1200×630)",
+      "reason": "Las bibliotecas no contienen las salidas raster del generador: LP generador-meta/README.md «Las salidas PNG 1200 × 630 y las portadas JPEG no están aquí» y 70-inventario: «las 36 OG en PNG 1200 × 630 … no están aquí». Sólo están los 18 maestros 4K de arte (grupo Meta) y el generador HTML; generarlas aquí sería crear archivos nuevos, no distribuir los aprobados.",
+      "needed": "Los 9 PNG/JPG ES dark v3 aprobados con su sha256 (Inicio, Nosotros, Cómo funciona, Agenda, Blog y los 4 artículos), o su carga a la biblioteca LP."
+    },
+    {
+      "item": "Card + animación refinada (CardMockup)",
+      "reason": "Existe sólo como componente dentro de components/bundle.js/bundle.css de LP (§22), no como entrega separable. Su ficha la marca «candidato autorizado, no servido» (espacio 18/20→22/24 y contorno 14 px del paquete Cysure-card-UI-animacion-minimo-04oct) y la LP sigue en afinación; copiar el bundle ahora sería fijar una revisión intermedia.",
+      "needed": "El paquete portable aprobado (fuente + preview + manifiesto) o la versión estable de la LP para extraerlo."
+    },
+    {
+      "item": "Sincronización final de la LP",
+      "reason": "Biblioteca en afinación (v38.4, versión 1791163080-8473 comprobada el 2026-10-05). Portada y logo grid LP entran como provisionales.",
+      "needed": "Re-cotejar sha256 de portada y logo grid LP contra la entrega estable y cambiar su estado a «publicado»."
+    },
+    {
+      "item": "6 recortes móviles de agentes (AG-nube/auditoria/gasto-mobile-18sep, light/dark)",
+      "reason": "Aprobados en Producto y Presentaciones, pero no están en el banco servido de la LP; no son homologados en las tres bibliotecas. No se añaden.",
+      "needed": "Confirmar si son vigentes en la LP o si los sustituye otro derivado."
+    }
+  ],
+  "excluded": [
+    "Logos de terceros (Microsoft, Google, Google Cloud, CrowdStrike, SentinelOne): marcas ajenas, no son assets de marca Cysure.",
+    "Paisajes y heroes (Atalayas, Arco, heroes, splash, cantos, riesgos, Meta 4K): fuera del alcance pedido.",
+    "Retratos retrato-i-ceo / retrato-ii-cto y avatares retratos-perfil-29sep: sin aprobación de publicación para este repositorio.",
+    "Propuestas (guias/80-propuestas.md), candidatos no servidos, arte archivado y versiones rechazadas.",
+    "Tipografías TTF: tienen su propia licencia (OFL) y viven en las bibliotecas; no son assets de este repo."
+  ]
+}
