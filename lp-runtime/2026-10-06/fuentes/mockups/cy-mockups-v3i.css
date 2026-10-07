@@ -1,0 +1,176 @@
+
+@font-face{font-family:Space;src:url(./assets/SpaceGrotesk.ttf)}@font-face{font-family:DM;src:url(./assets/DMSans.ttf)}@font-face{font-family:Serif;src:url(./assets/DMSerifDisplay-Italic.ttf)}*{box-sizing:border-box}:host{margin:0;padding:32px 44px;background:#eaf0fb;color:#14223d;font-family:DM,sans-serif;--ink:#14223d;--mut:#425778;--accent:#29487b;--glass:linear-gradient(125deg,rgba(255,255,255,.66),rgba(224,236,253,.4));--edge:rgba(255,255,255,.55);--track:rgba(41,72,123,.18)}:host([theme="dark"]){background:#080f20;color:#edf1ff;--ink:#edf1ff;--mut:#c1cfe8;--accent:#7c92ff;--glass:linear-gradient(125deg,rgba(206,225,255,.19),rgba(20,39,79,.4));--edge:rgba(213,232,255,.18);--track:rgba(190,213,255,.22)}header{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:600 24px Space;letter-spacing:-1px}.controls{display:flex;gap:8px}button{color:inherit;background:transparent;border:1px solid #8198b955;border-radius:30px;padding:9px 14px;font:12px Space;cursor:pointer}button:focus-visible{outline:3px solid #718cee;outline-offset:3px}h1{font:400 33px Space;letter-spacing:-1px;margin:24px 0 9px}h1 i{font-family:Serif;color:var(--accent)}.intro{font-size:13px;color:var(--mut);margin:0 0 25px;max-width:920px;line-height:1.5}.grouphead{display:flex;justify-content:space-between;border-top:1px solid #879ec536;padding:19px 0 15px;font:11px Space;letter-spacing:1.3px;color:var(--accent)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:27px 23px}.card h2{font:500 18px Space;margin:0 0 6px;letter-spacing:-.3px}.purpose{font-size:12px;color:var(--mut);margin:0 0 13px;height:18px}.scene{height:382px;position:relative;overflow:hidden;background:#16264a}.art{position:absolute;inset:0;background-image:var(--day);background-size:cover;background-position:var(--pos,50% 35%)}:host([theme="dark"]) .art{background-image:var(--night)}.glass{position:absolute;left:18px;right:18px;bottom:21px;height:222px;padding:18px 20px;border-radius:13px;border:1px solid var(--edge);background:var(--glass);backdrop-filter:blur(18px) saturate(115%);-webkit-backdrop-filter:blur(18px) saturate(115%);color:var(--ink);box-shadow:0 9px 30px #00123310;transition:opacity .4s,transform .4s}.micro{display:flex;align-items:center;justify-content:space-between;font:500 11px Space}.live{font:10px DM;color:var(--mut);display:flex;gap:5px;align-items:center}.live:before{content:'';width:4px;height:4px;border-radius:50%;background:var(--tone)}.visual{height:113px;display:flex;align-items:center;justify-content:center;margin:8px 0;color:var(--tone)}.visual svg{width:100%;height:100%;overflow:visible}.visual svg *{vector-effect:non-scaling-stroke}.track{stroke:var(--track);fill:none;stroke-width:1}.signal{stroke:var(--tone);stroke-width:2;fill:none}.soft{fill:var(--track)}.accent{fill:var(--tone)}.paper{fill:rgba(241,247,255,.18);stroke:var(--edge);stroke-width:1}.svgtext{font:11px Space;fill:var(--mut)}.svgbig{font:500 28px Space;fill:var(--ink);letter-spacing:-1px}.caption{font:500 15px Space;letter-spacing:-.2px;line-height:1.25}.sub{font:11px DM;color:var(--mut);margin-top:6px;line-height:1.35}.explain{font-size:12px;color:var(--mut);line-height:1.45;margin:10px 0 0;min-height:35px}.explain b{font-weight:500;color:var(--ink)}.foot{margin-top:25px;padding-top:14px;border-top:1px solid #8198b936;color:var(--mut);font-size:11px;line-height:1.5}.card.reveal .glass{opacity:0;transform:translateY(12px)}.card.running .signal:not(.score-arc){stroke-dasharray:500;stroke-dashoffset:500;animation:draw 1.8s ease forwards}.card.running .accent{animation:pulse 1.6s ease both}.scene button{position:absolute;inset:0;width:100%;border:0;border-radius:0;background:transparent;z-index:2}.scene button:focus-visible{outline-offset:-4px}.scene button span{position:absolute;right:13px;top:12px;background:#07142c70;color:white;padding:5px 8px;border-radius:15px;font-size:10px;backdrop-filter:blur(8px)}:host([theme="dark"]) .inverted{--ink:#14223d;--mut:#425778;--accent:#29487b;--glass:linear-gradient(125deg,rgba(255,255,255,.66),rgba(224,236,253,.4));--edge:rgba(255,255,255,.55);--track:rgba(41,72,123,.18);--tone:#197866}.inverted{--ink:#edf1ff;--mut:#c1cfe8;--accent:#c5cfff;--glass:linear-gradient(125deg,rgba(206,225,255,.19),rgba(20,39,79,.4));--edge:rgba(213,232,255,.18);--track:rgba(190,213,255,.22);--tone:#6dd4bd}.inverted .art{background-image:var(--night)}:host([theme="dark"]) .inverted .art{background-image:var(--day)}@keyframes draw{to{stroke-dashoffset:0}}@keyframes pulse{0%{opacity:.2}100%{opacity:1}}:host[data-page="a"] .page:not(.a),:host[data-page="b"] .page:not(.b),:host[data-page="c"] .page:not(.c){display:none}@media(max-width:991px){:host{padding:23px}.grid{grid-template-columns:1fr}.controls{flex-wrap:wrap;justify-content:flex-end}h1{font-size:28px}.scene{height:440px}.glass{height:222px;left:16px;right:16px;padding:18px 16px}.purpose{height:auto}.grouphead span:last-child{display:none}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.card{--tone:var(--tone-day)}:host([theme="dark"]) .card{--tone:var(--tone-night)}.micro{font:600 12px Space}.caption{font:600 15px/1.3 Space}.svgbig{font-weight:600;fill:var(--tone)}.paper{stroke:color-mix(in srgb,var(--tone) 28%,transparent)}.visual .signal{stroke-linecap:round;stroke-linejoin:round}.visual .soft{fill:color-mix(in srgb,var(--tone) 22%,transparent)}
+.card[data-id="auditoria"]{--tone-day:#8A7344;--tone-night:#D4BF87}
+.card[data-id="correo"]{--tone-day:#A36243;--tone-night:#E5AF91}
+.card[data-id="explorador"]{--tone-day:#6D5D9C;--tone-night:#B7A9DB}
+.card[data-id="gasto"]{--tone-day:#6A7746;--tone-night:#B9C78F}
+.card[data-id="mdr"]{--tone-day:#3B5BFF;--tone-night:#7C92FF}
+.card[data-id="nube"]{--tone-day:#417C9F;--tone-night:#90C8E8}
+.card[data-id="redteam"]{--tone-day:#EF4444;--tone-night:#FF6B6B}
+.card[data-id="superficie"]{--tone-day:#2F7471;--tone-night:#82C3BA}
+.card[data-id="vendor"]{--tone-day:#43765F;--tone-night:#91C3AA}
+.card[data-id="lead"],.card[data-id="score"],.card[data-id="alignment"]{--tone-day:#3B5BFF;--tone-night:#7C92FF}.card[data-id="payout"]{--tone-day:#287F70;--tone-night:#6DD4BD}
+.card.running .score-arc{animation:scoreFill 1.8s ease both}@keyframes scoreFill{from{stroke-dasharray:0 100}to{stroke-dasharray:72 100}}
+@media(min-width:992px) and (max-width:1100px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+:host{display:block;padding:0;background:transparent;container-type:inline-size}.scene{height:440px}.glass{left:18px;right:18px;bottom:18px}.scene button{display:none}.card{margin:0}.card .scene{width:100%}@container(min-width:480px){.scene{height:440px}.glass{height:238px;padding:22px 24px;left:24px;right:24px;bottom:24px}.visual{height:120px}.micro{font-size:13px}.caption{font-size:17px}.sub{font-size:12px}}
+
+.micro{justify-content:flex-start;gap:8px}.micro .identity-icon{width:20px;height:20px;flex:0 0 20px;color:var(--accent)}
+
+/* v3b · 18 sep 2026 · Integración Max · correcciones expresas de Toño (puntos 5 y 6):
+   esquinas curvas en las 13 escenas (misma geometría) y tinte difuminado del agente (--tone, día/noche)
+   detrás del UI de cristal; se retira con el revelado (.reveal) para mostrar la ilustración sin tinte
+   y vuelve con el cristal al terminar el ciclo. Gradiente heredado de cy-mockups-cysure-v22 §2. */
+.scene{border-radius:16px;isolation:isolate}.art{border-radius:inherit}.glass{z-index:2}
+.scene::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;border-radius:inherit;opacity:1;transition:opacity .4s;background:linear-gradient(to top,color-mix(in srgb,var(--tone) 70%,transparent) 0%,color-mix(in srgb,var(--tone) 42%,transparent) 32%,color-mix(in srgb,var(--tone) 18%,transparent) 66%,color-mix(in srgb,var(--tone) 8%,transparent) 100%)}
+:host([theme="dark"]) .scene::after{background:linear-gradient(to top,color-mix(in srgb,var(--tone) 58%,transparent) 0%,color-mix(in srgb,var(--tone) 34%,transparent) 32%,color-mix(in srgb,var(--tone) 14%,transparent) 66%,color-mix(in srgb,var(--tone) 6%,transparent) 100%)}
+.card.reveal .scene::after{opacity:0}
+/* capítulos III–VI: sin tinte, como se aprobó (cy-mockups-cysure-v22 §3): ahí se ve más arte que en los agentes */
+.card:is([data-id="lead"],[data-id="score"],[data-id="alignment"],[data-id="payout"]) .scene::after{display:none}
+
+
+/* v3c · 20 sep 2026 · Cards (componentes) · esquinas del arte tras el mockup (encargo LP 20sep, componentes comunes).
+   Causa medida en pub81: en noche el host <cysure-mockup> pinta background #080f20 (regla :host([theme="dark"]) de la
+   cabecera del fichero, que gana a :host{background:transparent} por especificidad). El host es cuadrado y ocupa la misma
+   caja que .scene, así que sus esquinas asoman detrás de la escena redondeada (16px) en todos los estados: inicial,
+   secuencia, revelado y vuelta. En día el host ya era transparente y no se veía. Se retira el fondo del host en noche;
+   .scene conserva su propio fondo #16264a, radio 16px, overflow:hidden e isolation. Sin cambio de geometría ni de tema. */
+:host([theme="dark"]){background:transparent}
+
+
+/* v3d · 5 oct 2026 · Liquid Glass v7 (aprobado por Toño solo para staging). Fuente exacta: REFERENCIA-V7-AUTOCONTENIDA.html
+   + ENCARGO-TONO-V7.md. Sustituye el material de cysure-card-13-adaptado (cy-frost-proposal). Lo que la referencia no fija se
+   conserva del sitio: posición del panel (18 px / 24 px desde 480 de contenedor; lead/score/alignment 600 px a la derecha desde 800),
+   padding 18×20 / 22×24 de card-13 con inferior 22, arte, copy, tonos de agente y ciclo 3 s + 2 s.
+   Tema efectivo: día = host día sin .inverted o host noche con .inverted (payout); noche = el resto.
+   El filtro SVG lg-N lo pone cy-mockups-v6.js en estilo en línea solo en Chromium de escritorio (>991, puntero fino). */
+:host{--ink:#0E1B33;--mut:#0E1B33}:host([theme="dark"]){--ink:#fff;--mut:#fff}
+:host(:not([theme="dark"])) .scene:not(.inverted),:host([theme="dark"]) .scene.inverted{--ink:#0E1B33;--mut:#0E1B33}
+:host([theme="dark"]) .scene:not(.inverted),:host(:not([theme="dark"])) .scene.inverted{--ink:#fff;--mut:#fff}
+.scene{perspective:1200px}
+/* tinte del agente: valor de la referencia (sin recorte bajo el panel; anula la máscara de cy-mockup-tint-v1) */
+/* r3d · tinte del agente: se conserva el servido antes de r3c (cy-mockup-tint-v1 del pie de CF: 35→24→18→8 % día, 30→20→14→6 % noche,
+   solo los 9 agentes, se apaga con el revelado) y se le ajusta SOLO el hueco a la geometría v7: panel a 12 px, radio 16 = el del arte, alto real (--lg-gh),
+   hueco 3 px hacia dentro del panel (radio 13) con el borde difuminado hacia dentro (σ3) para que la flotación (−3 px) no deje una línea. Sustituye al 18→6 % de r3c. */
+:host .card .scene::after{-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cfilter id='b'%3E%3CfeGaussianBlur stdDeviation='3'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='100%25' height='100%25' rx='13' filter='url(%23b)'/%3E%3C/svg%3E") 15px calc(100% - 15px)/calc(100% - 30px) calc(var(--lg-gh,222px) - 6px) no-repeat,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cfilter id='b'%3E%3CfeGaussianBlur stdDeviation='3'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='100%25' height='100%25' rx='13' filter='url(%23b)'/%3E%3C/svg%3E") 15px calc(100% - 15px)/calc(100% - 30px) calc(var(--lg-gh,222px) - 6px) no-repeat,linear-gradient(#000 0 0);mask-composite:exclude}
+/* material: noche por defecto */
+.glass{--r:var(--lg-r,16px);border:0;border-radius:var(--r);height:auto;min-height:222px;padding:18px 20px 22px;color:var(--ink);font-weight:500;text-shadow:none;z-index:2;isolation:isolate;overflow:hidden;transform-style:preserve-3d;
+ background:linear-gradient(rgba(255,255,255,.04),rgba(255,255,255,.04)),linear-gradient(rgba(8,14,40,.06),rgba(8,14,40,.06));
+ -webkit-backdrop-filter:blur(34px) saturate(145%);backdrop-filter:blur(34px) saturate(145%);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 10px 30px rgba(0,0,0,.18)}
+@container(min-width:480px){.glass{height:auto;min-height:238px;padding:22px 24px 22px}}
+:host(:not([theme="dark"])) .scene:not(.inverted) .glass,:host([theme="dark"]) .scene.inverted .glass{background:rgba(255,255,255,.14);
+ -webkit-backdrop-filter:blur(34px) saturate(130%) brightness(1.04);backdrop-filter:blur(34px) saturate(130%) brightness(1.04);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 10px 30px rgba(20,40,80,.10)}
+.glass::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(150deg,rgba(255,255,255,.85) 0%,rgba(255,255,255,.35) 18%,rgba(255,255,255,.14) 55%,rgba(255,255,255,.32) 100%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;z-index:3;box-shadow:none}
+.glass::after{content:none}
+.glass .edge-light{position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06),inset 0 6px 10px -6px rgba(255,255,255,.35),inset 6px 0 10px -6px rgba(255,255,255,.22),inset 0 -6px 10px -6px rgba(255,255,255,.14),inset -6px 0 10px -6px rgba(255,255,255,.10)}
+:host(:not([theme="dark"])) .scene:not(.inverted) .glass .edge-light,:host([theme="dark"]) .scene.inverted .glass .edge-light{box-shadow:inset 0 0 0 1px rgba(255,255,255,.078),inset 0 6px 10px -6px rgba(255,255,255,.455),inset 6px 0 10px -6px rgba(255,255,255,.286),inset 0 -6px 10px -6px rgba(255,255,255,.182),inset -6px 0 10px -6px rgba(255,255,255,.13)}
+/* elementos internos */
+.micro{width:max-content;max-width:100%;padding:7px 12px;gap:8px}
+.glass .chip{border-radius:12px;padding:10px 14px;background-color:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.45);box-shadow:inset 0 1px 0 rgba(255,255,255,.25);backdrop-filter:none;-webkit-backdrop-filter:none}
+:host(:not([theme="dark"])) .scene:not(.inverted) .glass .chip,:host([theme="dark"]) .scene.inverted .glass .chip{background-color:rgba(255,255,255,.22)} /* r3c: background-color, no el shorthand (no pisa el velo del chip) */
+.visual{position:relative;display:block}.radar{position:absolute;left:11.785714%;top:9.090909%;width:31.428571%;height:80%}.radar svg{width:100%;height:100%}.visual>.waveform{position:absolute;inset:0}
+.glass .radar{width:76px;height:76px;border-radius:50%;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.35);box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+.glass svg *{filter:none}:host([agent="mdr"]) .glass svg *,.glass .identity-icon *{stroke-width:1.5px} /* r3: 1.5 px de la referencia en MDR e iconos; las demás plantillas conservan los trazos de sus figuras aprobadas */
+.caption,.sub,.micro{position:relative;z-index:4}
+.glass .visual{z-index:1;height:87px;margin:6px 0}
+@container(min-width:480px){.glass .visual{height:95px;margin:6px 0}}
+.micro,.caption,.sub{color:var(--ink);text-shadow:none}
+/* conserva lo vigente de card-13 (legibilidad, no material): cifra grande en tinta principal */
+.svgbig{fill:var(--ink)!important}.identity-icon{stroke-width:1.5px!important}
+.micro,.caption{font-family:"Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:500}
+.sub{font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:400}
+/* animación: entrada 3D al primer 60 % visible (v6.js), flotación solo en viewport y fuera de .reveal */
+@keyframes lgIn{from{opacity:0;transform:rotateX(12deg) rotateY(-8deg) translateY(20px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes lgFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes lgFade{from{opacity:0}}
+:host([data-lg="pre"]) .glass{opacity:0}
+:host([data-lg="in"]) .glass{animation:lgIn 1000ms cubic-bezier(.16,1,.3,1) both;will-change:transform,opacity}
+:host([data-lg="float"]) .glass{animation:lgFloat 7s ease-in-out infinite;animation-play-state:paused}
+:host([data-lg="float"][data-lg-run]) .card:not(.reveal):not(.cy-flota-hold) .glass{animation-play-state:running;will-change:transform}
+.card.reveal .glass{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){:host([data-lg="in"]) .scene .glass{animation:lgFade .4s both!important;will-change:auto}:host([data-lg="float"]) .scene .glass{animation:none!important;will-change:auto!important}}
+:host([data-lg-capture]) .scene .glass{animation:none!important;opacity:1!important;transform:none!important}
+/* r3 · fidelidad a la referencia v7 (REQUISITO-FIDELIDAD-TONO) + velo de lectura sin halo.
+   (1) Panel a 20 px de la escena en todos los anchos, como la referencia (512×238 en una escena de 552). El delta de escritorio
+       de lead/score/alignment (600 px a la derecha) sigue mandando por especificidad.
+   (2) El velo de r2 (::before que sobresalía 6–18 px alrededor del chip y de los textos) se veía como sombra/halo: retirado.
+       Ahora: chip = capa de color DENTRO de su propio fondo (bajo su borde .45 y su inset .25, sin salirse);
+       título+subtítulo = franja inferior a todo el ancho del vidrio que entra con un degradado de 18 px (sin bordes laterales);
+       etiquetas SVG = elipse radial difusa. Intensidad mínima medida POR CARD y TEMA (0 en mdr, redteam, correo, explorador, payout):
+       el vidrio v7 queda intacto donde no hace falta. */
+/* r3d · pedido de Toño: radio del vidrio = radio efectivo visible del arte (border-radius de .scene/.art, medido 16 px en 1440/1024/768/390;
+   ningún ancestro recorta con otro radio). v6 lo lee de la escena y lo publica en --lg-r (mapa del filtro, ::before, .edge-light, velos usan --r).
+   Card más ancha: márgenes laterales e inferior simétricos de 12 px (antes 20). Paneles a la derecha de lead/score/alignment (contenedor ≥800):
+   640 px (antes 600) a 12 px del borde derecho, sin invadir la figura de la izquierda. */
+.glass{left:12px;right:12px;bottom:12px}
+@container(min-width:800px){:host .card:is([data-id="lead"],[data-id="score"],[data-id="alignment"]) .glass{left:auto;right:12px;width:min(640px,calc(100% - 24px))}}
+/* r3f · 6 oct 2026 · decisión de Toño: fuera la franja (.lg-band), el velo inferior (.lg-scrim) y el velo del chip; el vidrio queda v7.
+   La legibilidad AA va pegada a cada glifo, del color de lectura del tema (noche rgb(8,14,40), día blanco; invertido = el del otro tema):
+   SVG = trazo bajo el relleno (paint-order:stroke), HTML = halo fino (text-shadow sin desplazamiento). Sin cajas ni bandas.
+   Alfa por card y tema en --lg-h-*; 0 = sin halo. */
+:host{--lg-h-txt-d:0;--lg-h-txt-n:0;--lg-h-svg-d:0;--lg-h-svg-n:0;--lg-h-sw:2px}
+:host(:not([theme="dark"])) .scene:not(.inverted),:host([theme="dark"]) .scene.inverted{--lg-veil-rgb:255,255,255;--lg-h-txt:var(--lg-h-txt-d);--lg-h-svg:var(--lg-h-svg-d)}
+:host([theme="dark"]) .scene:not(.inverted),:host(:not([theme="dark"])) .scene.inverted{--lg-veil-rgb:8,14,40;--lg-h-txt:var(--lg-h-txt-n);--lg-h-svg:var(--lg-h-svg-n)}
+.glass>.lg-band,.glass>.lg-scrim,.glass svg .lg-veil{display:none!important}
+.glass,.glass .micro,.glass .caption,.glass .sub{text-shadow:0 0 1px rgba(var(--lg-veil-rgb),var(--lg-h-txt)),0 0 3px rgba(var(--lg-veil-rgb),var(--lg-h-txt))}
+.glass svg text{paint-order:stroke fill;stroke:rgba(var(--lg-veil-rgb),var(--lg-h-svg));stroke-width:var(--lg-h-sw);stroke-linejoin:round;text-shadow:none} /* text-shadow se hereda y Chromium lo pinta en <text>: el SVG lleva solo su trazo */
+/* alfas = el menor de {.4/.5, .6/.7} que pasa en los 4 casos (qa/mide_aa.py, 13 cards × día/noche × 1440/390, peor 5 % bajo el trazo): solo las cards cuyo texto no llega a AA sin velo.
+   d = día (halo blanco), n = noche (halo rgb(8,14,40)). mdr, explorador, correo, redteam y payout no lo necesitan (0). */
+:host([agent="superficie"]){--lg-h-txt-n:.4;--lg-h-txt-d:.5}
+:host([agent="nube"]){--lg-h-txt-d:.5}
+:host([agent="auditoria"]){--lg-h-txt-n:.6}
+:host([agent="vendor"]){--lg-h-txt-d:.5}
+:host([agent="gasto"]){--lg-h-txt-n:.4}
+:host([agent="lead"]){--lg-h-txt-d:.7;--lg-h-svg-d:.35;--lg-h-txt-n:.4}
+:host([agent="score"]){--lg-h-txt-n:.4;--lg-h-svg-n:.35;--lg-h-txt-d:.5}
+:host([agent="alignment"]){--lg-h-txt-n:.4;--lg-h-svg-n:.35}
+/* único texto que no llega con el halo de su card: auditoria noche, .sub «Documentos vinculados entre sí.» (11 px, 1440): 4,10 con .6 y 4,45 con .9.
+   Solo a él: contorno de 0,6 px pegado al glifo (.9) + el mismo halo suave de 3 px (.8) -> 4,74. */
+:host([agent="auditoria"][theme="dark"]) .scene:not(.inverted) .glass .sub{text-shadow:.6px 0 0 rgba(var(--lg-veil-rgb),.9),-.6px 0 0 rgba(var(--lg-veil-rgb),.9),0 .6px 0 rgba(var(--lg-veil-rgb),.9),0 -.6px 0 rgba(var(--lg-veil-rgb),.9),0 0 3px rgba(var(--lg-veil-rgb),.8)}
+/* r3f · decisión de Toño: sin el marco lechoso de 14 px alrededor del arte en los mockups III–VI. Lo inyectan st-pages v98 frostMock()
+   y el bloque D1 dentro de este shadow (.art>.cy-frost-*); se oculta aquí, así que solo afecta a los mockups. El resto del sitio conserva su vidrio. */
+/* v3i 6 oct: el marco frosted de st-pages (frostMock) se ve en los capitulos III-VI (lead, score, alignment, payout) por pedido de Tono; sin exclusion. Rollback: v3h */
+
+/* r3 · figuras aprobadas de card-13 (contenido) sin su material. Origen: cysure-card-13-adaptado.js (6ac31f8c…), reglas de figura
+   des-condicionadas de [data-cy-frost]. NO se portan: sombras/borde/::before/::after del vidrio, --glass, caja del icono,
+   tracking del chip, peso 600 del título ni la rejilla (los fija v7). Paleta --fx-* igual que card-13. */
+:host(:not([theme="dark"])) .scene:not(.inverted),:host([theme="dark"]) .scene.inverted{--fx-relief:rgba(176,192,222,.45);--fx-line:rgba(255,255,255,.85);--fx-bottom:rgba(80,106,155,.22);--fx-glow:rgba(255,255,255,.32);--fx-wash:rgba(255,255,255,.28);--fx-paper:rgba(247,251,255,.60);--fx-line-inner:rgba(255,255,255,.58)}
+:host([theme="dark"]) .scene:not(.inverted),:host(:not([theme="dark"])) .scene.inverted{--fx-relief:rgba(159,176,255,.22);--fx-line:rgba(215,231,255,.48);--fx-bottom:rgba(13,25,53,.42);--fx-glow:rgba(159,176,255,.14);--fx-wash:rgba(185,210,255,.12);--fx-paper:rgba(193,217,255,.17);--fx-line-inner:rgba(225,239,255,.28)}
+.fx-detail{pointer-events:none}.fx-baseline{display:none}.fx-retained{display:inline}
+.paper{fill:var(--fx-paper)}
+.fx-hair{stroke:var(--tone);stroke-width:.7;fill:none;opacity:.32}
+.fx-inlay{stroke:var(--fx-line-inner);stroke-width:.7;fill:none}
+.fx-wash{fill:var(--tone);opacity:.06}.fx-point{fill:var(--tone);opacity:.65}.fx-highlight{fill:var(--fx-line);opacity:.8}.fx-packet{fill:var(--tone);opacity:0}
+.fx-disc,.fx-surface{fill:var(--fx-paper);stroke:var(--fx-line-inner);stroke-width:1}
+.fx-grid{fill:none;stroke:var(--tone);stroke-width:.75;opacity:.40}
+.fx-route{fill:none;stroke:var(--ink);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.fx-area{fill:var(--tone);opacity:.085}.fx-halo{fill:var(--tone);opacity:.16;stroke:var(--tone);stroke-width:.7}
+.fx-core{fill:var(--tone);stroke:var(--ink);stroke-width:.5}.fx-dot{fill:var(--tone);opacity:.38}
+.fx-building,.fx-document,.fx-bank,.fx-selected-icon{fill:none;stroke:var(--tone);stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}
+.fx-detail-line{fill:none;stroke:var(--tone);stroke-width:1;opacity:.35;stroke-linecap:round}.fx-selected{stroke:var(--tone);stroke-width:1.3}
+.fx-retained .paper{fill:var(--fx-paper);stroke:var(--fx-line-inner);stroke-width:1.1}
+.fx-retained .signal{stroke:var(--ink);stroke-linecap:round;stroke-linejoin:round}
+.fx-retained .track{stroke:var(--tone);opacity:.58;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.15}
+.fx-retained .soft{stroke:var(--fx-line-inner);stroke-width:.7}
+.card.running .fx-scan{transform-origin:77px 54px;animation:fx-scan 2.7s cubic-bezier(.2,.6,.25,1) both}
+.card.running .fx-node,.card.running .fx-core{animation:fx-node 2.5s ease both}
+.card.running .fx-packet{animation:fx-transfer 2.3s .15s ease both}
+.card.running .fx-route{stroke-dasharray:320;stroke-dashoffset:320;animation:fx-route-in 1.4s .15s ease forwards}
+@keyframes fx-scan{from{transform:rotate(-75deg);opacity:0}25%{opacity:1}to{transform:rotate(0);opacity:1}}
+@keyframes fx-node{0%,18%{opacity:.1}50%,100%{opacity:1}}
+@keyframes fx-transfer{0%{opacity:0;transform:translateX(0)}25%{opacity:1}90%{opacity:1}100%{opacity:0;transform:translateX(72px)}}
+@keyframes fx-route-in{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.fx-detail *{animation:none!important;stroke-dashoffset:0!important}}
+@container (max-width:300px){:host([agent="payout"]) .glass .visual{height:calc((100cqw - 70px) * .3929);margin:6px 0}}
+
+/* r3g · 6 oct 2026 · pedido de Tono: sin tinte difuminado del agente detras del UI (::after de la escena de v3f y cy-mockup-tint-v1 del pie de CF); la ilustracion original luce tal cual. El material Liquid Glass del panel (.glass, borde, edge-light, halo de glifo) no cambia. Rollback: v3f. */
+:host .card.card .scene::after{display:none!important}
+/* r3g · el panel solo transiciona la opacidad al entrar en el revelado (la unica desaparicion); fuera de el, el cambio de la entrada 3D a la flotacion ya no deja un baje de opacidad residual (medido en WebKit 390: 1 -> 0,77 -> 1 en ~300 ms) */
+:host .card:not(.reveal) .glass{transition-property:transform,translate}
+:host .card.reveal .glass{transition:opacity .4s,transform .4s,translate .4s}
+/* r3g · estado final del ciclo (v6g .cy-fin): el panel queda oculto aunque un tercero quite .reveal (cy-arte28 v17 al cambiar el tema) */
+:host .card.cy-fin .glass{opacity:0!important;translate:0 12px;animation-play-state:paused!important}
