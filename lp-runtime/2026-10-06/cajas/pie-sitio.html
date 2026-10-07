@@ -1,0 +1,448 @@
+<!-- Cysure | pie-sitio-10.14 (4 oct 2026: st-pages v91, contorno D1; script de sizes v2) sobre pie-sitio-10.13 (1 oct 2026: st-pages v90, cierre de los articulos del blog con el vidrio y el carrusel de los bloques) sobre pie-sitio-10.12 (1 oct 2026: st-pages v89, el hero de Home movil ya no se funde dos veces al cargar) sobre pie-sitio-10.11 (1 oct 2026: st-pages v88, cierre LP: frosted de ilustraciones con la banda de relieve de los bloques (14 px), esquinas del carrusel del blog recortadas a sus tarjetas, La ruta sin lente, lentes colocadas en lote para la carga) sobre pie-sitio-10.10 (30 sep 2026: st-pages v84, frosted algo mas suave dentro de las ilustraciones; fundida de tema igual a v82) sobre pie-sitio-10.09 (30 sep 2026: st-pages v82, en Safari y iOS la fundida de tema vuelve como View Transition del documento que sigue al scroll, sin transiciones por elemento) sobre pie-sitio-10.08 (30 sep 2026: st-pages v79, en Safari y iOS el cambio de tema no crea transiciones; Chromium conserva el fundido) sobre pie-sitio-10.07 (30 sep 2026: st-pages v78, secciones fuera de pantalla sin fundido de tema y repintado tras la fundida para Safari; franjas de la lupa armadas en un solo lote fuera del scroll) sobre pie-sitio-10.06 (30 sep 2026: st-pages v77, cierre de la fundida de tema para Safari: fondos y titulos ya no se quedan en el tema anterior tras navegar y hacer scroll) sobre pie-sitio-10.05 (30 sep 2026: st-pages v76, frosted algo mas suave y lupa Liquid Glass continua hacia el centro) sobre pie-sitio-10.04 (30 sep 2026: st-pages v75, parallax reducido y sin escala, titulos moviles sin text-shadow animado, frosted con velo visible en todas las ilustraciones) sobre pie-sitio-10.03 (30 sep 2026: st-pages v74, parallax del hero en el compositor, frosted en todas las ilustraciones con la lente en su marco, alcance 46 px) sobre pie-sitio-10.02 (30 sep 2026: st-pages v73, el pintor nocturno respeta el mensaje verde del formulario) sobre pie-sitio-10.01 (30 sep 2026: st-pages v72, parallax del hero mas marcado y frosted tipo lupa) sobre pie-sitio-10.00 (30 sep 2026: st-pages v71, frosted Atalayas y bloques con ilustracion, Blog movil en tira con rombos) sobre pie-sitio-9.99 (29 sep 2026: cy-dither v13, sin precalentado automatico de las atalayas retina) sobre pie-sitio-9.98 (29 sep 2026: st-pages v69, frosted en la ilustracion del capitulo VI de Como funciona) sobre pie-sitio-9.97 (29 sep 2026: st-pages v68, carrusel del Blog movil con tarjetas sueltas) sobre pie-sitio-9.96 (29 sep 2026: st-pages v67, frost maximo en extremo con desvanecido continuo) sobre pie-sitio-9.95 (29 sep 2026: st-pages v66, borde frosted suave en ilustraciones y capitulos III-V) sobre pie-sitio-9.94 (29 sep 2026: st-pages v65, lente recolocada sobre su imagen) sobre pie-sitio-9.93 (29 sep 2026: st-pages v64, lente de ilustraciones con lupa real en el anillo) sobre pie-sitio-9.92 (29 sep 2026: st-pages v63, carruseles sin marco y lentes en ilustraciones) sobre pie-sitio-9.91 (29 sep 2026: st-pages v62, cierre nocturno P06/P09/P10/P17) sobre pie-sitio-9.90 (28 sep 2026: st-pages v61, vidrio esmerilado en toda la superficie; el wordmark movil pasa a cy-botones-v6) sobre pie-sitio-9.89 (28 sep 2026: st-pages v60, vidrio por curvatura mate del borde y esquinas de portadas) sobre pie-sitio-9.88 (28 sep 2026: st-pages v59, profundidad mate de bloques y serif por seccion) sobre pie-sitio-9.87 (st-pages v58) sobre pie-sitio-9.86 (HT27b 27 sep 2026: cy-dither-ui v12 + cy-arte-map v37, gemelas sin variantes -p-N con un unico candidato real; Hermes movil noche sin 403) sobre pie-sitio-9.85 (HT27 27 sep 2026: cy-arte-map v36, Hermes movil noche sin disco) sobre pie-sitio-9.84 | pie-sitio-9.83 (CM02+CM05 26 sep 2026) sobre pub96-rebase pie-sitio-9.82.html | src:b53d4cb83ef7faf3 | comments-only-c1 -->
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ab8965070fc0e6b4656c59a_cy-arte-map-v37.js"></script>
+
+
+<script src="https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ac3a19df0d0ae6b2ead0689_cy-alt-es-v6.js"></script>
+
+
+<script src="https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6abc44db4bde6e20af66f0ab_cy-dither-ui-wf-v13.js"></script>
+
+
+<script src="https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ab83fae4b0daba98ef25aaa_pubs-stealth-v20.js"></script>
+
+
+<script src="https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa68c8df0d416e48bb052d7_stealth-webflow-wf-v18.js"></script>
+
+
+
+<script src="https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ac4d7da72204f5e382f829f_st-pages-v99.js"></script>
+
+
+
+<script src="https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aad133ad5c8aaed56346fb1_st-a11y-v4.js"></script>
+
+
+<script src="https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa6a089e6511bf076a94734_st-fig-v5.js"></script>
+
+
+<style>
+/* 9.1 */
+html:root .st-mb [data-cy-lang] :is([data-st-carr],[data-st-pubs],[data-st-blq])>.st-n[data-st-auton]{display:block!important}
+/* 9.2 */
+[data-st-burger][aria-expanded="true"] svg{overflow:visible}
+/* 9.3 */
+html:root[data-wf-page="6a553f8e569e3148ffc68445"] .st-mb .st-i-7eec58fa{position:static!important;transform:none!important;align-self:center!important;margin:34px 0 0!important}
+/* 9.3 · 9.81 hero-espaciado v1c: <=680 el cue Home queda a 20 px del ultimo CTA (gap 34 del padre - 14) */
+@media (max-width:680px){html:root[data-wf-page="6a553f8e569e3148ffc68445"] .st-mb .st-i-7eec58fa{margin:-14px 0 0!important}}
+/* 9.4 */
+html:root:not([data-cy-theme="noche"]):is([data-wf-page="6a553f8e569e3148ffc68445"],[data-wf-page="6a945828e0a2510ab8ed4069"],[data-wf-page="6a70a47f984c1cfa9f999a5e"]) body :is(.st-dt,.st-mb) [data-cy-lang] [data-st-hero] a[data-st-cta].cy-dbtn-white.cy-dbtn-white.cy-dbtn-white:not([data-st-nav-cta]):not(:hover):not(:focus-visible){border-color:transparent!important}
+/* 9.5 */
+html:root[data-wf-page="6a553f8e569e3148ffc68445"] .st-dt [data-st-nav] a.cy-dchip[href="#top"]{display:none!important}
+/* bitacora 9.5b NAV-992-ES */
+.st-dt [data-st-nav] a.cy-dchip[href="/"][href]{display:flex!important}
+/* 9.6 */
+@media (min-width:992px){
+html:root body .st-dt [data-cy-lang] .st-i-c6ee35da{padding-top:clamp(6px,1vh,12px)!important;padding-bottom:clamp(6px,1.1vh,16px)!important}
+html:root body .st-dt [data-cy-lang] .st-i-c6ee35da .st-i-61cdc545{margin-bottom:clamp(5px,0.9vh,14px)!important}
+html:root body .st-dt [data-cy-lang] .st-i-e5fab0d2{font-size:clamp(38px,4.8vh,60px)!important;line-height:1.06!important}
+html:root body .st-dt [data-cy-lang] .st-i-11571b59{font-size:clamp(19px,2.4vh,28px)!important;line-height:1.3!important}
+html:root body .st-dt [data-cy-lang] .st-i-7af49ec3{--grid-frame-x:clamp(12px,1.8vw,134px)!important}
+html:root body .st-dt [data-cy-lang] .st-i-4184068a{--grid-content-pad:clamp(8px,0.8vw,44px)!important}
+html:root body .st-dt [data-cy-lang] [data-st-card3][data-st-card3]{top:clamp(206px,23vh,246px)!important;max-height:calc(100vh - clamp(230px,25.6vh,272px))!important}
+html:root body .st-dt [data-cy-lang] [data-st-card3][data-st-card3] .st-i-b84d4cee{aspect-ratio:2.15!important}
+html:root body .st-dt [data-cy-lang] [data-st-card3][data-st-card3]>*:last-child{padding-top:clamp(9px,1.3vh,20px)!important;padding-bottom:clamp(9px,1.3vh,20px)!important}
+html:root body .st-dt [data-cy-lang] [data-st-card3][data-st-card3] .st-i-f95dba2b{font-size:clamp(17px,2.1vh,28px)!important}
+html:root body .st-dt [data-cy-lang] [data-st-card3][data-st-card3] .st-i-9323d567{font-size:clamp(20px,2.6vh,34px)!important;line-height:1.12!important}
+html:root body .st-dt [data-cy-lang] [data-st-card3][data-st-card3] .st-i-cc11c3f7 :is(p,div,span){font-size:clamp(11px,1.35vh,14px)!important;line-height:1.42!important}
+}
+/* 9.7 */
+@media (min-width:992px){
+html:root body .st-dt [data-cy-lang] [data-st-nav] [role="group"]:is([aria-label="Idioma"],[aria-label="Language"]){width:76px!important;min-width:76px!important}
+html:root body .st-dt [data-cy-lang] [data-st-nav] [role="group"]:is([aria-label="Idioma"],[aria-label="Language"]) a.cy-lang-btn{font-size:0!important;letter-spacing:0!important;gap:0!important;padding-left:0!important;padding-right:0!important;justify-content:center!important;flex:1 1 0!important;min-width:0!important}
+}
+/* 9.8 */
+@media (max-width:991px){
+html:root body .st-mb [data-cy-lang] #cys-menu-panel [role="group"]:is(:is([aria-label="Idioma"],[aria-label="Language"]),:is([aria-label="Tema"],[aria-label="Theme"])){width:108px!important;min-width:108px!important}
+html:root body .st-mb [data-cy-lang] #cys-menu-panel [role="group"]:is([aria-label="Tema"],[aria-label="Theme"]) a.cy-tgb{flex:1 1 0!important;min-width:0!important}
+}
+/* 9.9 */
+html:root:not([data-cy-theme="noche"]) body [data-cy-lang] :is(.st-i-11571b59,.st-i-1d895953,.st-i-a65dee09,.st-i-4ba7f2db,.st-i-daa9339c,.st-i-c8e7677a,.st-i-cfdfd0c8,.st-i-f57ec11e,.st-i-14fd0ab8,.st-i-9b69824e,.st-i-7ffe1bb8,.st-i-b00027c5,.st-i-5637a86d,.st-i-71896b84,.st-i-24b95bdb,.st-i-c8b552a7,.st-i-6076378f,.st-i-06cbe78b,.st-i-84509485,.st-i-bfa03e44):not(:where(a[href^="mailto:"],.st-i-7a2e103f *)):not(.cy-dbtn):not(.cy-dbtn *):not(.cy-lang-btn):not(.cy-lang-btn *):not(.cy-tgb):not(.cy-tgb *):not(.cy-dchip):not(.cy-dchip *),
+html:root:not([data-cy-theme="noche"]) body [data-cy-lang] :is(.st-i-11571b59,.st-i-1d895953,.st-i-a65dee09,.st-i-4ba7f2db,.st-i-daa9339c,.st-i-c8e7677a,.st-i-cfdfd0c8,.st-i-f57ec11e,.st-i-14fd0ab8,.st-i-9b69824e,.st-i-7ffe1bb8,.st-i-b00027c5,.st-i-5637a86d,.st-i-71896b84,.st-i-24b95bdb,.st-i-c8b552a7,.st-i-6076378f,.st-i-06cbe78b,.st-i-84509485,.st-i-bfa03e44) *:not(:where(a[href^="mailto:"],a[href^="mailto:"] *,[style*="--st-tag"],[style*="--st-tag"] *,.st-i-7a2e103f,.st-i-7a2e103f *)):not(.cy-dbtn):not(.cy-dbtn *):not(.cy-lang-btn):not(.cy-lang-btn *):not(.cy-tgb):not(.cy-tgb *):not(.cy-dchip):not(.cy-dchip *){
+color:rgb(90,96,104)!important}
+/* 9.10 */
+html:root[data-cy-theme="noche"]{--cy-faint:#8F98AB}
+/* 9.11 */
+html:root:not([data-cy-theme="noche"]):is([data-wf-page="6a563da99c6f0e301c15632d"],[data-wf-page="6a563728806b5b7a10c17693"]) .st-dt [data-st-nav][data-scrolled="0"] [data-st-navmid] a[data-st-here]:not(:hover):not(:focus-visible) span{color:rgb(48,72,210)!important}
+/* 9.12 */
+html:root:not([data-cy-theme="noche"]) body [data-cy-lang] form :is(input,textarea)::placeholder{color:rgb(90,96,104)!important;opacity:1!important}
+/* 9.13 */
+@media (max-width:359px){
+html:root body .st-mb .st-i-ed3db7a7{grid-template-columns:minmax(0,1fr)!important}
+}
+/* 9.14 */
+@media (max-width:991px){
+html:root body .st-mb .st-i-e9d13a14{grid-template-columns:minmax(0,1fr)!important}
+}
+/* 9.15 */
+@media (min-width:681px) and (max-width:743px){
+html:root body .st-dt [data-cy-lang] [data-st-nav] [role="group"]:is(:is([aria-label="Idioma"],[aria-label="Language"]),:is([aria-label="Tema"],[aria-label="Theme"])){width:76px!important;min-width:76px!important}
+html:root body .st-dt [data-cy-lang] [data-st-nav] [role="group"]:is([aria-label="Idioma"],[aria-label="Language"]) a.cy-lang-btn{font-size:0!important;letter-spacing:0!important;gap:0!important;padding-left:0!important;padding-right:0!important;justify-content:center!important;flex:1 1 0!important;min-width:0!important}
+html:root body .st-dt [data-cy-lang] [data-st-nav] [role="group"]:is([aria-label="Tema"],[aria-label="Theme"]) a.cy-tgb{flex:1 1 0!important;min-width:0!important}
+html:root body .st-dt [data-cy-lang] [data-st-nav] [data-st-navmid] a.cy-dchip{padding:0 3px!important;font-size:11.5px!important}
+html:root body .st-dt [data-cy-lang] [data-st-nav] a.cy-dbtn{padding-left:12px!important;padding-right:12px!important;min-width:0!important}
+}
+</style>
+
+
+<style>
+/* 9.75: reglas de serif del hero de Home movidas a la cabecera 23 (bloque 4g cy-serif-critico); aqui queda solo la regla de img */
+@media (max-width:991px){
+html:root body .st-mb [data-cy-lang] [data-st-hero] img{transform:none!important;will-change:auto!important}
+}
+</style>
+
+
+<style>
+/* 9.19 y 9.20 */
+</style>
+
+<script>(function(){var f=function(){try{if(window.Webflow&&Webflow.scroll&&Webflow.scroll.off){Webflow.scroll.off();}}catch(e){}};if(window.Webflow&&Webflow.push){Webflow.push(f);}else{document.addEventListener('DOMContentLoaded',f);}})();</script>
+
+
+<style>
+/* 9.22 */
+@media (max-width:991px){
+html:root body .st-mb [data-cy-lang] #cys-menu-panel :is(a.cy-tgb,a[data-lang-btn]):is(:hover,:focus,:active,:focus-visible){background-image:none!important;box-shadow:none!important}
+html:root body .st-mb [data-cy-lang] #cys-menu-panel :is(a.cy-tgb,a[data-lang-btn])[aria-pressed="false"]:is(:hover,:focus,:active){background-color:transparent!important}
+}
+/* 9.23 */
+@media (max-width:339px){
+html:root body .st-mb [data-cy-lang] [data-st-nav] a[data-st-cta][data-st-nav-cta]{padding:0 8px!important;gap:4px!important;font-size:13px!important}
+}
+/* 9.24 */
+@media (min-width:992px) and (max-width:1060px){
+html:root body .st-dt [data-cy-lang] [data-st-nav] [role="group"][aria-label]:is(.cy-tgw,:has(>[data-lang-btn])){width:91px!important;min-width:91px!important}
+}
+@media (min-width:992px){
+html:root body .st-dt [data-cy-lang] [data-st-nav] a[data-st-cta][data-st-nav-cta]{width:auto!important;min-width:0!important;padding:0 11px!important;gap:6px!important}
+}
+@media (min-width:1061px){
+html:root body .st-dt [data-cy-lang] [data-st-nav] [role="group"][aria-label]:is(.cy-tgw,:has(>[data-lang-btn])){width:64px!important;min-width:64px!important}
+html:root body .st-dt [data-cy-lang] [data-st-nav] [role="group"][aria-label]:has(>[data-lang-btn]) a.cy-lang-btn{font-size:0!important;letter-spacing:0!important;gap:0!important;padding-left:0!important;padding-right:0!important;justify-content:center!important;flex:1 1 0!important;min-width:0!important}
+html:root body .st-dt [data-cy-lang] [data-st-nav] .cy-tgw a.cy-tgb{flex:1 1 0!important;min-width:0!important;width:auto!important}
+html:root body .st-dt [data-cy-lang] :is(a.cy-dbtn,a.cy-dbtn-white)[data-st-cta]:not([data-st-nav-cta]){padding:0 16px!important;gap:10px!important}
+}
+@media (max-width:991px){
+html:root body .st-mb [data-cy-lang] #cys-menu-panel [role="group"][aria-label]:is(.cy-tgw,:has(>[data-lang-btn])){width:108px!important;min-width:108px!important}
+html:root body .st-mb [data-cy-lang] #cys-menu-panel [role="group"][aria-label]:has(>[data-lang-btn]) a.cy-lang-btn{flex:1 1 0!important;min-width:0!important;padding:0 6px!important;gap:4px!important;font-size:11.5px!important;justify-content:center!important}
+html:root body .st-mb [data-cy-lang] #cys-menu-panel .cy-tgw a.cy-tgb{flex:1 1 0!important;min-width:0!important}
+}
+</style>
+
+
+<style>
+html:root :is(.st-dt,.st-mb) [data-cy-lang] :is([data-screen-label],footer) img[data-st-img]{transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform 1.1s cubic-bezier(.2,.7,.2,1);transform-origin:50% 55%}
+html:root :is(.st-dt,.st-mb) [data-cy-lang] :is([data-screen-label],footer) img[data-st-img]:not([data-st-img="ok"]){opacity:0;transform:scale(.965)}
+@media (prefers-reduced-motion: reduce){
+html:root :is(.st-dt,.st-mb) [data-cy-lang] :is([data-screen-label],footer) img[data-st-img],
+html:root :is(.st-dt,.st-mb) [data-cy-lang] :is([data-screen-label],footer) img[data-st-img]:not([data-st-img="ok"]){opacity:1!important;transform:none!important;transition:none!important}
+}
+</style>
+<script>(function(){var SEL='[data-cy-lang] :is([data-screen-label],footer) img:not([data-st-hero] img):not(nav img):not([src$=".svg"]):not([data-ody-logo])';var ok=function(i){i.setAttribute('data-st-img','ok');};var listo=function(i){return i.complete&&i.naturalWidth>0;};var marca=function(i){if(!i.hasAttribute('decoding'))i.decoding='async';if(!i.hasAttribute('data-st-img'))i.setAttribute('data-st-img',listo(i)?'ok':'1');};document.addEventListener('load',function(e){var t=e.target;if(t&&t.tagName==='IMG'&&t.matches(SEL))ok(t);},true);document.addEventListener('error',function(e){var t=e.target;if(t&&t.tagName==='IMG'&&t.matches(SEL))ok(t);},true);var pasa=function(){document.querySelectorAll(SEL).forEach(marca);};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',pasa);else pasa();})();</script>
+
+
+<style>
+/* A-01 */
+html:root [data-cy-lang] [data-st-dot][data-st-dot][data-st-dot]{padding-left:9px!important;padding-right:9px!important}
+/* A-02 */
+html:root [data-cy-lang] :is([data-st-carr],.st-bio)[tabindex]:focus-visible{outline:2px solid var(--st-tag,#3B5BFF)!important;outline-offset:-2px!important;border-radius:14px}
+html:root[data-cy-theme="noche"] [data-cy-lang] :is([data-st-carr],.st-bio)[tabindex]:focus-visible{outline-color:#9FB0FF!important}
+/* CT-01 */
+html:root:not([data-cy-theme="noche"]) body .st-mb [data-cy-lang] #cys-menu-panel a[data-lang-btn][aria-pressed="false"],
+html:root:not([data-cy-theme="noche"]) body .st-mb [data-cy-lang="es"] #cys-menu-panel a[data-lang-btn="en"],
+html:root:not([data-cy-theme="noche"]) body .st-mb [data-cy-lang]:not([data-cy-lang="es"]) #cys-menu-panel a[data-lang-btn="es"]{color:rgb(90,96,104)!important}
+/* F-1 -> cabecera 23 (4g) */
+/* F-2 */
+html:root body .st-mb [data-cy-lang] #cys-menu-panel{max-height:calc(100vh - 68px)!important;max-height:calc(100dvh - 68px)!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch}
+/* F-4 */
+@media (prefers-reduced-motion:reduce){html:root .cy-dec{animation:none!important;clip-path:none!important;filter:none!important}}
+/* F-5 */
+/* F-6 */
+@media (hover:none){
+html:root body .st-mb [data-cy-lang] .st-i-fd9273fa:hover:not(.bio-open):not(:focus-within) .st-bio{opacity:0!important;pointer-events:none!important}
+}
+/* F-8 */
+</style>
+
+
+<style>
+/* T-01b em.cy-dser (3 reglas + T-01b-3 v2) -> cabecera 23 (4g); aqui quedan las reglas de tags/lineas y T-01c */
+html:root body :is(.st-dt,.st-mb) [data-cy-lang] :is(.st-i-61cdc545,.st-i-2e999158,.st-i-89390c51,.st-i-936f7f89):is(.st-i-61cdc545,.st-i-2e999158,.st-i-89390c51,.st-i-936f7f89):is(.st-i-61cdc545,.st-i-2e999158,.st-i-89390c51,.st-i-936f7f89){--st-actline:var(--st-prog,#29487B);color:var(--st-prog,#29487B)!important;border-color:rgba(41,72,123,.4)!important;background-color:rgba(41,72,123,.07)!important}
+html:root[data-cy-theme="noche"] body :is(.st-dt,.st-mb) [data-cy-lang] :is(.st-i-61cdc545,.st-i-2e999158,.st-i-89390c51,.st-i-936f7f89):is(.st-i-61cdc545,.st-i-2e999158,.st-i-89390c51,.st-i-936f7f89):is(.st-i-61cdc545,.st-i-2e999158,.st-i-89390c51,.st-i-936f7f89),
+html:root:not([data-cy-theme="noche"]) body :is(.st-dt,.st-mb) [data-cy-lang] :is([data-cy-arte="invert"],[data-screen-label^="Capítulo VI,"]) :is(.st-i-61cdc545,.st-i-2e999158,.st-i-89390c51,.st-i-936f7f89):is(.st-i-61cdc545,.st-i-2e999158,.st-i-89390c51,.st-i-936f7f89):is(.st-i-61cdc545,.st-i-2e999158,.st-i-89390c51,.st-i-936f7f89){--st-actline:#9FB0FF;color:#9FB0FF!important;border-color:rgba(159,176,255,.4)!important;background-color:rgba(159,176,255,.12)!important}
+html:root[data-cy-theme="noche"] body :is(.st-dt,.st-mb) [data-cy-lang] :is([data-cy-arte="invert"],[data-screen-label^="Capítulo VI,"]) :is(.st-i-61cdc545,.st-i-2e999158,.st-i-89390c51,.st-i-936f7f89):is(.st-i-61cdc545,.st-i-2e999158,.st-i-89390c51,.st-i-936f7f89):is(.st-i-61cdc545,.st-i-2e999158,.st-i-89390c51,.st-i-936f7f89){--st-actline:#2740C9;color:#2740C9!important;border-color:rgba(39,64,201,.4)!important;background-color:rgba(39,64,201,.07)!important}
+/* T-01c · 15 sep 2026, revision de Astra sobre el mismo hallazgo 4: con la regla de arriba, el Acto II invertido de Home conservaba tag y linea en
+   #2740C9 mientras su serif pasaba a #29487B. Se lleva el chip a la misma familia de azul que el serif, SOLO en esa seccion clara de noche.
+   Alcance: los dos arboles, #thesis-dt y #thesis-mb. El candidato de Astra solo traia #thesis-mb porque su fichero entero vive dentro de
+   @media (max-width:991px); la regla que se corrige arriba NO esta acotada por breakpoint, asi que dejarlo solo en movil dejaria el escritorio con
+   serif #29487B y chip #2740C9. Se extiende por coherencia y queda anotado para VoBo de Astra.
+   Medido sobre las capturas servidas: en Home los unicos [data-cy-arte="invert"] son esos dos contenedores, y en /como-funciona el Capitulo VI y sus
+   laminas invertidas NO llevan estos ids, de modo que conservan su #2740C9 tal y como pide el mapa.
+   VUELTA ATRAS: borrar este comentario y las dos reglas siguientes. */
+html:root[data-cy-theme="noche"] body :is(.st-dt,.st-mb) [data-cy-lang] :is(#thesis-dt,#thesis-mb){--st-actline:#29487B;--st-tag:#29487B}
+html:root[data-cy-theme="noche"] body :is(.st-dt,.st-mb) [data-cy-lang] :is(#thesis-dt,#thesis-mb) :is(.st-i-61cdc545,.st-i-2e999158,.st-i-89390c51,.st-i-936f7f89):is(.st-i-61cdc545,.st-i-2e999158,.st-i-89390c51,.st-i-936f7f89):is(.st-i-61cdc545,.st-i-2e999158,.st-i-89390c51,.st-i-936f7f89){--st-actline:#29487B;color:#29487B!important;border-color:rgba(41,72,123,.4)!important;background-color:rgba(41,72,123,.07)!important}
+</style>
+
+<style id="cy-ronda-mobile-13sep">
+/* M-01 */
+html:root [data-cy-lang] nav [data-st-burger]>svg{opacity:0!important}
+html:root [data-cy-lang] nav [data-st-burger]::before{content:"";position:absolute;left:50%;top:50%;width:26px;height:26px;transform:translate(-50%,-50%);background:currentColor;pointer-events:none;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 6h16M4 12h16M4 18h16'/%3E%3C/svg%3E") center/26px 26px no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 6h16M4 12h16M4 18h16'/%3E%3C/svg%3E") center/26px 26px no-repeat}
+html:root [data-cy-lang] nav [data-st-burger][aria-expanded="true"]::before{width:26px;height:26px;transform:translate(-50%,-50%);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 6l12 12M18 6 6 18'/%3E%3C/svg%3E") center/26px 26px no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 6l12 12M18 6 6 18'/%3E%3C/svg%3E") center/26px 26px no-repeat}
+/* M-02 */
+@media (max-width:991px){html:root{--st-footer-x:16px}}
+/* M-03 */
+html:root .st-mb [data-cy-lang] nav [data-st-menu] a[data-st-here]>svg{display:none!important}
+html:root .st-mb [data-cy-lang] nav [data-st-menu] a[data-st-here]::after{display:none!important}
+/* M-04 -> cabecera 23 (4g) */
+/* M-05c */
+@media (max-width:991px){
+html:root:not([data-cy-theme="noche"]) body .st-mb [data-cy-lang][data-cy-lang] [data-st-hero][data-st-hero][data-st-hero] [data-st-herocopy][data-st-herocopy] p,
+html:root:not([data-cy-theme="noche"]) body .st-mb [data-cy-lang][data-cy-lang] [data-st-hero][data-st-hero][data-st-hero] [data-st-herocopy][data-st-herocopy] p > span,
+html:root:not([data-cy-theme="noche"]) body .st-mb [data-cy-lang][data-cy-lang] [data-st-hero][data-st-hero][data-st-hero] [data-st-herocopy][data-st-herocopy] p > span > span{color:var(--cy-ink,#0E1116)!important;-webkit-text-fill-color:var(--cy-ink,#0E1116)!important}
+html:root:not([data-cy-theme="noche"]) body .st-mb [data-cy-lang][data-cy-lang] [data-st-hero][data-st-hero][data-st-hero] [data-st-herocopy][data-st-herocopy] > span[data-st-rev],
+html:root:not([data-cy-theme="noche"]) body .st-mb [data-cy-lang][data-cy-lang] [data-st-hero][data-st-hero][data-st-hero] [data-st-herocopy][data-st-herocopy] > span[data-st-rev] span{color:var(--cy-ink,#0E1116)!important;-webkit-text-fill-color:var(--cy-ink,#0E1116)!important}
+}
+html:root:not([data-cy-theme="noche"]) body :is(.st-dt,.st-mb) [data-cy-lang] a.st-i-34d95c18.st-i-34d95c18.st-i-34d95c18.st-i-34d95c18.st-i-34d95c18.st-i-34d95c18.st-i-34d95c18:not([data-st-nav-cta]):not(:hover):not(:focus-visible){background-color:#33578F!important}
+</style>
+
+
+<style>
+@media (prefers-reduced-motion:reduce){html:root .cxm,html:root .cxm *,html:root.cy-theme-anim,html:root.cy-theme-anim *{transition:none!important}}
+</style>
+
+<style>
+[data-st-menu-root] > a.st-i-27587d51 > svg{width:20px;height:20px;flex:0 0 auto}
+[data-st-menu-root] > a.st-i-27587d51::after{width:20px;height:20px}
+</style>
+
+<style>
+html:root .st-mb [data-cy-lang] nav a[data-st-cta][data-st-nav-cta][data-st-nav-cta][data-st-nav-cta] svg{width:20px!important;height:20px!important}
+html:root [data-st-flota-btn]>svg,html:root [data-cy-covbtn]>svg{height:20px!important;width:12.86px!important}
+[data-st-menu-root]>a.st-i-27587d51:has(>svg)::after{content:none!important}
+</style>
+<script>(function(){var D='M3.6 10.4 10.4 3.6M4.9 3.6h5.5v5.5',NS='http://www.w3.org/2000/svg';function pon(){var n=document.querySelectorAll('[data-st-menu-root]>a.st-i-27587d51');for(var i=0;i<n.length;i++){var a=n[i];if(a.querySelector(':scope>svg'))continue;var s=document.createElementNS(NS,'svg');s.setAttribute('viewBox','0 0 14 14');s.setAttribute('width','12');s.setAttribute('height','12');s.setAttribute('fill','none');s.setAttribute('aria-hidden','true');var p=document.createElementNS(NS,'path');p.setAttribute('d',D);p.setAttribute('stroke','currentColor');p.setAttribute('stroke-width','1.7');p.setAttribute('stroke-linecap','round');p.setAttribute('stroke-linejoin','round');s.appendChild(p);a.appendChild(s);}}if(document.readyState!=='loading')pon();else document.addEventListener('DOMContentLoaded',pon);window.addEventListener('load',pon);setTimeout(pon,1200);})();</script>
+
+
+<style>
+html:root body [data-cy-lang] .st-hfaq-btn:focus-visible{outline:2px solid var(--st-tag,#3B5BFF)!important;outline-offset:2px!important}
+html:root[data-cy-theme="noche"] body [data-cy-lang] .st-hfaq-btn:focus-visible{outline-color:#9FB0FF!important}
+</style>
+
+<!-- CM05 (26 sep 2026, RELEVO-CORRECCIONES-MOVIL; recibo recepcion-correcciones-movil/RECIBO-CORRECCIONES-MOVIL-26SEP.md): retirado el toggle heredado de .bio-open por clic en la ficha .st-i-fd9273fa (.st-mb). Desde cy-bio-touch el estado de la bio lo gobierna el boton .cy-biobtn (aria-expanded + data-cy-bio-open); el toggle heredado anadia bio-open a la ficha ajena en un toque neutro (fila del nombre) sin tocar el boton. VUELTA ATRAS: pie 9.82. -->
+
+<style>
+html:root body [data-cy-lang] form input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not(:focus),
+html:root body [data-cy-lang] form textarea:not(:focus),
+html:root body [data-cy-lang] form select:not(:focus){border-color:var(--st-dot-off,#5F7195)!important}
+html:root[data-cy-theme="noche"] body [data-cy-lang] form input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not(:focus),
+html:root[data-cy-theme="noche"] body [data-cy-lang] form textarea:not(:focus),
+html:root[data-cy-theme="noche"] body [data-cy-lang] form select:not(:focus){border-color:var(--cy-faint,#8F98AB)!important}
+</style>
+
+<script>(function(){var L=[500,800,1080,1600,2000,2600],C={},A='https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/',W=window.CY_ARTE_W=window.CY_ARTE_W||{};
+['6aac717c225cead4514d66ba_R46-tesis-dos-motores','6aac717e225cead4514d6787_R46-tesis-dos-motores-dark','6aac717eca26f7f7ad43e440_R47-tesis-dos-rutas','6aac717efc1b8da36a12be9d_R47-tesis-dos-rutas-dark','6aac717e5b97fbe3b13f5ca7_R50-tesis-vertical','6aac717f729b6468c3793ae6_R50-tesis-vertical-dark'].forEach(function(n){if(!W[A+n+'.webp'])W[A+n+'.webp']=1672;});
+function sz(s){return /_retrato-/.test(s)?'(max-width:991px) 45vw, 100vw':'(max-width:991px) calc(100vw - 36px), 100vw';}
+function apto(s){return /\.webp$/.test(s)&&!/-p-\d+\.webp$/.test(s)&&!/-w\d+\.webp$/.test(s)&&(/_R\d+-tesis-/.test(s)||/_retrato-/.test(s));}/* CM02 (26 sep 2026): los activos exportados con ancho explicito (-wNNNN.webp, lote de arte 25 sep) no tienen variantes -p- en el CDN (403 application/xml, bloqueadas por ORB al sondearlas con new Image()); se excluyen del srcset. VUELTA ATRAS: pie 9.82. */
+function pon(im){var s=im.getAttribute('src')||'';if(!apto(s))return;
+var w=W[s]||0,ss='';for(var i=0;i<L.length;i++){if(w&&L[i]>=w)continue;ss+=(ss?', ':'')+s.replace(/\.webp$/,'-p-'+L[i]+'.webp')+' '+L[i]+'w';}
+if(!ss||im.getAttribute('srcset')===ss)return;
+function ok(){if((im.getAttribute('src')||'')!==s)return;if(!im.__cyFb){im.__cyFb=1;im.addEventListener('error',function(){if(im.hasAttribute('srcset')){im.removeAttribute('srcset');im.removeAttribute('sizes');im.setAttribute('data-cy-srcset','fallback');}});}im.setAttribute('sizes',sz(s));im.setAttribute('srcset',ss);}
+var k=s.replace(/\.webp$/,'-p-500.webp');if(C[k]===1)return ok();if(C[k]===0)return;/* cy-carga P1 (5 oct 2026): si cy-arte28 reescribe la variante, el sondeo con new Image() bajaba el derivado entero (~1 MB) al instante aunque la imagen sea lazy; las variantes de familia aprobada siempre existen tras la reescritura. VUELTA ATRAS: borrar esta linea. */try{if(window.CY_A28&&CY_A28.rw&&CY_A28.rw(k)!==k){C[k]=1;return ok();}}catch(e){}
+var p=new Image();p.onload=function(){C[k]=1;ok();};p.onerror=function(){C[k]=0;};p.src=k;}
+function pasada(){var im=document.images;for(var i=0;i<im.length;i++)pon(im[i]);}
+pasada();
+try{new MutationObserver(function(ms){for(var i=0;i<ms.length;i++){var t=ms[i].target;if(t&&t.tagName==='IMG')pon(t);}}).observe(document.documentElement,{subtree:true,attributes:true,attributeFilter:['src']});}catch(e){}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',pasada,false);})();</script>
+
+<script>(function(){var T={'Anterior':'Previous','Siguiente':'Next','Contacto':'Contact'};
+function pasa(){if(!/^en/i.test(document.documentElement.lang||''))return;
+var n=document.querySelectorAll('[aria-label]');for(var i=0;i<n.length;i++){var a=n[i].getAttribute('aria-label');if(T.hasOwnProperty(a))n[i].setAttribute('aria-label',T[a]);}}
+pasa();if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',pasa,false);
+window.addEventListener('load',pasa,false);})();</script>
+
+<script>(function(){var U='https://www.linkedin.com/in/jose-antonio-arellano-ibanez/';
+function pon(){var n=document.querySelectorAll('a[aria-label][href="#"]');
+ for(var i=0;i<n.length;i++){var a=n[i].getAttribute('aria-label')||'';
+  if(!/linkedin/i.test(a))continue;if(!/arellano/i.test(a))continue;
+  n[i].setAttribute('href',U);n[i].setAttribute('target','_blank');n[i].setAttribute('rel','noopener');}}
+pon();if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',pon,false);
+window.addEventListener('load',pon,false);})();</script>
+
+<!-- pie 10.14 cand · sizes v2 (3 oct 2026): no toca sizes si el srcset real tiene un solo candidato -->
+<script>(function(){var MQ='(max-width:991px) 92vw, 100vw';
+function uno(x){var a=x.getAttributeNode('srcset');return !a||a.value.indexOf(',')<0}
+function pon(){var im=document.images;
+ for(var i=0;i<im.length;i++){var x=im[i];
+  if(!x.getAttribute('srcset')||uno(x))continue;
+  if((x.getAttribute('sizes')||'').trim()!=='100vw')continue;
+  x.setAttribute('sizes',MQ);x.setAttribute('data-cy-sz','mq');}}
+function fino(){var n=document.querySelectorAll('img[data-cy-sz]');
+ for(var i=0;i<n.length;i++){var x=n[i];
+  if((x.complete&&x.naturalWidth>0)||uno(x))continue;
+  var w=x.getBoundingClientRect().width;
+  if(w>0&&w<=innerWidth*0.97)x.setAttribute('sizes',Math.ceil(w)+'px');
+  else x.setAttribute('sizes',MQ);}}
+function ambos(){pon();fino();}
+pon();
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ambos,false);
+window.addEventListener('load',ambos,false);
+var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(ambos,250);},false);})();</script>
+
+<style id="cy-bio-touch">
+@media (max-width:991px){
+.st-mb .cy-biobtn{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;min-height:44px;margin:6px 0 0;padding:0 12px;box-sizing:border-box;border:1px solid var(--st-dot-off,#5F7195);border-radius:10px;background:var(--cy-chip,rgba(59,91,255,.07));color:var(--cy-ink,#0E1116);font-weight:500;font-size:12px;line-height:1.2;letter-spacing:.01em;text-align:left;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.st-mb .cy-biobtn:focus-visible{outline:2px solid var(--cy-link,#3B5BFF)!important;outline-offset:2px!important}
+.st-mb .cy-biocv{font-size:10px;line-height:1;transition:transform .2s ease}
+.st-mb .cy-biobtn[aria-expanded="true"] .cy-biocv{transform:rotate(180deg)}
+.st-mb .st-bio{visibility:hidden}
+html:root body .st-mb .st-bio.st-bio.st-bio[data-cy-bio-open][data-cy-bio-open][data-cy-bio-open][data-cy-bio-open]{visibility:visible!important;opacity:1!important;pointer-events:auto!important;justify-content:flex-start!important;background-image:none!important;background-color:var(--st-veil-1,rgba(255,255,255,.97))!important;color:var(--cy-ink,#0E1116)!important;overflow-y:auto;-webkit-overflow-scrolling:touch}
+html:root body .st-mb .st-bio.st-bio.st-bio[data-cy-bio-open][data-cy-bio-open][data-cy-bio-open][data-cy-bio-open] *{color:var(--cy-ink,#0E1116)!important}
+html:root body .st-mb .st-bio.st-bio.st-bio[data-cy-bio-open][data-cy-bio-open][data-cy-bio-open][data-cy-bio-open]>*{margin-top:0!important}
+}
+@media (max-width:991px) and (prefers-reduced-motion:reduce){
+.st-mb .cy-biocv{transition:none!important}
+}
+</style>
+<script>(function(){var n=0,ult=null;
+function es(){return !/^en/i.test(document.documentElement.lang||'');}
+function lbl(b,st){var q=b.querySelector('.cy-biolbl');if(!q)return;var e=!es();
+ q.textContent=st?(e?'Close':'Cerrar'):(e?'View bio':'Ver biografía');}
+function set(b,st){var bio=b.__cyBio;if(!bio)return;var card=bio.parentElement;
+ b.setAttribute('aria-expanded',st?'true':'false');
+ if(st)bio.setAttribute('data-cy-bio-open','1');else bio.removeAttribute('data-cy-bio-open');
+ if(card&&card.classList)card.classList[st?'add':'remove']('bio-open');
+ if(st)ult=b;else if(ult===b)ult=null;
+ lbl(b,st);}
+function crea(){if(innerWidth>991)return;
+ var bios=document.querySelectorAll('.st-mb .st-bio');
+ for(var i=0;i<bios.length;i++){var bio=bios[i];
+  if(bio.__cyBtn&&bio.__cyBtn.isConnected)continue;
+  var card=bio.parentElement;if(!card)continue;var col=card.parentElement;if(!col)continue;
+  if(!bio.id)bio.id='cy-bio-'+(++n);
+  var row=col.children[1],nom=row?((row.innerText||row.textContent||'').trim().split('\n')[0]||'').trim().slice(0,40):'';
+  bio.setAttribute('role','region');
+  bio.setAttribute('aria-label',(es()?'Biografía de ':'Bio of ')+nom);
+  var b=document.createElement('button');
+  b.type='button';b.className='cy-biobtn';
+  b.setAttribute('aria-expanded','false');b.setAttribute('aria-controls',bio.id);
+  b.innerHTML='<span class="cy-biolbl"></span><span class="cy-biocv" aria-hidden="true">&#9662;</span>';
+  b.__cyBio=bio;bio.__cyBtn=b;lbl(b,false);col.appendChild(b);}}
+function dueno(t){var el=t;
+ while(el&&el!==document.body){
+  if(el.classList&&el.classList.contains('st-bio'))return{bio:el,panel:true};
+  if(el.querySelector){var q=el.querySelector(':scope > .st-bio');if(q)return{bio:q,panel:false};}
+  el=el.parentElement;}
+ return null;}
+document.addEventListener('click',function(e){if(innerWidth>991)return;
+ var t=e.target;if(!t||!t.closest)return;if(t.closest('a'))return;
+ var b=t.closest('.cy-biobtn');
+ if(b){e.preventDefault();e.stopPropagation();set(b,b.getAttribute('aria-expanded')!=='true');return;}
+ if(!t.closest('.st-mb'))return;
+ var d=dueno(t);if(!d||!d.bio.__cyBtn)return;
+ e.stopPropagation();
+ set(d.bio.__cyBtn,d.panel?false:d.bio.getAttribute('data-cy-bio-open')!=='1');},true);
+document.addEventListener('keydown',function(e){if(e.key!=='Escape')return;
+ var a=document.activeElement,ab=null,d;
+ if(a&&a.closest){ab=a.closest('.cy-biobtn');
+  if(!ab){d=dueno(a);if(d&&d.bio.__cyBtn)ab=d.bio.__cyBtn;}}
+ if(ab&&ab.getAttribute('aria-expanded')!=='true')ab=null;
+ if(!ab&&ult&&ult.isConnected&&ult.getAttribute('aria-expanded')==='true')ab=ult;
+ if(!ab)ab=document.querySelector('.st-mb .cy-biobtn[aria-expanded="true"]');
+ if(ab){set(ab,false);ab.focus();}},true);
+var t1;function tarde(){clearTimeout(t1);t1=setTimeout(crea,150);}
+crea();
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',crea,false);
+window.addEventListener('load',crea,false);
+window.addEventListener('resize',tarde,false);
+try{new MutationObserver(tarde).observe(document.documentElement,{childList:true,subtree:true});}catch(e){}
+})();</script>
+
+<style id="cy-ola-visual-16sep">
+/* 9.62a P2+P5 JUNTAS-FLOTA · las nueve maquetas de /como-funciona llevaban border-radius:14px en las CUATRO
+   esquinas (st-plataforma-v14q L17) con gap 0: en cada junta se encontraban dos curvas, el divisor se
+   interrumpia y el rombo quedaba sobre el hueco. esquinasBlq() de st-pages v54 no rectifica porque el
+   contenedor lleva border-radius:0 (RV-5). Se dejan rectas las 8 juntas y se conserva la silueta exterior.
+   VUELTA ATRAS: borrar las tres reglas siguientes. */
+@media (max-width:991px){
+html:root body .st-mb [data-cy-lang] [data-st-carr="flota"]>:not(.st-n){border-radius:0!important}
+html:root body .st-mb [data-cy-lang] [data-st-carr="flota"]>:not(.st-n):first-child{border-top-left-radius:14px!important;border-bottom-left-radius:14px!important}
+html:root body .st-mb [data-cy-lang] [data-st-carr="flota"]>:not(.st-n):nth-child(9){border-top-right-radius:14px!important;border-bottom-right-radius:14px!important}
+}
+/* 9.62b -> st-pages-v55 (9.64) */
+/* 9.62c -> 9.68 P4-HOME (18 sep): Home resuelto en parte sobre el arte v30; resto de rutas sigue F-1 (9.31). */
+/* 9.62d -> st-pages-v55 (9.64) */
+/* 9.62e -> st-pages-v55 (9.64) */
+</style>
+
+<style id="cy-mb01b-agenda-posts">
+@media (max-width:991px){
+html:root[data-wf-page="6a6a838901e497c438313620"],
+html:root[data-wf-page="6a563728806b5b7a10c17693"]{--grid-frame-x:0px;--grid-content-pad:18px}
+}
+</style>
+
+
+
+<style id="cy-9-70-tono-18sep">
+html:root:not([data-cy-theme="noche"]):is([data-wf-page="6a563da99c6f0e301c15632d"],[data-wf-page="6a563728806b5b7a10c17693"]){--st-tag:#29487B;--cy-link:#29487B}
+html:root[data-cy-theme="noche"]:is([data-wf-page="6a563da99c6f0e301c15632d"],[data-wf-page="6a563728806b5b7a10c17693"]){--st-tag:#9FB0FF;--cy-link:#9FB0FF}
+html:root:not([data-cy-theme="noche"]) body :is(.st-dt,.st-mb) [data-cy-lang] :is(.st-i-eb8408d4,.st-i-fe722788,.st-i-7a2e103f){color:#29487B!important;border-color:rgba(41,72,123,.4)!important;background-color:rgba(41,72,123,.07)!important}
+html:root[data-cy-theme="noche"] body :is(.st-dt,.st-mb) [data-cy-lang] :is(.st-i-eb8408d4,.st-i-fe722788,.st-i-7a2e103f){color:#9FB0FF!important;border-color:rgba(159,176,255,.4)!important;background-color:rgba(159,176,255,.12)!important}
+html:root body :is(.st-dt,.st-mb) [data-cy-lang] footer .st-i-ed3db7a7{background-color:#2B2E32!important}
+html:root:not([data-cy-theme="noche"]) body :is(.st-dt,.st-mb) [data-cy-lang] a[href^="mailto:"]{color:#29487B!important}
+html:root[data-cy-theme="noche"] body :is(.st-dt,.st-mb) [data-cy-lang] a[href^="mailto:"]{color:#9FB0FF!important}
+html:root[data-cy-theme="noche"] body .st-dt [data-cy-lang] nav [data-st-nav] [data-st-navmid] a.cy-dchip[data-st-here][data-st-here][data-st-here]:not(:hover):not(:focus-visible),
+html:root[data-cy-theme="noche"] body .st-dt [data-cy-lang] nav [data-st-nav] [data-st-navmid] a.cy-dchip[data-st-here][data-st-here][data-st-here]:not(:hover):not(:focus-visible) span{color:#9FB0FF!important;-webkit-text-fill-color:#9FB0FF!important}
+html:root:not([data-cy-theme="noche"]) body .st-mb [data-cy-lang] nav [data-st-menu] a[data-st-here]:not(:focus-visible),
+html:root:not([data-cy-theme="noche"]) body .st-mb [data-cy-lang] nav [data-st-menu] a[data-st-here]:not(:focus-visible) span{color:#29487B!important}
+html:root[data-cy-theme="noche"] body .st-mb [data-cy-lang] nav [data-st-menu] a[data-st-here]:not(:focus-visible),
+html:root[data-cy-theme="noche"] body .st-mb [data-cy-lang] nav [data-st-menu] a[data-st-here]:not(:focus-visible) span{color:#9FB0FF!important}
+html:root[data-wf-page="6a553f8e569e3148ffc68445"] body :is(.st-dt,.st-mb) [data-cy-lang] .st-i-5e28caec{display:none!important}
+</style>
+
+
+
+<style id="cy-9-79-tags-blog-agenda">
+html:root body :is(.st-dt,.st-mb) [data-cy-lang] .st-i-fe722788{position:relative}
+html:root body :is(.st-dt,.st-mb) [data-cy-lang] .st-i-fe722788::before,html:root body :is(.st-dt,.st-mb) [data-cy-lang] .st-i-fe722788::after{content:"";position:absolute;top:50%;height:1px;width:100vw;background:currentColor;pointer-events:none}
+html:root body :is(.st-dt,.st-mb) [data-cy-lang] .st-i-fe722788::before{right:calc(100% + 12px)}
+html:root body :is(.st-dt,.st-mb) [data-cy-lang] .st-i-fe722788::after{left:calc(100% + 12px)}
+html:root body .st-dt [data-cy-lang] :is([data-screen-label="Agenda, formulario"],[data-screen-label="Recursos, portada"]){overflow-x:clip}
+html:root body .st-dt [data-cy-lang] [data-screen-label="Agenda, formulario"] .st-i-2fc114c9{isolation:isolate}
+</style>
+<script src="https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ab03e7902373e747b98cf2d_st-carr-ctrl-v5.js" defer></script>
+<!-- Pie 9.84 (RM26, 26 sep 2026): pubs-stealth-v20 (terminos desarrollados en los cuatro articulos) y wordmark del pie movil 32-40 px. -->
+<style>
+@media (max-width:991px){
+html:root body .st-mb [data-cy-lang] footer[data-screen-label="Footer"] .st-i-f4300451{height:auto!important;min-height:clamp(32px,8vw,40px)!important}
+html:root body .st-mb [data-cy-lang] footer[data-screen-label="Footer"] .st-i-f4300451>img.st-i-74a57e2d{height:clamp(32px,8vw,40px)!important;width:auto!important;max-width:100%!important;object-fit:contain!important}
+}
+</style>
+<style id="cy-bt">html:root body .cy-pal-verde.cy-pal-verde{color:#43765F!important;-webkit-text-fill-color:#43765F!important}html:root body .cy-pal-amarillo.cy-pal-amarillo{color:#816D43!important;-webkit-text-fill-color:#816D43!important}html:root body .cy-pal-azul.cy-pal-azul{color:#3B5BFF!important;-webkit-text-fill-color:#3B5BFF!important}html:root body .cy-pal-naranja.cy-pal-naranja{color:#9A5E42!important;-webkit-text-fill-color:#9A5E42!important}html:root body .cy-pal-dser.cy-pal-dser{color:var(--st-prog,#29487B)!important;-webkit-text-fill-color:var(--st-prog,#29487B)!important}html:root[data-cy-theme="noche"] body .cy-pal-verde.cy-pal-verde{color:#91C3AA!important;-webkit-text-fill-color:#91C3AA!important}html:root[data-cy-theme="noche"] body .cy-pal-amarillo.cy-pal-amarillo{color:#D4BF87!important;-webkit-text-fill-color:#D4BF87!important}html:root[data-cy-theme="noche"] body .cy-pal-azul.cy-pal-azul{color:#7C92FF!important;-webkit-text-fill-color:#7C92FF!important}html:root[data-cy-theme="noche"] body .cy-pal-naranja.cy-pal-naranja{color:#E5AF91!important;-webkit-text-fill-color:#E5AF91!important}html:root[data-cy-theme="noche"] body .cy-pal-dser.cy-pal-dser{color:#9FB0FF!important;-webkit-text-fill-color:#9FB0FF!important}html:not(#cb1):not(#cb2):not(#cb3):not(#cb4):not(#cb5):not(#cb6):not(#cb7):not(#cb8):not(#cb9):not(#cb10)[data-wf-page="6a70a47f984c1cfa9f999a5e"] body [data-screen-label="Acto V, Los rieles"] .st-i-ca1f08ce>p.st-i-ce999f84.sx2{display:block!important;margin-top:4px!important}:is(#team-dt,#team-mb) h2>.lang-en>em+span{margin-right:.06em}</style>
+<script>(function(){if(window.__cyTsDif)return;window.__cyTsDif=2;var F='form[data-turnstile-sitekey]',q=[],tm=0,u=0,go=0,d=document;addEventListener('scroll',function(){u=Date.now()},{passive:true});function pump(){tm=0;var w=Date.now()-u;if(!go&&w<450){tm=setTimeout(pump,470-w);return}go=1;var a=q.splice(0);for(var i=0;i<a.length;i++)try{a[i][0].apply(window.turnstile,a[i][1])}catch(e){console.error(e)}}function now(){go=1;clearTimeout(tm);pump()}function hook(){var T=window.turnstile;if(!T||T.__cyDif)return;var f=T.render;T.render=function(){if(go)return f.apply(this,arguments);q.push([f,arguments]);if(!tm)tm=setTimeout(pump,60)};T.__cyDif=1}d.addEventListener('load',function(e){var s=e.target;if(s&&s.tagName==='SCRIPT'&&/challenges\.cloudflare\.com\/turnstile/.test(s.src))hook()},true);hook();function inF(e){var t=e.target;return t&&t.closest&&t.closest(F)}function tok(f){var i=f.querySelector('[name="cf-turnstile-response"]'),J=window.jQuery;return(i&&i.value)||(J&&(J.data(f,'.w-form')||{}).turnstileToken)}d.addEventListener('focusin',function(e){if(inF(e))now()},true);d.addEventListener('pointerdown',function(e){if(inF(e))now()},true);d.addEventListener('submit',function(e){var f=inF(e);if(!f)return;now();if(f.__cyTsOk||tok(f)){f.__cyTsOk=0;return}e.preventDefault();e.stopImmediatePropagation();if(f.__cyTsW)return;var t0=Date.now();f.__cyTsW=setInterval(function(){var k=tok(f);if(k||Date.now()-t0>1e4){clearInterval(f.__cyTsW);f.__cyTsW=0;f.__cyTsOk=!k;f.requestSubmit?f.requestSubmit():f.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}))}},100)},true)})();</script>
+<style id="cy-faq-clip">/*cy-faq-clip 1.0 05oct: Acto VII sin clip propio (temblor FAQ en WebKit). Rollback: borrar*/.st-mb [data-screen-label="Acto VII, Preguntas frecuentes"]{overflow:visible!important}</style>
+<style id="cy-wm-lg">/*cy-wm-lg 1.2 05oct: wordmark «cysure» del pie en Liquid Glass vectorial (nitido a cualquier DPR, sin hover). Sustituye el relleno PNG muestreado de cy-wordmark-frosted (0,5 px/CSS x ganancia 18 = manchas). 10 ids > 9 de frosted. Rollback: borrar este bloque y el script cy-wm-lg*/
+html:not(#cb1):not(#cb2):not(#cb3):not(#cb4):not(#cb5):not(#cb6):not(#cb7):not(#cb8):not(#cb9):not(#cb10) body [data-stf-cielo-host] .st-i-5d29ff81{-webkit-text-fill-color:transparent!important;color:transparent!important;background-image:linear-gradient(180deg,rgba(255,255,255,.30) 0,rgba(255,255,255,.10) 16%,rgba(255,255,255,0) 38%),linear-gradient(0deg,rgba(255,255,255,.10) 0,rgba(255,255,255,0) 14%),linear-gradient(180deg,rgba(164,180,228,.64) 0,rgba(128,144,196,.60) 100%)!important;background-size:100% 100%!important;background-repeat:no-repeat!important;background-position:0 0!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-stroke:1px rgba(255,255,255,.45)!important;text-shadow:none!important;filter:none!important;animation:none!important;transition:-webkit-text-stroke-color .3s ease!important}
+@media (hover:hover){html:not(#cb1):not(#cb2):not(#cb3):not(#cb4):not(#cb5):not(#cb6):not(#cb7):not(#cb8):not(#cb9):not(#cb10) body [data-stf-cielo-host] .st-i-5d29ff81:hover{-webkit-text-stroke-color:rgba(255,255,255,.72)!important;filter:none!important}}
+@media (prefers-reduced-motion:reduce){html:not(#cb1):not(#cb2):not(#cb3):not(#cb4):not(#cb5):not(#cb6):not(#cb7):not(#cb8):not(#cb9):not(#cb10) body [data-stf-cielo-host] .st-i-5d29ff81{transition:none!important}}
+@media (prefers-reduced-transparency:reduce){html:not(#cb1):not(#cb2):not(#cb3):not(#cb4):not(#cb5):not(#cb6):not(#cb7):not(#cb8):not(#cb9):not(#cb10) body [data-stf-cielo-host] .st-i-5d29ff81{background-image:linear-gradient(180deg,rgba(255,255,255,.22) 0,rgba(255,255,255,0) 38%),linear-gradient(180deg,#5D6A92 0,#4A5678 100%)!important}}</style>
+<script>/*cy-wm-lg 1.2: apaga el muestreo de cy-wordmark-frosted sin depender del orden de carga: cfg mode s (si aun no evaluo) y marca cada host como ya armado (arm() salta los hosts con __cyWm), asi boot/MutationObserver no crean unidades; si ya habia unidades, se paran sin destroy()*/window.__cyWmFrostCfg={mode:'s'};(function(){var F=window.__cyWmFrost,U=F&&F.units||[],h=document.querySelectorAll('[data-stf-cielo-host]'),i,u;for(i=0;i<U.length;i++)try{u=U[i];u.stop();u.io&&u.io.disconnect();u.ro&&u.ro.disconnect();u.wm.style.removeProperty('--cywm-bd');u.wm.style.removeProperty('--cywm-rl');u.wm.removeAttribute('data-cywm')}catch(e){}if(F)F.units=[];for(i=0;i<h.length;i++)h[i].__cyWm={lg:1}})();</script>

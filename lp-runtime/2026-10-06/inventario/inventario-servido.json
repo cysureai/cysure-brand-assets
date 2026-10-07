@@ -1,0 +1,350 @@
+{
+ "corte": "2026-10-06T15:24:08Z (producción = staging)",
+ "cajas": [
+  {
+   "caja": "cabecera-como-funciona.html",
+   "caracteres": 43638,
+   "sha256": "a69cbde5e0d33cb8bb8b52dcbc49ab6749683b435ad4fe7ce2fb6706adff6f43"
+  },
+  {
+   "caja": "cabecera-sitio.html",
+   "caracteres": 40655,
+   "sha256": "0b5f88b9b7e9563dfc025f15dd83a16df49861245b0e4337a05eb36af8d3ab72"
+  },
+  {
+   "caja": "pie-como-funciona.html",
+   "caracteres": 47887,
+   "sha256": "60474220252158b9941bab519323c7bb440eb6214954865d09e18540ed0e78b8"
+  },
+  {
+   "caja": "pie-sitio.html",
+   "caracteres": 48021,
+   "sha256": "6ab362fff2a1744f7e186b742df6d6d808392a970b3610ec22b81bd632b91eb6"
+  }
+ ],
+ "assets": [
+  {
+   "fichero": "st-corte992-core-v1.css",
+   "asset_id": "6aa50e53755de9862ffdd51b",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa50e53755de9862ffdd51b_st-corte992-core-v1.css",
+   "bytes": 22745,
+   "sha256": "4f90f5de3a8afc038e42603463a738452978d4ef5746755b22c57d1d0fac6d7c"
+  },
+  {
+   "fichero": "st-corte992-plataforma-v1.css",
+   "asset_id": "6aa50e54c8219865d8db2125",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa50e54c8219865d8db2125_st-corte992-plataforma-v1.css",
+   "bytes": 4031,
+   "sha256": "a20c6018712cc4d0ecfde307bd7e4e71b21ab5f1cb76daa875df9ce1bbb84aad"
+  },
+  {
+   "fichero": "stealth-webflow-wf-v18.js",
+   "asset_id": "6aa68c8df0d416e48bb052d7",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa68c8df0d416e48bb052d7_stealth-webflow-wf-v18.js",
+   "bytes": 18639,
+   "sha256": "7af5c7012aff97eb603b71f04f460cdde6a1a65ce34e874f2d70d07ff38ce986"
+  },
+  {
+   "fichero": "st-fig-v5.js",
+   "asset_id": "6aa6a089e6511bf076a94734",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa6a089e6511bf076a94734_st-fig-v5.js",
+   "bytes": 5028,
+   "sha256": "06844f863011b7f852ab794058f8dc1a78b8c9cad6b1a65673732c7e7989083a"
+  },
+  {
+   "fichero": "st-cov-carr-v3.js",
+   "asset_id": "6aa6aaffc22829ebc7c067d2",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa6aaffc22829ebc7c067d2_st-cov-carr-v3.js",
+   "bytes": 7360,
+   "sha256": "895ad638d2ea7138a8749c59afde8d5f5919ba9e625eea71db322f44cb25a803"
+  },
+  {
+   "fichero": "st-agentes-iconos-v1.js",
+   "asset_id": "6aa72350f09ee2a0ca37d66b",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa72350f09ee2a0ca37d66b_st-agentes-iconos-v1.js",
+   "bytes": 3423,
+   "sha256": "ce504d8905f2292feb9c224ce83a43c7759ca68415814b75409960635616f5cf"
+  },
+  {
+   "fichero": "cy-glass-sobrio-v1.js",
+   "asset_id": "6aa735f88107c92f1ec09e2d",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa735f88107c92f1ec09e2d_cy-glass-sobrio-v1.js",
+   "bytes": 1793,
+   "sha256": "82b69463333ffc29e799696808f7bcd300aeb8ca37d52e8925bb8371d1c5fb27"
+  },
+  {
+   "fichero": "st-capv-astra-v5.js",
+   "asset_id": "6aa7728c34a002fe6831e8be",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa7728c34a002fe6831e8be_st-capv-astra-v5.js",
+   "bytes": 26879,
+   "sha256": "aac5c0e02386b56390f55aca0970eb0071224a63668fd206ad2f0009c9ce2ff2"
+  },
+  {
+   "fichero": "st-agentes-v2.css",
+   "asset_id": "6aa777254e94200fb5f44cfd",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa777254e94200fb5f44cfd_st-agentes-v2.css",
+   "bytes": 2844,
+   "sha256": "8b02a28dc7da33f6229988ddb9fc45c357dc2fc48687926d51c80430d2851172"
+  },
+  {
+   "fichero": "st-agentes-v2.js",
+   "asset_id": "6aa7772571017e4594a80aa8",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa7772571017e4594a80aa8_st-agentes-v2.js",
+   "bytes": 9996,
+   "sha256": "0e9298598d15257974646660e0d9cfd68c0f9cb97ce58713f053dd04803b9bfc"
+  },
+  {
+   "fichero": "st-riai-carr-v2.js",
+   "asset_id": "6aa7772584cc8049ba324b27",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa7772584cc8049ba324b27_st-riai-carr-v2.js",
+   "bytes": 7465,
+   "sha256": "7d8fbe6b5b26df9278cb9df56cfa90d8ab583d620e728e2be55a2845450b2e39"
+  },
+  {
+   "fichero": "st-mockups-auto-v2.1.js",
+   "asset_id": "6aa7820e9f50b220344d4929",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa7820e9f50b220344d4929_st-mockups-auto-v2.1.js",
+   "bytes": 19444,
+   "sha256": "f5244d5c169fea91282a4e10b59babc70cfcf4067a7a1eda02f5bf3941f4dbbb"
+  },
+  {
+   "fichero": "st-heroes-tablet-v2.css",
+   "asset_id": "6aa7c1a236ae973cc3475bab",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa7c1a236ae973cc3475bab_st-heroes-tablet-v2.css",
+   "bytes": 10757,
+   "sha256": "88f46673f7acbe2493ec9f6ec79b4a2e4d7399f66a514da2cec23841c8c89d24"
+  },
+  {
+   "fichero": "st-mockups-desktop-v2.1.js",
+   "asset_id": "6aa8bb48103193f4f74337c4",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa8bb48103193f4f74337c4_st-mockups-desktop-v2.1.js",
+   "bytes": 4767,
+   "sha256": "c365fd5121546bdf77f4f2659a0c9ed65f894679f60861f83190113bc2b8630b"
+  },
+  {
+   "fichero": "st-coberturas-dark-v1.css",
+   "asset_id": "6aa8bb48e63284652862c48d",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa8bb48e63284652862c48d_st-coberturas-dark-v1.css",
+   "bytes": 7675,
+   "sha256": "31c862b5ac964d6810db762a7643575d064d34d3d2857a426a096c798e306418"
+  },
+  {
+   "fichero": "st-heroes-desktop-v1.css",
+   "asset_id": "6aa8bb48eb94c13dd384c51c",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa8bb48eb94c13dd384c51c_st-heroes-desktop-v1.css",
+   "bytes": 6698,
+   "sha256": "a4d3e28e0b77600545165023d27d0658e30a276ec5e89f2131d1b8e562be8267"
+  },
+  {
+   "fichero": "st-plataforma-v14q.css",
+   "asset_id": "6aa98af8873e05af44cad88b",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa98af8873e05af44cad88b_st-plataforma-v14q.css",
+   "bytes": 134063,
+   "sha256": "c4e4d623098f53e23367b1bf964be2c82c1b94e855efb1970709dcc8b1e98a82"
+  },
+  {
+   "fichero": "st-capitulos-v1.3.css",
+   "asset_id": "6aa9d31495c2d18cfd773c10",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa9d31495c2d18cfd773c10_st-capitulos-v1.3.css",
+   "bytes": 17145,
+   "sha256": "dda25d2535b44d1b49c62875bccc2739a69b0caf7e60f2c764c8e91ae2c5854b"
+  },
+  {
+   "fichero": "st-cards-B-v1.css",
+   "asset_id": "6aa9d93a46aebf8455b41286",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa9d93a46aebf8455b41286_st-cards-B-v1.css",
+   "bytes": 12973,
+   "sha256": "02a8b3815943bd9c2567dbf080c0de6713c2f9629e5a967319c4384f6c435e9f"
+  },
+  {
+   "fichero": "st-cards-copy-v1.js",
+   "asset_id": "6aa9d93abddbeddd29fb984f",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aa9d93abddbeddd29fb984f_st-cards-copy-v1.js",
+   "bytes": 2036,
+   "sha256": "c744f19eee3486418c05c351270a8f3bccc6049afc07c02fde1bc2371391b88c"
+  },
+  {
+   "fichero": "cy-mockups-v3-templates.json",
+   "asset_id": "6aac7a5e07b1730763775c71",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aac7a5e07b1730763775c71_cy-mockups-v3-templates.json",
+   "bytes": 26937,
+   "sha256": "1dbd74e5e4684c55269a37698def13ea9398c37cef3052fd5afbc1b2d16a46fd",
+   "en_paquete": "fuentes/mockups/cy-mockups-v3-templates.json",
+   "paquete_igual_a_servido": true
+  },
+  {
+   "fichero": "cy-mockups-v3-i18n-en.json",
+   "asset_id": "6aac7a5e86bd8ba04f2a0022",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aac7a5e86bd8ba04f2a0022_cy-mockups-v3-i18n-en.json",
+   "bytes": 2720,
+   "sha256": "5388c36b61ace3667341fd33ca3fc2096be0d8cae7449e201ec4638863c0e7a4",
+   "en_paquete": "fuentes/mockups/cy-mockups-v3-i18n-en.json",
+   "paquete_igual_a_servido": true
+  },
+  {
+   "fichero": "st-mockups-adapter-v1.css",
+   "asset_id": "6aac7a5f07b1730763775d79",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aac7a5f07b1730763775d79_st-mockups-adapter-v1.css",
+   "bytes": 2047,
+   "sha256": "23226f1aa3dfde54df1bceae9c80be0ee25d1a1f473f224bebba4138be15b52c",
+   "en_paquete": "fuentes/mockups/st-mockups-adapter-v1.css",
+   "paquete_igual_a_servido": true
+  },
+  {
+   "fichero": "st-a11y-v4.js",
+   "asset_id": "6aad133ad5c8aaed56346fb1",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aad133ad5c8aaed56346fb1_st-a11y-v4.js",
+   "bytes": 14320,
+   "sha256": "c48554759f977fef20e74fe1f10127003cf58e67cd626c3cfe565c5b74b01e5b"
+  },
+  {
+   "fichero": "cy-como-funciona-coberturas-bd96f6f05dde.css",
+   "asset_id": "6aadb37aff9a5230a776ddfd",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aadb37aff9a5230a776ddfd_cy-como-funciona-coberturas-bd96f6f05dde.css",
+   "bytes": 4712,
+   "sha256": "bd96f6f05ddef29bcd472d5311b7aa61c4799a74588b3250038011c569ecdf46"
+  },
+  {
+   "fichero": "st-core-v75.css",
+   "asset_id": "6aae11dd7b48316cb09d1805",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6aae11dd7b48316cb09d1805_st-core-v75.css",
+   "bytes": 129860,
+   "sha256": "dd0c4999a5433b4cd8f92a8d7b4f61ec43f727229bf9e912402161a30e7dc316"
+  },
+  {
+   "fichero": "st-carr-ctrl-v5.js",
+   "asset_id": "6ab03e7902373e747b98cf2d",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ab03e7902373e747b98cf2d_st-carr-ctrl-v5.js",
+   "bytes": 16064,
+   "sha256": "b1cf63938e86e08bf7b7e13a5e7c279edb3d2ba58f0bbebe4f6e1c7c09b61c33"
+  },
+  {
+   "fichero": "st-flota-ctrl-v6-art-ready.js",
+   "asset_id": "6ab03e7a284c6073b565a6e9",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ab03e7a284c6073b565a6e9_st-flota-ctrl-v6-art-ready.js",
+   "bytes": 19312,
+   "sha256": "c89a1e2830b0a05b9fbe1f5881ce18d62232411aae146b5ccfef1fa627f2824d"
+  },
+  {
+   "fichero": "pubs-stealth-v20.js",
+   "asset_id": "6ab83fae4b0daba98ef25aaa",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ab83fae4b0daba98ef25aaa_pubs-stealth-v20.js",
+   "bytes": 56490,
+   "sha256": "bf07f4be7b30ecbf11f6365320f7dd290d22f6c5bb2de21332300b0e31f65320"
+  },
+  {
+   "fichero": "cy-arte-map-v37.js",
+   "asset_id": "6ab8965070fc0e6b4656c59a",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ab8965070fc0e6b4656c59a_cy-arte-map-v37.js",
+   "bytes": 69729,
+   "sha256": "4a50d268204a52f821738dabd99cc445a84eb06b2338959a87200add192f18ec"
+  },
+  {
+   "fichero": "cy-capas-v3.css",
+   "asset_id": "6ab967420be4a5735c868adb",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ab967420be4a5735c868adb_cy-capas-v3.css",
+   "bytes": 19859,
+   "sha256": "bdd51663729e60dd92113ed5ef4daeb60b1595b0beb753e40ea0e0be0e121e53"
+  },
+  {
+   "fichero": "cy-dither-ui-wf-v13.js",
+   "asset_id": "6abc44db4bde6e20af66f0ab",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6abc44db4bde6e20af66f0ab_cy-dither-ui-wf-v13.js",
+   "bytes": 88329,
+   "sha256": "47bf44f100fcd2769c04c96f0af7c20e8dbe2ead48153403472b7cef640078b5"
+  },
+  {
+   "fichero": "cy-arte28-v17.js",
+   "asset_id": "6ac1edb1e436a83e7f2da085",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ac1edb1e436a83e7f2da085_cy-arte28-v17.js",
+   "bytes": 76990,
+   "sha256": "7213735269891ba2bf1b040af805964f68a98ca5822bdff45da0b06d8c197b2d"
+  },
+  {
+   "fichero": "cy-botones-v33.css",
+   "asset_id": "6ac26377dd56648d581f40a8",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ac26377dd56648d581f40a8_cy-botones-v33.css",
+   "bytes": 159268,
+   "sha256": "59f67b36cf067d303ec90f8da4845c9f938c61ec47cc5eb86f205b8585ce44eb"
+  },
+  {
+   "fichero": "cy-alt-es-v6.js",
+   "asset_id": "6ac3a19df0d0ae6b2ead0689",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ac3a19df0d0ae6b2ead0689_cy-alt-es-v6.js",
+   "bytes": 19646,
+   "sha256": "2b7a4ef1953baedd19f52777ab02edeb43b6f0e7cb3e8e14e59b64bc2658625e"
+  },
+  {
+   "fichero": "st-mockups-adapter-v9.js",
+   "asset_id": "6ac426c4e59b0a41ea148763",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ac426c4e59b0a41ea148763_st-mockups-adapter-v9.js",
+   "bytes": 21929,
+   "sha256": "ae94bdd3715eadc6a5ad8fdcbd7704ed1831cfbf07384f3b289437e44ad03b52",
+   "en_paquete": "fuentes/mockups/st-mockups-adapter-v9.js",
+   "paquete_igual_a_servido": true
+  },
+  {
+   "fichero": "cy-cristal-mobile-v1.2.css",
+   "asset_id": "6ac49fd05c9b7a20a6c988cd",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ac49fd05c9b7a20a6c988cd_cy-cristal-mobile-v1.2.css",
+   "bytes": 5639,
+   "sha256": "acd18987876ec49de218e819c4050920e26cadd95301ab2b808a5bbe2fb00936",
+   "en_paquete": "fuentes/glass/cy-cristal-mobile-v1.2.css",
+   "paquete_igual_a_servido": true
+  },
+  {
+   "fichero": "cy-glass-desktop-v2.2.css",
+   "asset_id": "6ac49fd0f80e71323bad54c4",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ac49fd0f80e71323bad54c4_cy-glass-desktop-v2.2.css",
+   "bytes": 1182,
+   "sha256": "dc5ca83edb540902de9bc8041a968c94bb2bbd97c4101895323dd24b6771fd01",
+   "en_paquete": "fuentes/glass/cy-glass-desktop-v2.2.css",
+   "paquete_igual_a_servido": true
+  },
+  {
+   "fichero": "st-pages-v99.js",
+   "asset_id": "6ac4d7da72204f5e382f829f",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ac4d7da72204f5e382f829f_st-pages-v99.js",
+   "bytes": 280481,
+   "sha256": "e6a5acf92ff03994cce99db8c22b20b720b35f497c6f2276ba37855c77e30d50",
+   "en_paquete": "fuentes/sitio/st-pages-v99.js",
+   "paquete_igual_a_servido": true
+  },
+  {
+   "fichero": "cy-mockups-v6g.js",
+   "asset_id": "6ac4e62205972b4d2b794f27",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ac4e62205972b4d2b794f27_cy-mockups-v6g.js",
+   "bytes": 30174,
+   "sha256": "7709efde2b4c631312cc81cff4196b523549537d778d3e7ce2d1cda43da02e7d",
+   "en_paquete": "fuentes/mockups/cy-mockups-v6g.js",
+   "paquete_igual_a_servido": true
+  },
+  {
+   "fichero": "cy-glass-sobrio-v8.css",
+   "asset_id": "6ac4f966174b830d7f1b6aa8",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ac4f966174b830d7f1b6aa8_cy-glass-sobrio-v8.css",
+   "bytes": 7945,
+   "sha256": "de13a914dd38432c2959bb532a5f4490078d9915622bd302cd08e0143a681648",
+   "en_paquete": "fuentes/glass/cy-glass-sobrio-v8.css",
+   "paquete_igual_a_servido": true
+  },
+  {
+   "fichero": "cy-mockups-cysure-v26.css",
+   "asset_id": "6ac4f966e9d43de425b864af",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ac4f966e9d43de425b864af_cy-mockups-cysure-v26.css",
+   "bytes": 35824,
+   "sha256": "241ad19f007ede5778a331f3035b552bf1efa43f9c8f999b4f10767f04b452d1",
+   "en_paquete": "fuentes/mockups/cy-mockups-cysure-v26.css",
+   "paquete_igual_a_servido": true
+  },
+  {
+   "fichero": "cy-mockups-v3i.css",
+   "asset_id": "6ac4fe7564f2ed87bccd444f",
+   "url": "https://cdn.prod.website-files.com/6a553f8c569e3148ffc68415/6ac4fe7564f2ed87bccd444f_cy-mockups-v3i.css",
+   "bytes": 25890,
+   "sha256": "65d8ac760a34f37ab637c19ff37b92f494f6c168105107371efdc42e7f6543fd",
+   "en_paquete": "fuentes/mockups/cy-mockups-v3i.css",
+   "paquete_igual_a_servido": true
+  }
+ ]
+}

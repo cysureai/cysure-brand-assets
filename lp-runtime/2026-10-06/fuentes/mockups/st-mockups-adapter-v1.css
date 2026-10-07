@@ -1,0 +1,16 @@
+/* st-mockups-adapter-v1.css · solo lo que retira o ajusta en los consumidores montados con v3.
+   No apila sobre el mockup viejo: ese article.cxm ya no existe en el consumidor marcado. */
+@media (max-width:991px){
+  /* la ventana de arte del wrapper sobra: el componente trae su propia escena (un solo marco) */
+  html:root[data-wf-page][data-wf-page][data-wf-page][data-wf-page][data-wf-page][data-wf-page] body .st-mb.st-mb [data-st-ag][data-st-ag][data-st-mock="v3"]>div:has(>img){display:none!important}
+  /* el embed ocupa el sitio exacto de la ventana (4px por dentro de la caja de contenido); el gap 24 al texto se conserva */
+  html:root[data-wf-page][data-wf-page][data-wf-page][data-wf-page][data-wf-page][data-wf-page] body .st-mb.st-mb [data-st-ag][data-st-ag][data-st-mock="v3"]>.w-embed{margin:0 4px!important;align-self:stretch!important;justify-self:stretch!important;width:auto!important}
+  html:root[data-wf-page][data-wf-page][data-wf-page][data-wf-page][data-wf-page][data-wf-page] body .st-mb.st-mb [data-st-mock="v3"]>.w-embed>cysure-mockup{display:block;width:100%}
+  /* CapV móvil: el marco viejo se retira solo en ese consumidor */
+  html:root[data-wf-page][data-wf-page][data-wf-page][data-wf-page][data-wf-page][data-wf-page] body .st-mb.st-mb [data-cy-capvg][data-st-mock="v3"]>[data-st-mock-old]{display:none!important}
+  html:root[data-wf-page][data-wf-page][data-wf-page][data-wf-page][data-wf-page][data-wf-page] body .st-mb.st-mb [data-cy-capvg][data-st-mock="v3"]>cysure-mockup{display:block;width:100%}
+}
+/* escritorio: el componente sustituye al article.cxm dentro del mismo embed. La ventana de arte del wrapper de las
+   nueve cards de agente se retira (un solo marco); el resto del wrapper no se toca (LP03 lo aplica Integración). */
+html:root[data-wf-page][data-wf-page][data-wf-page][data-wf-page][data-wf-page][data-wf-page] body .st-dt.st-dt [data-st-ag][data-st-ag][data-st-mock="v3"]>div:has(>img){display:none!important}
+[data-cy-mockup][data-st-mock="v3"]>cysure-mockup{display:block;width:100%}

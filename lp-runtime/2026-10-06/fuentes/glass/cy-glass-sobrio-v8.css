@@ -1,0 +1,160 @@
+/* cy-glass-sobrio-v8.css (6 oct 2026, poda) = cy-glass-sobrio-v7.css (ecc39fd1) menos 11 reglas sin ningun elemento coincidente en CF (ES/EN, 1440 Chromium y 390 WebKit, dia/noche, normal y fallback de adapter). Rollback: cy-glass-sobrio-v7.css */
+/* Astra · Cristal Sobrio 01 · v2 · 14 septiembre 2026.
+   Material adapter only. Load AFTER current mockup CSS and CapV G styles.
+   No layout, content, illustration, visibility or interaction overrides. */
+html body [data-cy-glass="sobrio"] {
+  --glass-bg:rgba(248,250,253,.91); --glass-solid:#f8fafd;
+  --glass-ink:#142943; --glass-muted:#142943;
+  --glass-line:rgba(44,75,116,.30); --glass-edge:rgba(255,255,255,.88);
+  --glass-soft:rgba(60,94,141,.055); --glass-raised:rgba(255,255,255,.30);
+  --glass-shadow:0 12px 30px rgba(9,29,55,.10),inset 0 1px 0 rgba(255,255,255,.65);
+  --glass-focus:#275ca7;
+}
+html[data-cy-theme="noche"] body [data-cy-glass="sobrio"],
+html body [data-cy-glass="sobrio"][data-agent="payout"] {
+  --glass-bg:rgba(18,39,70,.94); --glass-solid:#122746;
+  --glass-ink:#edf4ff; --glass-muted:#EDF4FF;
+  --glass-line:rgba(180,207,244,.34); --glass-edge:rgba(182,211,250,.46);
+  --glass-soft:rgba(170,203,245,.055); --glass-raised:rgba(174,209,255,.075);
+  --glass-shadow:0 12px 30px rgba(0,8,24,.18),inset 0 1px 0 rgba(188,216,255,.13);
+  --glass-focus:#b4d2ff;
+}
+/* Map the existing design-system tokens instead of repainting semantic SVGs. */
+html body .cxm[data-cy-glass="sobrio"] {
+  --cxm-paper:transparent!important; --cxm-ink:var(--glass-ink)!important;
+  --cxm-muted:var(--glass-muted)!important; --cxm-line:var(--glass-line)!important;
+  --cxm-pp-surface:var(--glass-raised)!important;
+  --cxm-pp-sunken:var(--glass-soft)!important;
+  --cxm-pp-raised:var(--glass-raised)!important;
+  --cxm-pp-text:var(--glass-ink)!important;
+  --cxm-pp-muted:var(--glass-muted)!important;
+  --cxm-pp-faint:var(--glass-muted)!important;
+  --cxm-pp-border:var(--glass-line)!important;
+  --cxm-pp-hairline:var(--glass-line)!important;
+  background:transparent!important; box-shadow:none!important; border-color:transparent!important;
+}
+/* One glass surface, never the entire art-containing article. */
+html body .cxm[data-cy-glass="sobrio"] .pp-panel,
+html:root body .st-mb [data-cy-lang] #cy-capvg-frame [data-cy-capvg][data-cy-glass="sobrio"] {
+  background:var(--glass-bg)!important;
+  color:var(--glass-ink)!important;
+  border:0!important;
+  border-radius:16px!important;
+  box-shadow:none!important;
+  -webkit-backdrop-filter:blur(14px)!important;
+  backdrop-filter:blur(14px)!important;
+}
+/* These are known wrappers from R18/current markup, not arbitrary descendants. */
+
+/* Payout is intentionally navy in both global themes. Preserve green state meaning. */
+html body .cxm[data-cy-glass="sobrio"][data-agent="payout"] {
+  --cxm-pp-emerald-label:#76ddbd!important;
+  --cxm-pp-royal-label:#b5caff!important;
+  --cxm-pp-btn-bg:#e8f1ff!important;--cxm-pp-btn-text:#122746!important;
+}
+/* CapV mobile G: the existing separate art band and snap carousel stay intact.
+   Padding is deliberately on the single surface, not on the frame or track. */
+html:root body .st-mb [data-cy-lang] #cy-capvg-frame [data-cy-capvg][data-cy-glass="sobrio"] {
+  padding:18px!important;
+  --cy-ink:var(--glass-ink);--cy-body:var(--glass-muted);--cy-ln:var(--glass-line);
+}
+html:root body .st-mb [data-cy-lang] #cy-capvg-frame [data-cy-glass="sobrio"] [data-cy-capvg-slide] {
+  background:transparent!important;border-color:var(--glass-line)!important;
+  box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;
+}
+html:root body .st-mb [data-cy-lang] #cy-capvg-frame [data-cy-glass="sobrio"] :is([data-cy-capvg-h],[data-cy-capvg-t],[data-cy-capvg-row]) {color:var(--glass-ink)!important}
+html:root body .st-mb [data-cy-lang] #cy-capvg-frame [data-cy-glass="sobrio"] :is([data-cy-capvg-sub],[data-cy-capvg-p]) {color:var(--glass-muted)!important}
+
+/* No animated blur. Existing animations/timing remain owned by current scripts. */
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) {
+  html body .cxm[data-cy-glass="sobrio"] .pp-panel,
+  html:root body .st-mb [data-cy-lang] #cy-capvg-frame [data-cy-capvg][data-cy-glass="sobrio"] {background:var(--glass-solid)!important}
+}
+@media(prefers-reduced-transparency:reduce) {
+  html body .cxm[data-cy-glass="sobrio"] .pp-panel,
+  html:root body .st-mb [data-cy-lang] #cy-capvg-frame [data-cy-capvg][data-cy-glass="sobrio"] {
+    background:var(--glass-solid)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;
+  }
+}
+
+/* Toño: contorno limpio, sin relieve, tinte perimetral ni bisel.
+   El foco de teclado accesible se conserva solo durante la interacción. */
+html body .cxm[data-cy-glass="sobrio"] .pp-panel,
+html:root body .st-mb [data-cy-lang] #cy-capvg-frame [data-cy-capvg][data-cy-glass="sobrio"] {
+  outline:none; background-clip:padding-box!important;
+}
+
+/* E-1 QA: avatar RL legible en navy, sin alterar estados semánticos. */
+
+
+/* P31-R4b: only families with measured failing text receive stronger ink.
+   Geometry, hue semantics, surface, alpha, blur and layout stay unchanged. */
+html body .cxm[data-cy-glass="sobrio"] {
+  --cxm-pp-royal-label:#1B2C78!important;
+  --cxm-pp-emerald-label:#04452F!important;
+  --cxm-pp-coral-label:#701822!important;
+  --cxm-pp-amber-label:#4F3000!important;
+  /* Score contains a navy inset also during day; its muted ink was alpha .76. */
+  --cxm-pp-ink-muted:#EDF4FF!important;
+}
+html[data-cy-theme="noche"] body .cxm[data-cy-glass="sobrio"],
+html body .cxm[data-cy-glass="sobrio"][data-agent="payout"] {
+  --cxm-pp-royal-label:#D2DDFF!important;
+  --cxm-pp-royal:#D2DDFF!important;
+  --cxm-pp-emerald-label:#A0EFD7!important;
+  --cxm-pp-emerald:#A0EFD7!important;
+  --cxm-pp-coral-label:#FFC0BD!important;
+  --cxm-pp-coral:#FFC0BD!important;
+  --cxm-pp-amber-label:#FFE5A0!important;
+  --cxm-pp-amber:#FFE5A0!important;
+}
+
+/* V3: royal text without label suffix also fails on day glass (surface mobile). */
+html:not([data-cy-theme="noche"]) body .cxm[data-cy-glass="sobrio"]:not([data-agent="payout"]) {--cxm-pp-royal:#1B2C78!important}
+
+/* V4 · Residuals T-1/S-1/S-2 only. Payout S-3 belongs to integrator P36.
+   All rules are DAY ONLY. Preserve backgrounds, semantic signal and geometry. */
+
+
+
+/* Astra · visual correction v6 candidate · 14 September 2026.
+   Load AFTER the currently verified v4 sheet. Material only; no geometry changes.
+   Keeps all v4 ink/state fixes, E-1 and integrator P36. */
+html body [data-cy-glass="sobrio"] {
+  --glass-bg:rgba(248,250,253,.76);
+}
+html[data-cy-theme="noche"] body [data-cy-glass="sobrio"],
+html body [data-cy-glass="sobrio"][data-agent="payout"] {
+  --glass-bg:rgba(18,39,70,.76);
+}
+html body .cxm[data-cy-glass="sobrio"] .pp-panel,
+html:root body .st-mb [data-cy-lang] #cy-capvg-frame [data-cy-capvg][data-cy-glass="sobrio"] {
+  -webkit-backdrop-filter:blur(18px)!important;
+  backdrop-filter:blur(18px)!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+/* Preserve the existing opaque accessibility fallback after this later blur rule. */
+@media(prefers-reduced-transparency:reduce) {
+  html body .cxm[data-cy-glass="sobrio"] .pp-panel,
+  html:root body .st-mb [data-cy-lang] #cy-capvg-frame [data-cy-capvg][data-cy-glass="sobrio"] {
+    background:var(--glass-solid)!important;
+    -webkit-backdrop-filter:none!important;backdrop-filter:none!important;
+  }
+}
+
+/* RV-1 residuals only: three day text slots. No semantic icon recolor. */
+
+
+
+/* Payout: darker pigment, SAME .76 transparency, not a return to opacity. */
+html body .cxm[data-cy-glass="sobrio"][data-agent="payout"] {
+ --glass-bg:rgba(2,10,24,.76);
+ --glass-solid:#020A18;
+ --glass-ink:#FFFFFF;
+ --glass-muted:#FFFFFF;
+}
+
+/* Astra RV-1 final text residual: load AFTER integrated v6.
+   Only three Lead text slots during DAY; preserve alpha .76, blur18 and geometry. */
+
