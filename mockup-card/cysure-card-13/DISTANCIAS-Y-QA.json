@@ -1,0 +1,90 @@
+{
+  "scope": "Card UI mockup + animation only. Local headless QA, not staging or Safari native.",
+  "configurations": 416,
+  "cssStatesMeasured": 1248,
+  "failures": 0,
+  "states": [
+    "rest",
+    "running",
+    "reveal"
+  ],
+  "widths": [
+    280,
+    320,
+    480,
+    620
+  ],
+  "engines": [
+    "Chromium148",
+    "WebKit26.4 headless"
+  ],
+  "languages": [
+    "es",
+    "en"
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "expectedPadding": {
+    "mobile": {
+      "horizontal": 20,
+      "vertical": 18
+    },
+    "desktopContainerMin480": {
+      "horizontal": 24,
+      "vertical": 22
+    }
+  },
+  "observed": {
+    "mobile": {
+      "boxLeftMin": 21,
+      "boxRightMin": 21,
+      "maxBoxHorizontalAsymmetry": 0,
+      "glyphHorizontalMin": 21,
+      "headerTopMin": 19,
+      "noteBottomMin": 19.5343017578125
+    },
+    "desktop": {
+      "boxLeftMin": 25,
+      "boxRightMin": 25,
+      "maxBoxHorizontalAsymmetry": 0,
+      "glyphHorizontalMin": 25,
+      "headerTopMin": 23,
+      "noteBottomMin": 23.58642578125
+    }
+  },
+  "detailChecks": {
+    "cases": 104,
+    "iconLabelGapMin": 8,
+    "svgLabelOverlapCount": 0,
+    "svgLabelRenderedHeightMin": 8.96685791015625,
+    "diagramAreaHeightMin": 70.21875
+  },
+  "limits": [
+    "Running/reveal were applied as CSS state classes for measurement; this is not a native motion timing matrix.",
+    "Grid fits existing copy; no artificial centering of short strings, no copy changes, no font-size reductions.",
+    "At the minimum 280px container the diagram uses remaining70.22px; viewBox aspect ratio remains original.",
+    "Final QA on integrated page and Safari/iPhone is still required."
+  ],
+  "paintedTextContrastAfterSpacing": {
+    "webkit": {
+      "cases": 52,
+      "minimumRatio": 5.815761930179305,
+      "allMeasuredTextAtLeast45": true
+    },
+    "chromium": {
+      "cases": 52,
+      "minimumRatio": 5.349219378298104,
+      "allMeasuredTextAtLeast45": true
+    }
+  },
+  "minimalInlineSmoke": {
+    "mountedHosts": 26,
+    "engines": [
+      "Chromium",
+      "WebKit headless"
+    ],
+    "pageErrors": 0
+  }
+}

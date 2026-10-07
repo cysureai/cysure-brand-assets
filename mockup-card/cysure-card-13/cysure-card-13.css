@@ -1,0 +1,141 @@
+/* Proposal 04 Oct. Opt-in, Shadow DOM only. No geometry/type/copy changes. */
+:host([data-cy-frost="proposal"]) .scene {
+  --fx-relief:rgba(176,192,222,.45);
+  --fx-line:rgba(255,255,255,.85);
+  --fx-bottom:rgba(80,106,155,.22);
+  --fx-glow:rgba(255,255,255,.32);
+  --fx-wash:rgba(255,255,255,.28);
+  --fx-paper:rgba(247,251,255,.30);
+  --fx-line-inner:rgba(255,255,255,.58);
+}
+:host([data-cy-frost="proposal"][theme="dark"]) .scene,
+:host([data-cy-frost="proposal"]) .scene.inverted {
+  --fx-relief:rgba(159,176,255,.22);
+  --fx-line:rgba(215,231,255,.48);
+  --fx-bottom:rgba(13,25,53,.42);
+  --fx-glow:rgba(159,176,255,.14);
+  --fx-wash:rgba(185,210,255,.12);
+  --fx-paper:rgba(193,217,255,.10);
+  --fx-line-inner:rgba(225,239,255,.28);
+}
+:host([data-cy-frost="proposal"][theme="dark"]) .scene.inverted {
+  --fx-relief:rgba(176,192,222,.45);
+  --fx-line:rgba(255,255,255,.85);
+  --fx-bottom:rgba(80,106,155,.22);
+  --fx-glow:rgba(255,255,255,.32);
+  --fx-wash:rgba(255,255,255,.28);
+  --fx-paper:rgba(247,251,255,.30);
+  --fx-line-inner:rgba(255,255,255,.58);
+}
+:host([data-cy-frost="proposal"]) .glass {
+  /* Original background, blur, border and box geometry remain in place. */
+  box-shadow:0 9px 30px #00123310,0 2px 4px #00123310;
+}
+:host([data-cy-frost="proposal"]) .glass::before {
+  content:"";position:absolute;inset:-1px;border-radius:inherit;pointer-events:none;
+  z-index:0;
+  background:linear-gradient(150deg,var(--fx-wash),transparent 38%,transparent 68%,var(--fx-wash));
+  box-shadow:inset 0 1px 0 var(--fx-line),inset 0 -1px 0 var(--fx-bottom),
+    inset 1px 0 0 var(--fx-glow),inset -1px 0 0 var(--fx-glow),
+    inset 0 0 12px var(--fx-glow),
+    inset 0 10px 10px -10px var(--fx-relief),
+    inset 0 -10px 10px -10px var(--fx-relief),
+    inset 10px 0 10px -10px var(--fx-relief),
+    inset -10px 0 10px -10px var(--fx-relief);
+  /* Falloff ends at 14px. No veil/filter on the text or diagram. */
+  -webkit-mask-image:linear-gradient(to bottom,#000,rgba(0,0,0,.65) 3px,transparent 14px),linear-gradient(to top,#000,rgba(0,0,0,.65) 3px,transparent 14px),linear-gradient(to right,#000,rgba(0,0,0,.65) 3px,transparent 14px),linear-gradient(to left,#000,rgba(0,0,0,.65) 3px,transparent 14px);
+  mask-image:linear-gradient(to bottom,#000,rgba(0,0,0,.65) 3px,transparent 14px),linear-gradient(to top,#000,rgba(0,0,0,.65) 3px,transparent 14px),linear-gradient(to right,#000,rgba(0,0,0,.65) 3px,transparent 14px),linear-gradient(to left,#000,rgba(0,0,0,.65) 3px,transparent 14px);
+}
+:host([data-cy-frost="proposal"]) .glass > * {position:relative;z-index:1}
+/* Original figures and their coordinates are retained. Added detail is aria-hidden. */
+.fx-detail {display:none;pointer-events:none}
+:host([data-cy-frost="proposal"]) .fx-detail {display:inline}
+:host([data-cy-frost="proposal"]) .paper {fill:var(--fx-paper)}
+.fx-hair {stroke:var(--tone);stroke-width:.7;fill:none;opacity:.32}
+.fx-inlay {stroke:var(--fx-line-inner);stroke-width:.7;fill:none}
+.fx-wash {fill:var(--tone);opacity:.06}
+.fx-point {fill:var(--tone);opacity:.65}
+.fx-highlight {fill:var(--fx-line);opacity:.8}
+.fx-packet {fill:var(--tone);opacity:0}
+:host([data-cy-frost="proposal"]) .card.running .fx-scan {
+  transform-origin:77px 54px;animation:fx-scan 2.7s cubic-bezier(.2,.6,.25,1) both;
+}
+:host([data-cy-frost="proposal"]) .card.running .fx-node {
+  animation:fx-node 2.5s ease both;
+}
+:host([data-cy-frost="proposal"]) .card.running .fx-packet {
+  animation:fx-transfer 2.3s .15s ease both;
+}
+@keyframes fx-scan {from{transform:rotate(-75deg);opacity:0}25%{opacity:1}to{transform:rotate(0);opacity:1}}
+@keyframes fx-node {0%,18%{opacity:.1}50%,100%{opacity:1}}
+@keyframes fx-transfer {0%{opacity:0;transform:translateX(0)}25%{opacity:1}90%{opacity:1}100%{opacity:0;transform:translateX(72px)}}
+@media(prefers-reduced-motion:reduce){.fx-detail,.fx-detail *{animation:none!important;transition:none!important}}
+/* Existing primary ink gives secondary copy/diagram labels sufficient separation
+   from the illustrated backdrop; no new palette color. */
+:host([data-cy-frost="proposal"]) :is(.sub,.svgtext){color:var(--ink);fill:var(--ink)}
+/* Same small-container fit already used by current agents; extended to Payout.
+   Outer 440/222px geometry and SVG viewBox/coordinates stay unchanged. */
+@container (max-width:300px){
+  :host([data-cy-frost="proposal"][agent="payout"]) .glass .visual{
+    height:calc((100cqw - 70px) * .3929);margin:6px 0;
+  }
+}
+/* A minimum navy backing protects text over bright artwork even when a browser
+   reports backdrop-filter support but does not paint the blur (headless WebKit).
+   Reuses the original 20,39,79 glass color; only opacity changes. */
+:host([data-cy-frost="proposal"][theme="dark"]) .scene:not(.inverted),
+:host([data-cy-frost="proposal"]:not([theme="dark"])) .scene.inverted {
+  --glass:linear-gradient(125deg,rgba(20,39,79,.70),rgba(20,39,79,.78));
+}
+
+/* V2: redesigned illustrative figures; labels and product meaning conserved. */
+:host([data-cy-frost="proposal"]) .fx-baseline{display:none}
+:host([data-cy-frost="proposal"]) .glass{box-shadow:0 12px 30px #00123320,inset 0 1px 0 var(--fx-line),inset 0 -1px 0 var(--fx-bottom);}
+:host([data-cy-frost="proposal"]) .glass::after{content:"";position:absolute;inset:5px;border-radius:9px;border:1px solid var(--fx-line-inner);opacity:.45;pointer-events:none;z-index:0;}
+:host([data-cy-frost="proposal"]) .micro{letter-spacing:.03em;justify-content:flex-start;gap:8px}
+:host([data-cy-frost="proposal"]) .identity-icon{padding:4px;width:26px;height:26px;border-radius:7px;background:var(--fx-paper);border:1px solid var(--fx-line-inner);}
+:host([data-cy-frost="proposal"]) .caption{font-weight:600;letter-spacing:-.35px}
+:host([data-cy-frost="proposal"]) .sub{line-height:1.4}
+.fx-disc,.fx-surface{fill:var(--fx-paper);stroke:var(--fx-line-inner);stroke-width:1}
+.fx-grid{fill:none;stroke:var(--tone);stroke-width:.75;opacity:.26}
+.fx-route{fill:none;stroke:var(--tone);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.fx-area{fill:var(--tone);opacity:.085}
+.fx-halo{fill:var(--tone);opacity:.16;stroke:var(--tone);stroke-width:.7}
+.fx-core{fill:var(--tone)}
+.fx-dot{fill:var(--tone);opacity:.38}
+.fx-building,.fx-document,.fx-bank,.fx-selected-icon{fill:none;stroke:var(--tone);stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}
+.fx-detail-line{fill:none;stroke:var(--tone);stroke-width:1;opacity:.35;stroke-linecap:round}
+.fx-selected{stroke:var(--tone);stroke-width:1.3}
+:host([data-cy-frost="proposal"]) .card.running .fx-route{stroke-dasharray:320;stroke-dashoffset:320;animation:fx-route-in 1.4s .15s ease forwards}
+:host([data-cy-frost="proposal"]) .card.running .fx-core{animation:fx-node 2.5s ease both}
+@keyframes fx-route-in{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){:host([data-cy-frost="proposal"]) .fx-detail *{animation:none!important;stroke-dashoffset:0!important}}
+
+/* Ten additional current templates keep their illustrative quantities and labels. */
+:host([data-cy-frost="proposal"]) .fx-retained{display:inline}
+:host([data-cy-frost="proposal"]) .fx-retained .paper{fill:var(--fx-paper);stroke:var(--fx-line-inner);stroke-width:1.1}
+:host([data-cy-frost="proposal"]) .fx-retained .signal{stroke-linecap:round;stroke-linejoin:round}
+:host([data-cy-frost="proposal"]) .fx-retained .track{stroke-linecap:round;stroke-linejoin:round;stroke-width:1.15}
+:host([data-cy-frost="proposal"]) .fx-retained .soft{stroke:var(--fx-line-inner);stroke-width:.7}
+
+/* V2 material fallback: more separation from unblurred backdrop; no whole-art filter. */
+:host([data-cy-frost="proposal"]:not([theme="dark"])) .scene:not(.inverted),
+:host([data-cy-frost="proposal"][theme="dark"]) .scene.inverted{--glass:linear-gradient(125deg,rgba(255,255,255,.80),rgba(224,236,253,.70));--fx-paper:rgba(247,251,255,.60)}
+:host([data-cy-frost="proposal"][theme="dark"]) .scene:not(.inverted),
+:host([data-cy-frost="proposal"]:not([theme="dark"])) .scene.inverted{--fx-paper:rgba(193,217,255,.17)}
+.fx-grid{opacity:.40}
+:host([data-cy-frost="proposal"]) .fx-retained .track{stroke:var(--tone);opacity:.58}
+:host([data-cy-frost="proposal"]) .svgbig{fill:var(--ink)!important}
+:host([data-cy-frost="proposal"]) .fx-core{stroke:var(--ink);stroke-width:.5}
+/* Structural connectors use primary ink; agent color remains on priority nodes. */
+:host([data-cy-frost="proposal"]) .fx-route,
+:host([data-cy-frost="proposal"]) .fx-retained .signal{stroke:var(--ink)}
+/* Content spacing: symmetric inset measured from the visible glass edge. */
+:host([data-cy-frost="proposal"]) .glass{
+  display:grid;grid-template-rows:auto minmax(0,1fr) auto auto;gap:6px;
+  padding:18px 20px;align-content:stretch;
+}
+:host([data-cy-frost="proposal"]) .glass .visual{height:auto!important;min-height:0;margin:0!important}
+:host([data-cy-frost="proposal"]) .glass .sub{margin:0}
+:host([data-cy-frost="proposal"]) .glass .micro{min-width:0}
+@container(min-width:480px){:host([data-cy-frost="proposal"]) .glass{padding:22px 24px;gap:7px}}

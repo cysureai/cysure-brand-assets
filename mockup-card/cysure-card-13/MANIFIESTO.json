@@ -1,0 +1,27 @@
+[
+  {
+    "file": "LEEME-CLAUDE.md",
+    "bytes": 2971,
+    "sha256": "40a6334316ccf86445672b2125dbe29e23c7026b367230e784e9af2d5be21312"
+  },
+  {
+    "file": "cysure-card-13.css",
+    "bytes": 9027,
+    "sha256": "cc305b68a341a75932d0089274a47d3d7d8fecaf587c20fafb77e12d7fdc5ae1"
+  },
+  {
+    "file": "DISTANCIAS-Y-QA.json",
+    "bytes": 2097,
+    "sha256": "40bf9459707b063c2a26ef702ba84b2572ce6ad448c243b66733846070f833cf"
+  },
+  {
+    "file": "cysure-card-13.js",
+    "bytes": 7733,
+    "sha256": "a02aba7d35b6b8f8417b1f8c4fd3e7a710c9afdd7b052452a7c9b627a13624f9"
+  },
+  {
+    "file": "cysure-card-13.inline.js",
+    "bytes": 17192,
+    "sha256": "b6f31ab98e71fcfd074fc2acae6adef3451c4b8257303ac59ab863e035f8e155"
+  }
+]
