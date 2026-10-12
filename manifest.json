@@ -8383,13 +8383,13 @@
       },
       "version": "existente en main e471086",
       "status": "existente · conservado sin cambios (URL externa estable)",
-      "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
+      "approval": "Trazado idéntico al maestro v19.49. Se conserva la serialización histórica para no cambiar el sha256 de la URL.",
       "dimensions": {
         "viewBox": "0 0 490.92 133"
       },
       "bytes": 6127,
       "sha256": "b382a41e4fc1421aa5beafaf7bad42da81c08b6cfefed66fccdebc4d68f62802",
-      "notes": "Lockup oficial v2.1. Equivalente C14N al maestro de las tres bibliotecas `project/marca/cysure-lockup-master.svg` (6133 B, sha256 f1c0f862686f4c7a997e654000b547e5d2277755fac87218c8b681b618197951): mismo trazado, viewBox y atributos; sólo cambia la serialización del cierre del path. No se añade otra copia para no duplicar."
+      "notes": "Lockup v2.1. Cotejado el 2026-10-12 contra el maestro v19.49 cysure-lockup-master.svg (6133 B, sha256 f1c0f862686f4c7a997e654000b547e5d2277755fac87218c8b681b618197951): el trazado, el viewBox y los atributos son los mismos. Sólo cambia el cierre del path (`/>` frente a `></path>`). No se sustituyó."
     },
     {
       "path": "cysure-mark.svg",
@@ -8400,13 +8400,13 @@
       },
       "version": "existente en main e471086",
       "status": "existente · conservado sin cambios (URL externa estable)",
-      "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
+      "approval": "Trazado idéntico al símbolo del maestro v19.49.",
       "dimensions": {
         "viewBox": "0 0 115.6 133"
       },
       "bytes": 2739,
       "sha256": "68702c0db924bb6dc46da7dd5ff7faac6241684362e0a8f1491216478a6cdb72",
-      "notes": "Símbolo sin wordmark (v2.1). Las bibliotecas no publican el símbolo como archivo suelto; no hay fuente con la que cotejar bytes."
+      "notes": "Símbolo sin wordmark. Los dos subtrazados coinciden, carácter a carácter, con el símbolo del maestro v19.49 (viewBox 0 0 115.6 133). No se sustituyó."
     },
     {
       "path": "cysure-mark-firma-1024.png",
@@ -8598,6 +8598,164 @@
       "bytes": 131223,
       "sha256": "eb92641a1dfdaf14e3e8b4d80e175225ac5e1b8fb8b175d7c6ef5e921aea07d7",
       "notes": "Retrato preexistente en el repo. Mismo caso que perfil-diego-1024.jpg: se conserva, no se promueve."
+    },
+    {
+      "path": "marca/cysure-lockup-dia.svg",
+      "category": "logo",
+      "theme": "dia",
+      "source": {
+        "library": "Cysure · Presentaciones y Documentos",
+        "version": "v19.49",
+        "file": "cysure-lockup-master.svg"
+      },
+      "version": "v19.49 · tinta fija",
+      "status": "publicado · derivado del maestro v19.49",
+      "approval": "Geometría del maestro v19.49. Tinta fija para uso en <img>.",
+      "dimensions": {
+        "viewBox": "0 0 490.92 133"
+      },
+      "bytes": 6128,
+      "sha256": "a044acc64cf725a76f8cd0f5bce860def8432e16a0b5f80a8a3a52462d188483",
+      "notes": "Maestro v19.49 con fill=\"#0E1116\" en lugar de currentColor. Mismo path y viewBox."
+    },
+    {
+      "path": "marca/cysure-lockup-noche.svg",
+      "category": "logo",
+      "theme": "noche",
+      "source": {
+        "library": "Cysure · Presentaciones y Documentos",
+        "version": "v19.49",
+        "file": "cysure-lockup-master.svg"
+      },
+      "version": "v19.49 · tinta fija",
+      "status": "publicado · derivado del maestro v19.49",
+      "approval": "Geometría del maestro v19.49. Tinta fija para uso en <img>.",
+      "dimensions": {
+        "viewBox": "0 0 490.92 133"
+      },
+      "bytes": 6128,
+      "sha256": "99a08434b6253e639fc5dbb6ca39adba59d4a820e0a156185f198c34d17b650e",
+      "notes": "Derivada registrada del maestro (7 oct 2026): único cambio fill=\"#e8ecf8\" (--text de noche). sha256 99a08434b6253e639fc5dbb6ca39adba59d4a820e0a156185f198c34d17b650e. No es blanco."
+    },
+    {
+      "path": "marca/cysure-mark-dia-890x1024.png",
+      "category": "logo",
+      "theme": "dia",
+      "source": {
+        "library": "Cysure · Presentaciones y Documentos",
+        "version": "v19.49",
+        "file": "cysure-lockup-master.svg"
+      },
+      "version": "v19.49 · PNG transparente",
+      "status": "publicado · derivado del maestro v19.49",
+      "approval": "Raster del maestro v19.49, fondo transparente. El viewBox no tiene margen interno.",
+      "dimensions": [
+        890,
+        1024
+      ],
+      "bytes": 57099,
+      "sha256": "f10a83262967b54fb333d9e6534f1f30d98052caab3823ac3af0fddc3227d0ef",
+      "notes": "Símbolo del maestro, alto 1024 px (lado largo), tinta #0E1116, fondo transparente. Ancho 890 por el viewBox 115.6×133. Sin padding añadido."
+    },
+    {
+      "path": "marca/cysure-mark-dia-1780x2048.png",
+      "category": "logo",
+      "theme": "dia",
+      "source": {
+        "library": "Cysure · Presentaciones y Documentos",
+        "version": "v19.49",
+        "file": "cysure-lockup-master.svg"
+      },
+      "version": "v19.49 · PNG transparente",
+      "status": "publicado · derivado del maestro v19.49",
+      "approval": "Raster del maestro v19.49, fondo transparente. El viewBox no tiene margen interno.",
+      "dimensions": [
+        1780,
+        2048
+      ],
+      "bytes": 127490,
+      "sha256": "d231413eb89d652d0776c2d7f7ee4ef5712afeb1606c9ce3423530abec8b563f",
+      "notes": "Símbolo del maestro, alto 2048 px, tinta #0E1116, fondo transparente. Ancho 1780. Sin padding añadido."
+    },
+    {
+      "path": "marca/cysure-mark-noche-890x1024.png",
+      "category": "logo",
+      "theme": "noche",
+      "source": {
+        "library": "Cysure · Presentaciones y Documentos",
+        "version": "v19.49",
+        "file": "cysure-lockup-master.svg"
+      },
+      "version": "v19.49 · PNG transparente",
+      "status": "publicado · derivado del maestro v19.49",
+      "approval": "Raster del maestro v19.49, fondo transparente. El viewBox no tiene margen interno.",
+      "dimensions": [
+        890,
+        1024
+      ],
+      "bytes": 43709,
+      "sha256": "5502ee32057381137bab608b2b85fb01caa9189304cf6bbc136c3f16772c7933",
+      "notes": "Símbolo del maestro, alto 1024 px, tinta #FFFFFF, fondo transparente."
+    },
+    {
+      "path": "marca/cysure-mark-noche-1780x2048.png",
+      "category": "logo",
+      "theme": "noche",
+      "source": {
+        "library": "Cysure · Presentaciones y Documentos",
+        "version": "v19.49",
+        "file": "cysure-lockup-master.svg"
+      },
+      "version": "v19.49 · PNG transparente",
+      "status": "publicado · derivado del maestro v19.49",
+      "approval": "Raster del maestro v19.49, fondo transparente. El viewBox no tiene margen interno.",
+      "dimensions": [
+        1780,
+        2048
+      ],
+      "bytes": 100396,
+      "sha256": "a17039f332c8ac3332cd1a10513300de30b4f84b1c747fb98dbd4bc604b4b002",
+      "notes": "Símbolo del maestro, alto 2048 px, tinta #FFFFFF, fondo transparente."
+    },
+    {
+      "path": "marca/cysure-lockup-dia-2400x650.png",
+      "category": "logo",
+      "theme": "dia",
+      "source": {
+        "library": "Cysure · Presentaciones y Documentos",
+        "version": "v19.49",
+        "file": "cysure-lockup-master.svg"
+      },
+      "version": "v19.49 · PNG transparente",
+      "status": "publicado · derivado del maestro v19.49",
+      "approval": "Raster del maestro v19.49, fondo transparente. El viewBox no tiene margen interno.",
+      "dimensions": [
+        2400,
+        650
+      ],
+      "bytes": 77443,
+      "sha256": "354f40ceb14c9fc90f6e7aa62d51b7aa6c0b05511bb9f52974de29976bfc16fa",
+      "notes": "Lockup del maestro a 2400 px de ancho (alto 650, viewBox 490.92×133), tinta #0E1116, fondo transparente. Sin padding añadido: el margen del viewBox es 0."
+    },
+    {
+      "path": "marca/cysure-lockup-noche-2400x650.png",
+      "category": "logo",
+      "theme": "noche",
+      "source": {
+        "library": "Cysure · Presentaciones y Documentos",
+        "version": "v19.49",
+        "file": "cysure-lockup-master.svg"
+      },
+      "version": "v19.49 · PNG transparente",
+      "status": "publicado · derivado del maestro v19.49",
+      "approval": "Raster del maestro v19.49, fondo transparente. El viewBox no tiene margen interno.",
+      "dimensions": [
+        2400,
+        650
+      ],
+      "bytes": 60715,
+      "sha256": "3ca216994193acbffe67edb3ad03c28cd82f877cc2c73298f16eb0bbdae5dd8d",
+      "notes": "Lockup del maestro a 2400×650, tinta #FFFFFF, fondo transparente. El SVG de noche de la biblioteca es #e8ecf8; este PNG sigue el blanco pedido para la noche."
     }
   ],
   "pending": [
@@ -8617,14 +8775,9 @@
       "needed": "VoBo de publicación explícito."
     },
     {
-      "item": "Cotejo del logo contra Presentaciones y Documentos v19.49",
-      "reason": "El repo hermano cysureai/claude-plugins no es accesible desde este entorno (404). El cotejo de esta entrega usa cysure-lockup.svg / cysure-mark.svg, equivalentes al maestro de las bibliotecas del 4 oct 2026 (tokens 2), no a la biblioteca v19.49.",
-      "needed": "Acceso de lectura a main de cysureai/claude-plugins y, si el logo maestro v19.49 difiere, sustituir los raster en la misma ruta."
-    },
-    {
-      "item": "Exportes de logo que faltan y nombres de portada",
-      "reason": "No hay PNG transparente del mark ni del lockup en buena resolución, ni variante noche suelta (el SVG es currentColor; el único PNG del lockup es 320×132 opaco). Los nombres de las portadas Notion usan guiones y conservan «2400x600»; la convención pedida es espacios, sin guiones bajos, y divisor «|». Renombrar rompería las URLs raw.",
-      "needed": "Decisión de exportación (tamaño, padding, tinta día #0E1116 y noche blanco, fondo transparente) y si se publican rutas nuevas además de las históricas."
+      "item": "Nombres de las portadas Notion",
+      "reason": "Las rutas históricas usan kebab-case y conservan «2400x600». La convención pedida es espacios, sin guiones bajos, y divisor «|».",
+      "needed": "Decidir si se publican rutas nuevas con ese nombre, conviviendo con las históricas."
     }
   ],
   "excluded": [

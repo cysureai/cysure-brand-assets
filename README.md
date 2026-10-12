@@ -28,7 +28,7 @@ Toda corrección se hace en la biblioteca y se redistribuye aquí con nuevo sha2
 
 ### Históricos (nombres estables — no renombrar, hay URLs externas apuntando a ellos)
 
-- `cysure-mark.svg` / `cysure-lockup.svg` — vectores oficiales del mark y del lockup (v2.1). `cysure-lockup.svg` es equivalente C14N al maestro *project/marca/cysure-lockup-master.svg* de las tres bibliotecas (mismo trazado y viewBox `0 0 490.92 133`; sólo cambia la serialización), por eso no se añade otra copia. Monocromo con `fill="currentColor"`: en `<img>` pinta negro; para heredar la tinta del tema, insértalo en línea.
+- `cysure-mark.svg` / `cysure-lockup.svg` — vectores oficiales del mark y del lockup (v2.1), con `fill="currentColor"`. Cotejados el 12 oct 2026 contra el maestro de Presentaciones y Documentos v19.49 (cysure-lockup-master.svg, 6 133 B, sha256 f1c0f862686f4c7a…): el trazado, el viewBox `0 0 490.92 133` y los atributos coinciden. El lockup de este repo sólo cierra el path con `/>` en lugar de `></path>` (6 127 B). El mark es los dos primeros subtrazados de ese maestro, viewBox `0 0 115.6 133`. No se sustituyeron: el trazado no difiere. En `<img>` pintan negro; para heredar la tinta del tema, van en línea.
 - `cysure-mark-firma-1024.png` — mark sobre blanco, 1024×1024 (firma electrónica)
 - `cover-notion-linkedin-drive-blanco-2400x600.png` — cover claro (Notion HQ, LinkedIn, Drive). Píxeles 1500×600: recorte centrado del original 2400×600. El nombre legado se conserva para no romper las URLs externas
 - `cover-notion-linkedin-drive-dark-2400x600.png` — cover oscuro: escena completa con el lockup Cysure centrado, sin frase ni subtítulo (Notion HQ, LinkedIn, Drive). Píxeles 1500×600: recorte centrado del original 2400×800 y escala uniforme. El nombre legado `2400x600` se conserva para no romper las URLs externas
@@ -37,6 +37,16 @@ Toda corrección se hace en la biblioteca y se redistribuye aquí con nuevo sha2
 - `firma-icon-calendar.png` — ícono de agenda 512×512, línea blanca sobre transparente (pill "Agendar reunión" de la firma)
 - `firma-meandro-transparente-110x24-v2.png` — meandro transparente de la firma, 110×24
 - `perfil-diego-1024.jpg` / `perfil-tono-1024.jpg` — retratos preexistentes. Se conservan sin cambios; las bibliotecas no registran aprobación de publicación para fotos de perfil, así que no se promueven ni se enlazan desde material nuevo.
+
+### Marca v19.49 con tinta fija — `marca/`
+
+Archivos nuevos. No sustituyen a `cysure-lockup.svg` ni a `cysure-mark.svg`. El viewBox del maestro llega al borde del dibujo (margen propio 0; el path incluso asoma unas décimas fuera del viewBox), así que el PNG es ese marco, sin un padding añadido.
+
+- `marca/cysure-lockup-dia.svg` — el maestro con `fill="#0E1116"` (tinta de día). Misma geometría; no es `currentColor`.
+- `marca/cysure-lockup-noche.svg` — la derivada registrada del maestro (7 oct 2026, sha256 `99a08434b6253e63…`, 6 128 B): único cambio `fill="#e8ecf8"` (`--text` de noche). No es blanco.
+- `marca/cysure-mark-dia-890x1024.png` / `marca/cysure-mark-dia-1780x2048.png` — símbolo, tinta `#0E1116`, fondo transparente. El lado largo es 1024 y 2048 px; el ancho sale del viewBox `115.6×133`.
+- `marca/cysure-mark-noche-890x1024.png` / `marca/cysure-mark-noche-1780x2048.png` — el mismo símbolo en blanco (`#FFFFFF`) sobre transparente.
+- `marca/cysure-lockup-dia-2400x650.png` / `marca/cysure-lockup-noche-2400x650.png` — lockup a 2400 px de ancho (alto 650, el viewBox `490.92×133`), día `#0E1116` y noche blanco, fondo transparente.
 
 ### Portadas de los sistemas de diseño — `portadas-ds/`
 
