@@ -20,7 +20,7 @@ Es **distribución versionada** de assets ya aprobados. **No es una cuarta bibli
 
 Favicons, metas ES dark v3 y la card llegaron en un sobre de transferencia (5 oct 2026, sha256 `b1b48060…71a0`) con los ZIP originales sin regenerar; el manifiesto registra el sobre y el paquete de cada archivo. El escritor del sistema de diseño ya incorporó su copia canónica a la LP 38.5 (grupos «Favicons» y «Meta ES dark v3», Files `entregas/card-13-minimo-04oct/`), con sha256 idéntico al de este repositorio; el manifiesto lo registra en `canonical`.
 
-Toda corrección se hace en la biblioteca y se redistribuye aquí con nuevo sha256. Aquí no se redibuja, no se recolorea, no se recomprime ni se renombra un asset existente.
+Toda corrección se hace en la biblioteca y se redistribuye aquí con nuevo sha256. Aquí no se redibuja, no se recolorea, no se recomprime ni se renombra un asset existente. Excepción: las dos portadas de Notion, LinkedIn y Drive se recortaron a 1500×600 en la misma ruta (11 oct 2026) para el marco que Notion recomienda. No se redibujó el logo.
 
 `manifest.json` lista **cada** archivo con origen (biblioteca, versión, grupo, nombre, blob), versión, estado, aprobación, dimensiones, peso y sha256, más los pendientes y las exclusiones. `python3 scripts/verify-manifest.py` comprueba bytes, sha256 y dimensiones contra el disco, que no haya archivos sin registrar ni duplicados por sha256, y que las rutas citadas en este README existan.
 
@@ -30,8 +30,8 @@ Toda corrección se hace en la biblioteca y se redistribuye aquí con nuevo sha2
 
 - `cysure-mark.svg` / `cysure-lockup.svg` — vectores oficiales del mark y del lockup (v2.1). `cysure-lockup.svg` es equivalente C14N al maestro *project/marca/cysure-lockup-master.svg* de las tres bibliotecas (mismo trazado y viewBox `0 0 490.92 133`; sólo cambia la serialización), por eso no se añade otra copia. Monocromo con `fill="currentColor"`: en `<img>` pinta negro; para heredar la tinta del tema, insértalo en línea.
 - `cysure-mark-firma-1024.png` — mark sobre blanco, 1024×1024 (firma electrónica)
-- `cover-notion-linkedin-drive-blanco-2400x600.png` — cover claro (Notion HQ, LinkedIn, Drive)
-- `cover-notion-linkedin-drive-dark-2400x600.png` — cover oscuro: escena completa con el lockup Cysure centrado, sin frase ni subtítulo (Notion HQ, LinkedIn, Drive). Dimensiones reales 2400×800; el nombre legado `2400x600` se conserva para no romper las URLs externas
+- `cover-notion-linkedin-drive-blanco-2400x600.png` — cover claro (Notion HQ, LinkedIn, Drive). Píxeles 1500×600: recorte centrado del original 2400×600. El nombre legado se conserva para no romper las URLs externas
+- `cover-notion-linkedin-drive-dark-2400x600.png` — cover oscuro: escena completa con el lockup Cysure centrado, sin frase ni subtítulo (Notion HQ, LinkedIn, Drive). Píxeles 1500×600: recorte centrado del original 2400×800 y escala uniforme. El nombre legado `2400x600` se conserva para no romper las URLs externas
 - `google-workspace-logo-320x132.png` — lockup horizontal (Google Workspace)
 - `firma-icon-whatsapp.png` / `firma-icon-linkedin.png` / `firma-icon-x.png` — íconos sociales 512×512 para la firma electrónica (tile redondeado, colores oficiales)
 - `firma-icon-calendar.png` — ícono de agenda 512×512, línea blanca sobre transparente (pill "Agendar reunión" de la firma)

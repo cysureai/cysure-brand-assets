@@ -8433,14 +8433,15 @@
         "library": "histórico del repositorio (anterior a esta entrega)"
       },
       "version": "existente en main e471086",
-      "status": "existente · conservado sin cambios (URL externa estable)",
+      "status": "normalizado a 1500×600 (Notion) · ruta histórica conservada",
       "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
       "dimensions": [
-        2400,
+        1500,
         600
       ],
-      "bytes": 133837,
-      "sha256": "0b59268728ac25882788559f8b282db756fb480f95f186fcd366b8c137b82b8f"
+      "bytes": 126087,
+      "sha256": "dd2e759fa7c517a00357aeff3acec5b8a764e82a8bc50f227d9da7ecfc0377e2",
+      "notes": "Antes 2400×600 (4:1). Normalizado a la portada Notion 1500×600 (2.5:1) el 2026-10-11. Recorte centrado para conservar el lockup; la ruta no cambia para no romper URLs raw. El nombre de archivo sigue siendo el legado."
     },
     {
       "path": "cover-notion-linkedin-drive-dark-2400x600.png",
@@ -8450,15 +8451,15 @@
         "library": "histórico del repositorio (anterior a esta entrega)"
       },
       "version": "existente en main e471086",
-      "status": "existente · conservado sin cambios (URL externa estable)",
+      "status": "normalizado a 1500×600 (Notion) · ruta histórica conservada",
       "approval": "Publicado antes de esta entrega; no reauditado contra las bibliotecas salvo lo indicado.",
       "dimensions": [
-        2400,
-        800
+        1500,
+        600
       ],
-      "bytes": 1185209,
-      "sha256": "4369c6e0c14ab72d9bf52da9c3b03aa8e38543ef3efb12e442d4919682d94ab7",
-      "notes": "Dimensiones reales 2400×800; nombre legado conservado por URLs externas."
+      "bytes": 688365,
+      "sha256": "7a1b716787bffc51f2a4a7e3918a8ced636cba154202a1e4dc55f632e4531b87",
+      "notes": "Antes 2400×800 (3:1), 1185209 B. Normalizado a la portada Notion 1500×600 (2.5:1) el 2026-10-11. Recorte centrado para conservar el lockup; la ruta no cambia para no romper URLs raw. El nombre de archivo sigue siendo el legado."
     },
     {
       "path": "google-workspace-logo-320x132.png",
@@ -8614,6 +8615,16 @@
       "item": "retrato-iii-advisor (día/noche)",
       "reason": "Está en el arte servido de la LP, pero Presentaciones registra «El advisor no se añade» y no hay VoBo de publicación localizado.",
       "needed": "VoBo de publicación explícito."
+    },
+    {
+      "item": "Cotejo del logo contra Presentaciones y Documentos v19.49",
+      "reason": "El repo hermano cysureai/claude-plugins no es accesible desde este entorno (404). El cotejo de esta entrega usa cysure-lockup.svg / cysure-mark.svg, equivalentes al maestro de las bibliotecas del 4 oct 2026 (tokens 2), no a la biblioteca v19.49.",
+      "needed": "Acceso de lectura a main de cysureai/claude-plugins y, si el logo maestro v19.49 difiere, sustituir los raster en la misma ruta."
+    },
+    {
+      "item": "Exportes de logo que faltan y nombres de portada",
+      "reason": "No hay PNG transparente del mark ni del lockup en buena resolución, ni variante noche suelta (el SVG es currentColor; el único PNG del lockup es 320×132 opaco). Los nombres de las portadas Notion usan guiones y conservan «2400x600»; la convención pedida es espacios, sin guiones bajos, y divisor «|». Renombrar rompería las URLs raw.",
+      "needed": "Decisión de exportación (tamaño, padding, tinta día #0E1116 y noche blanco, fondo transparente) y si se publican rutas nuevas además de las históricas."
     }
   ],
   "excluded": [
