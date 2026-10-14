@@ -130,3 +130,4 @@ Detalle en `manifest.json` → `pending`.
 - **Verificación:** `scripts/verify-manifest.py` sólo necesita Python 3.8+.
 
 Fuente canónica de diseño: las tres bibliotecas de Claude Design citadas arriba (mark/lockup v2.1).
+- cover-notion-atalayas-1500x600.png: cover de Notion 1500×600 (R26 atalayas, noche, con logo)
