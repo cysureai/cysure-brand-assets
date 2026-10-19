@@ -38,6 +38,14 @@ Toda corrección se hace en la biblioteca y se redistribuye aquí con nuevo sha2
 - `firma-meandro-transparente-110x24-v2.png` — meandro transparente de la firma, 110×24
 - `perfil-diego-1024.jpg` / `perfil-tono-1024.jpg` — retratos preexistentes. Se conservan sin cambios; las bibliotecas no registran aprobación de publicación para fotos de perfil, así que no se promueven ni se enlazan desde material nuevo.
 
+### Correos — `email/`
+
+Imágenes de los correos transaccionales (plantillas de Clerk y avisos de la plataforma vía Resend). Las URL raw de `main` son las que cargan los correos; no se renombran.
+
+- `email/cysure-logo-dia.png` — lockup en tinta #0E1116, 480 px de ancho; encabezado en modo claro (se muestra a 132 px)
+- `email/cysure-logo-noche.png` — lockup #E8ECF8, 480 px; encabezado en modo oscuro y pie negro
+- `email/cysure-red-linkedin.png` / `email/cysure-red-x.png` / `email/cysure-red-instagram.png` — íconos del pie, 48×48, tinta #D0D2D5 sobre transparente (los SVG servidos de PieLP)
+
 ### Portadas de los sistemas de diseño — `portadas-ds/`
 
 PNG 1920×1080 (16:9), bytes idénticos a la portada aprobada de cada biblioteca.
