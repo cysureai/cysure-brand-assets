@@ -8687,6 +8687,21 @@
       ],
       "bytes": 2178,
       "sha256": "b3c28ec65e4bd069883fcffea47fd072f35961ff2a7a8f35e0ba14fba42ff866"
+    },
+    {
+      "path": "email/Correos Cysure.zip",
+      "category": "correo",
+      "theme": null,
+      "source": {
+        "library": "Cysure · Landing Page y Presentaciones y Documentos v19.49",
+        "note": "Paquete de plantillas de correo (Clerk y plataforma)."
+      },
+      "version": "correos 2026-10-19",
+      "status": "publicado",
+      "approval": "Plantillas de correo aprobadas por Toño el 19 oct 2026: clerk/ (HTML de las 10 plantillas de Clerk), revolvapp/ (el mismo diseño en el formato del editor de Clerk, ya cargado en staging), plataforma/ (13 avisos de ejemplo y layout.gohtml para el backend) y assets/.",
+      "dimensions": null,
+      "bytes": 127449,
+      "sha256": "32eefbdffc8402ab505f432a61d942d833e695a51ea836f7ba53885851e55836"
     }
   ],
   "pending": [

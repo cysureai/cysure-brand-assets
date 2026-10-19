@@ -45,6 +45,7 @@ Imágenes de los correos transaccionales (plantillas de Clerk y avisos de la pla
 - `email/cysure-logo-dia.png` — lockup en tinta #0E1116, 480 px de ancho; encabezado en modo claro (se muestra a 132 px)
 - `email/cysure-logo-noche.png` — lockup #E8ECF8, 480 px; encabezado en modo oscuro y pie negro
 - `email/cysure-red-linkedin.png` / `email/cysure-red-x.png` / `email/cysure-red-instagram.png` — íconos del pie, 48×48, tinta #D0D2D5 sobre transparente (los SVG servidos de PieLP)
+- `email/Correos Cysure.zip` — plantillas de correo: `clerk/` (10 plantillas de Clerk en HTML), `revolvapp/` (las mismas en el formato del editor de Clerk, ya cargadas en staging), `plataforma/` (13 avisos de ejemplo y `layout.gohtml` para `backend/internal/notifications/email`) y `assets/`
 
 ### Portadas de los sistemas de diseño — `portadas-ds/`
 
