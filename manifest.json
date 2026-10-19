@@ -8597,6 +8597,96 @@
       "bytes": 131223,
       "sha256": "eb92641a1dfdaf14e3e8b4d80e175225ac5e1b8fb8b175d7c6ef5e921aea07d7",
       "notes": "Retrato preexistente en el repo. Mismo caso que perfil-diego-1024.jpg: se conserva, no se promueve."
+    },
+    {
+      "path": "email/cysure-logo-dia.png",
+      "category": "correo",
+      "theme": "dia",
+      "source": {
+        "library": "Cysure · Landing Page (PieLP) y maestro del lockup de Presentaciones y Documentos v19.49",
+        "note": "Render para correo transaccional (Clerk y plataforma). Ver approval."
+      },
+      "version": "correos 2026-10-19",
+      "status": "publicado",
+      "approval": "Lockup maestro (cysure-lockup-master.svg, tinta #0E1116) rasterizado a 480 px de ancho para el encabezado de los correos en modo claro. Subido con autorización de Toño (19 oct 2026) para los correos de Clerk y Resend.",
+      "dimensions": [
+        480,
+        130
+      ],
+      "bytes": 13952,
+      "sha256": "0ae2e66b40baec90abc22ad396493a6cd736d53953f42e17ffda15e19ce771c7"
+    },
+    {
+      "path": "email/cysure-logo-noche.png",
+      "category": "correo",
+      "theme": "noche",
+      "source": {
+        "library": "Cysure · Landing Page (PieLP) y maestro del lockup de Presentaciones y Documentos v19.49",
+        "note": "Render para correo transaccional (Clerk y plataforma). Ver approval."
+      },
+      "version": "correos 2026-10-19",
+      "status": "publicado",
+      "approval": "Derivada de noche registrada (cysure-lockup-master-noche.svg, #E8ECF8) rasterizada a 480 px para el encabezado en modo oscuro y el pie negro. Subido con autorización de Toño (19 oct 2026) para los correos de Clerk y Resend.",
+      "dimensions": [
+        480,
+        130
+      ],
+      "bytes": 13994,
+      "sha256": "b66e24938fca191b7bac5a16406b6001a87606b0d218e0e492c16d684677997b"
+    },
+    {
+      "path": "email/cysure-red-linkedin.png",
+      "category": "correo",
+      "theme": "pie",
+      "source": {
+        "library": "Cysure · Landing Page (PieLP) y maestro del lockup de Presentaciones y Documentos v19.49",
+        "note": "Render para correo transaccional (Clerk y plataforma). Ver approval."
+      },
+      "version": "correos 2026-10-19",
+      "status": "publicado",
+      "approval": "SVG servido de LinkedIn de PieLP (MARCAS, bundle de la LP) en tinta pie-btn-ink #D0D2D5, 48×48 para botones de 16 px. Subido con autorización de Toño (19 oct 2026) para los correos de Clerk y Resend.",
+      "dimensions": [
+        48,
+        48
+      ],
+      "bytes": 762,
+      "sha256": "51abbff41cf70b766eb4703525bb00cb62485131dd22b9d7988fe58467aef85f"
+    },
+    {
+      "path": "email/cysure-red-x.png",
+      "category": "correo",
+      "theme": "pie",
+      "source": {
+        "library": "Cysure · Landing Page (PieLP) y maestro del lockup de Presentaciones y Documentos v19.49",
+        "note": "Render para correo transaccional (Clerk y plataforma). Ver approval."
+      },
+      "version": "correos 2026-10-19",
+      "status": "publicado",
+      "approval": "SVG servido de X de PieLP (MARCAS) en tinta pie-btn-ink #D0D2D5, 48×48. Subido con autorización de Toño (19 oct 2026) para los correos de Clerk y Resend.",
+      "dimensions": [
+        48,
+        48
+      ],
+      "bytes": 2015,
+      "sha256": "f0ce3ebb44d3f604fdae1424d181d88280048a65befdfc5cefd0988894b16dba"
+    },
+    {
+      "path": "email/cysure-red-instagram.png",
+      "category": "correo",
+      "theme": "pie",
+      "source": {
+        "library": "Cysure · Landing Page (PieLP) y maestro del lockup de Presentaciones y Documentos v19.49",
+        "note": "Render para correo transaccional (Clerk y plataforma). Ver approval."
+      },
+      "version": "correos 2026-10-19",
+      "status": "publicado",
+      "approval": "SVG servido de Instagram de PieLP (MARCAS) en tinta pie-btn-ink #D0D2D5, 48×48. Subido con autorización de Toño (19 oct 2026) para los correos de Clerk y Resend.",
+      "dimensions": [
+        48,
+        48
+      ],
+      "bytes": 2178,
+      "sha256": "b3c28ec65e4bd069883fcffea47fd072f35961ff2a7a8f35e0ba14fba42ff866"
     }
   ],
   "pending": [
